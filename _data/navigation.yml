@@ -13,9 +13,9 @@
   - title: "Project 1"
     url: "/research/project1/"
   - title: "Project 2"
-    url: "/design/typography/typography/"
+    url: "/research/project2/"
   - title: "Project 3"
-    url: "/design/page/"
+    url: "/research/project3/"
 
 - title: "Publications"
   url: "/publications/"
