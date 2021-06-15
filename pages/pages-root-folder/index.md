@@ -9,18 +9,18 @@ header:
   image_fullwidth: header_unsplash_12.jpg
 widget1:
   title: "Widget No 1"
-  url: 'The url to the widget'
-  image: widget-1-302x182.jpg
-  text: 'This is the description to the first widget. We meed to figure out whether we can have more than three widgets or if we are limited here.'
+  url: '/research/project1'
+  #image: widget-1-302x182.jpg
+  text: 'This is the description to the first widget. The link leads to our first research project.'
 widget2:
   title: "Widget No 2"
-  url: 'http://trust-cps-group.github.io/info/'
-  text: 'The description of the second image. The link should actually lead somewhere. I have removed the video part which was present in the original page.'
+  url: '/research/project2'
+  text: 'The description of the second image. The link should actually lead to the second research project.'
 widget3:
   title: "Widget No 3"
-  url: 'https://github.com/trust-cps-group'
-  image: widget-github-303x182.jpg
-  text: 'The link should lead to the organization'
+  url: '/research/project3'
+  #image: widget-github-303x182.jpg
+  text: 'The link should lead to the third research project.'
 #
 # Use the call for action to show a button on the frontpage
 #
@@ -31,10 +31,10 @@ widget3:
 # to use the main color or success, alert or secondary.
 # To change colors see sass/_01_settings_colors.scss
 #
-callforaction:
-  url: https://tinyletter.com/feeling-responsive
-  text: Inform me about new updates and features ›
-  style: alert
+#callforaction:
+#  url: https://tinyletter.com/feeling-responsive
+#  text: Inform me about new updates and features ›
+#  style: alert
 permalink: /index.html
 #
 # This is a nasty hack to make the navigation highlight
