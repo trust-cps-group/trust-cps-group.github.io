@@ -5,6 +5,7 @@ layout: page-fullwidth
 {% unless site.posts == empty %}
     <div class="row t30 b20 homepage">
             {% for post in site.posts %}
+            {% if post.categories contains 'research' %}
             <div class="medium-12 columns border-dotted t10">
               <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><h3>{{  post.title}}</h3></a>
             {% if post.image.homepage %}
@@ -40,6 +41,7 @@ layout: page-fullwidth
               </div>
             {% endif %}
             </div><!-- /.medium-12.columns -->
+            {% endif %}
             {% endfor %}
 
     </div><!-- /.row -->

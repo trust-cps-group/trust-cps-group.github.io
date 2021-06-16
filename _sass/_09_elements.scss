@@ -71,8 +71,8 @@
     border-bottom: 1px solid #fff;
   }
   .alert-box.terminal {
-    background: $grey-12; 
-    color: #fff; 
+    background: $grey-12;
+    color: #fff;
     border-color: scale-color($grey-12, $lightness: -14%);
     font-family: $font-family-monospace;
   }
@@ -159,4 +159,28 @@ img.lazy {
     padding-top: 50px;
     margin-top: -50px;
   }
+}
+
+
+/* People Tile */
+
+.person-tile {
+
+  margin-bottom: 20px;
+
+  .person-tile-title {
+    font-weight: 600;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    color: #404040;
+  }
+
+ /*
+  a:hover {
+    p {
+      color: map-get($foundation-palette, primary);
+    }
+  }*/
 }

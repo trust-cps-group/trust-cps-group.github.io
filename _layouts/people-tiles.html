@@ -1,0 +1,22 @@
+---
+layout: page-fullwidth
+---
+
+{% unless site.posts == empty %}
+    <div class="row small-up-2 medium-up-3 large-up-4">
+            {% for post in site.posts %}
+            {% if post.categories contains 'people' %}
+            <div class="person-tile small-12 medium-6 large-6 column">
+              <div class="small-6 medium-6 large-6 column">
+              <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img  width="970" class="figure" src="{{ site.urlimg }}{{ post.image.thumb }}" alt="{{ page.title | escape_once }}"></a>
+              </div>
+              <div class="small-6 medium-6 large-6 column">
+                {{ post.title }}
+                <br>
+                {{ post.mail }}
+              </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+    </div><!-- /.row -->
+{% endunless %}
