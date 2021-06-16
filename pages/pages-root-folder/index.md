@@ -5,9 +5,8 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-header:
-  title: Trustworthy Cyber-Physical Systems Group
-  subheadline: Who we are
+#header:
+#  title: Trustworthy Cyber-Physical Systems Group
 widget1:
   title: "Widget No 1"
   url: '/research/project1'

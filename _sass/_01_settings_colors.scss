@@ -24,14 +24,16 @@ $body-bg: 			#fdfdfd;
 
 /* Corporate Identity Colorpalette
    https://color.adobe.com/de/Flat-Design-Colors-v2-color-theme-4341903/
+
+   https://pigment.shapefactory.co/?d=2&a=D2E9F5&b=FFFFFFs
 ------------------------------------------------------------------- */
 
-$ci-1: #3A55CF;		// dark blue
-$ci-2: #48ACF0;		// light blue
-$ci-3: #FCE762;		// yellow
+$ci-1: #7EA0B6;		// dark blue
+$ci-2: #D2E9F5;		// light blue
+$ci-3: #D5D5D5;		// gray
 $ci-4: #F0A202;		// orange
-$ci-5: #AF1B3F;		// red
-$ci-6: #63D471;     // green
+$ci-5: #AF1B3F;		// dark red
+$ci-6: #A8C4D5;   // gray-blue
 
 
 
@@ -109,7 +111,7 @@ $topbar-menu-icon-color-toggled: $ci-6;
 
 $footer-bg: $grey-8;
 $footer-color: #fff;
-$footer-link-color: $ci-6;
+$footer-link-color: $ci-2;
 
 
 $subfooter-bg: $grey-13;
