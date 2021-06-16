@@ -21,6 +21,14 @@
   url: "/publications/"
   side: left
 
+- title: "Openings"
+  url: "/openings/"
+  side: left
+
+- title: "Teaching"
+  url: "/teaching/"
+  side: left
+
 - title: "Search"
   url: "/search/"
   side: right
