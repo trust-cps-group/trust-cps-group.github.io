@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: page-fullwidth
 title: "Publications"
 subheadline: "Our publications"
-teaser: "What has been published"
+teaser: "We offer a chronological collection of work published by members of our group."
 permalink: "/publications/"
-header:
-    image_fullwidth: "header_drop.jpg"
+header: no
 ---
 
 Lots of publications

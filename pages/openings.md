@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: page-fullwidth
 title: "Openings"
-subheadline: "Who is who in our group"
-teaser: "This is a teaser ... "
+subheadline: "Open positions"
+teaser: "We are always looking for talented people who like to contribute their knowledge ..."
 permalink: "/openings/"
-header:
-    image_fullwidth: "header_drop.jpg"
+header: no
 ---
 
 Test.

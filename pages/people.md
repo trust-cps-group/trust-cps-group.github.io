@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: page-fullwidth
 title: "People"
-subheadline: "Who is who in our group"
+subheadline: "Who is who"
 teaser: "This is a teaser ... "
 permalink: "/people/"
-header:
-    image_fullwidth: "header_drop.jpg"
+header: no
 ---
 
 Here we will show all people. Maybe the layout needs to be adjusted.

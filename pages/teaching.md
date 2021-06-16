@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: page-fullwidth
 title: "Teaching"
-subheadline: "Who is who in our group"
-teaser: "This is a teaser ... "
+subheadline: "Courses and practical terms"
+teaser: "As part of TU Wien we offer several courses and practical terms related to our ongoing research."
 permalink: "/teaching/"
-header:
-    image_fullwidth: "header_drop.jpg"
+header: no
 ---
 
 Test.

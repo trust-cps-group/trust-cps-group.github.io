@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: page-fullwidth
 title: "About"
 subheadline: "The Trust-CPS Group"
 teaser: "Contact information and background about the Trust-CPS Group @TU Wien."
 permalink: "/info/"
-header:
-    image_fullwidth: "header_drop.jpg"
+header: no
 ---
 
 

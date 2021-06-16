@@ -6,7 +6,8 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: header_unsplash_12.jpg
+  title: Trustworthy Cyber-Physical Systems Group
+  subheadline: Who we are
 widget1:
   title: "Widget No 1"
   url: '/research/project1'

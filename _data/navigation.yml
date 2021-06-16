@@ -9,13 +9,13 @@
 - title: "Research"
   url: "/research/"
   side: left
-  dropdown:
-  - title: "Project 1"
-    url: "/research/project1/"
-  - title: "Project 2"
-    url: "/research/project2/"
-  - title: "Project 3"
-    url: "/research/project3/"
+  #dropdown:
+  #- title: "Project 1"
+  #  url: "/research/project1/"
+  #- title: "Project 2"
+  #  url: "/research/project2/"
+  #- title: "Project 3"
+  #  url: "/research/project3/"
 
 - title: "Publications"
   url: "/publications/"
