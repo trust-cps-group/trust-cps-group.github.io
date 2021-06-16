@@ -1,0 +1,46 @@
+---
+layout: page
+---
+
+{% unless site.posts == empty %}
+    <div class="row t30 b20 homepage">
+            {% for post in site.posts %}
+            <div class="medium-12 columns">
+              <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><h3>{{  post.title}}</h3></a>
+            {% if post.image.homepage %}
+            <div class="medium-6 columns">
+              <p>
+                {% if post.teaser %}
+                <br>
+                {{ post.teaser }}
+                <br>
+                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}">{{  site.data.language.more}}</a>
+                {% endif %}
+              </p>
+            </div><!-- /.medium-6.columns -->
+            <div class="medium-6 columns">
+              <p>
+                  <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img  width="970" src="{{ site.urlimg }}{{ post.image.thumb }}" alt="{{ page.title | escape_once }}"></a>
+                </p>
+
+                {% if post.image.caption_url and post.image.caption %}
+                <p class="text-right caption">
+                  <a href="{{ post.image.caption_url }}">{{ post.image.caption }}</a>
+                </p>
+                {% endif %}
+            </div><!-- /.medium-6.columns -->
+            {% else post.image.homepage == NULL %}
+              <div class="medium-12 columns">
+                {% if post.teaser %}
+                <br>
+                {{ post.teaser }}
+                <br>
+                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}">{{  site.data.language.more}}</a>
+                {% endif %}
+              </div>
+            {% endif %}
+            </div><!-- /.medium-12.columns -->
+            {% endfor %}
+
+    </div><!-- /.row -->
+{% endunless %}
