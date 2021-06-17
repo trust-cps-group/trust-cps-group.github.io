@@ -91,6 +91,21 @@ defaults:
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
       # author: phlow # Default author for posts
+  - scope:
+      path: "pages/people"
+      type: "pages"
+    values:
+      header: no
+      layout: page-fullwidth
+      categories: "people"
+  - scope:
+      path: "pages/research_projects"
+      type: "pages"
+    values:
+      header: no
+      layout: page-fullwidth
+      categories: "research"
+
 
 #  Open _data/navigation.yml to adjust the left and right topbar navigation
 #

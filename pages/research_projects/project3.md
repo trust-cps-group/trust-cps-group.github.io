@@ -1,11 +1,7 @@
 ---
-layout: page-fullwidth
-header: no
 subheadline:  "Research Project 3"
 title:  "Incredible Project 3"
 teaser: "This is a teaser for project 3 ..."
-categories:
-    - research
 tags:
     - post format
 image:

@@ -1,11 +1,7 @@
 ---
-layout: page-fullwidth
-header: no
 subheadline:  "Research Project 2"
 title:  "Incredible Project 2"
 teaser: "This is a teaser for project 2 which is also several lines long. We should advertise the project here and raise interest in this project. We have achieved great results and presented a novel method. Our current work aims at extending the approach by TBA."
-categories:
-    - research
 tags:
     - cps
     - resilience
