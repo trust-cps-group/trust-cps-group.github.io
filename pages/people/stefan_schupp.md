@@ -9,4 +9,4 @@ image:
 
 <!--more-->
 
-Stefan Schupp
+I am a post-doctoral researcher at Trust-CPS Group.
