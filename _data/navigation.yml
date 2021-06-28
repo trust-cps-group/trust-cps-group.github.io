@@ -17,6 +17,10 @@
   #- title: "Project 3"
   #  url: "/research/project3/"
 
+- title: "Collaborations"
+  url: "/collaborations/"
+  side: left
+
 - title: "Publications"
   url: "/publications/"
   side: left

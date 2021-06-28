@@ -9,6 +9,11 @@ header: no
 
 Lots of publications
 
+<!--{% bibliography -q @*[year=] %}-->
+
+{% bibliography %}
+
+<!--
 ## Journal Articles
 
 {% bibliography -q @article %}
@@ -24,3 +29,4 @@ Lots of publications
 ## Manuscripts
 
 {% bibliography -q @phdthesis %}
+-->
