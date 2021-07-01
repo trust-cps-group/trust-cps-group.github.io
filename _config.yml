@@ -21,7 +21,7 @@ baseurl: ""
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
+improve_content: #https://github.com/trust-cps-group/feeling-responsive/edit/gh-pages
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
@@ -29,7 +29,8 @@ improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: "https://phlow.github.io/feeling-responsive/images/"
+#urlimg: "https://phlow.github.io/feeling-responsive/images/"
+urlimg: "https://trust-cps-group.github.io/images/"
 
 # Logo size is 600x80 pixels
 logo: ""
@@ -98,6 +99,13 @@ defaults:
       header: no
       layout: page-fullwidth
       categories: "people"
+  - scope:
+      path: "pages/alumni"
+      type: "pages"
+    values:
+      header: no
+      layout: page-fullwidth
+      categories: "alumni"
   - scope:
       path: "pages/research_projects"
       type: "pages"
