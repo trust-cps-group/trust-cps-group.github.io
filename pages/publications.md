@@ -10,7 +10,7 @@ header: no
 
 <!--{% bibliography -q @*[year=] %}-->
 
-<!--{% bibliography %}-->
+{% bibliography %}
 
 <!--
 ## Journal Articles
