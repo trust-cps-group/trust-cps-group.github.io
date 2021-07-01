@@ -1,0 +1,2821 @@
+@ARTICLE{TBG21,
+  title = {{Modeling and Analysis of Cardiac Hybrid Cellular Automata via GPU-accelerated Monte Carlo Simulation}},
+  author = {Treml, Lilly and Bartocci, Ezio and Gizzi, Alessio},
+  journal = {Mathematics},
+  abstract = {The heart consists of a complex network of billions of cells. Under
+      physiological conditions, cardiac cells propagate electrical signals in space,
+      generating the heartbeat in a synchronous and coordinated manner. When such a
+      synchronization fails, life-threatening events can arise. The inherent
+      complexity of the underlying nonlinear dynamics and the large number of
+      biological components involved make the modeling and the analysis of
+      electrophysiological properties in cardiac tissue still an open challenge. We
+      consider here a Hybrid Cellular Automata (HCA) approach modeling the cardiac
+      cell-cell membrane resistance with a free variable. We show that the modeling
+      approach can reproduce important and complex spatiotemporal properties paving
+      the ground for promising future applications. We show how GPU-based technology
+      can considerably accelerate the simulation and the analysis. Furthermore, we
+      study the cardiac behavior within a uni-dimensional domain considering
+      inhomogeneous resistance and we perform a Monte Carlo analysis to evaluate our
+      approach.},
+  volume = {9},
+  number = {2},
+  year = {2021},
+  papertype = {journal},
+  publisher = {MDPI}
+}
+
+@INPROCEEDINGS{NBCG21,
+  title = {{A Normative Supervisor for Reinforcement Learning Agents (System Description)}},
+  author = {Neufeld, Emery and Bartocci, Ezio and Ciabattoni, Agata and Governatori, Guido},
+  booktitle = {Proc. of CADE 2021: the 28th International Conference on Automated Deduction},
+  year = {2021},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference}
+}
+
+@INPROCEEDINGS{MBKK21,
+  title = {{Automated Termination Analysis of Polynomial Probabilistic Programs}},
+  author = {Moosbrugger, Marcel and Bartocci, Ezio and Katoen, J.-P. and Kovacs, Laura},
+  booktitle = {Proc. of ESOP 2021: the 30th European Symposium on Programming},
+  pages = {491--518},
+  abstract = {The termination behavior of probabilistic programs depends on the outcomes of
+      random assignments. Almost sure termination (AST) is concerned with the question
+      whether a program terminates with probability one on all possible inputs.
+      Positive almost sure termination (PAST) focuses on termination in a finite
+      expected number of steps. This paper presents a fully automated approach to the
+      termination analysis of probabilistic while-programs whose guards and
+      expressions are polynomial expressions. As proving (positive) AST is undecidable
+      in general, existing proof rules typically provide sufficient conditions. These
+      conditions mostly involve constraints on supermartingales. We consider four
+      proof rules from the literature and extend these with generalizations of
+      existing proof rules for (P)AST. We automate the resulting set of proof rules by
+      effectively computing asymptotic bounds on polynomials over the program
+      variables. These bounds are used to decide the sufficient conditions - including
+      the constraints on supermartingales - of a proof rule. Our software tool Amber
+      can thus check AST, PAST, as well as their negations for a large class of
+      polynomial probabilistic programs, while carrying out the termination reasoning
+      fully with polynomial witnesses. Experimental results show the merits of our
+      generalized proof rules and demonstrate that Amber can handle probabilistic
+      programs that are out of reach for other state-of-the-art tools. },
+  volume = {12648},
+  year = {2021},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-030-72019-3_18}
+}
+
+@ARTICLE{MBLSF21,
+  title = {{A Novel Spatial-Temporal Specification-Based Monitoring System for Smart Cities}},
+  author = {Ma, Meiyi and Bartocci, Ezio and Lifland, Eli and Stankovic, John A. and Feng, Lu},
+  journal = {IEEE Internet of Things Journal},
+  year = {2021},
+  publisher = {IEEE Computer Society},
+  papertype = {journal},
+}
+
+@INPROCEEDINGS{BBMMN21,
+  title = {{Adaptive Testing for Specification Coverage in CPS Models}},
+  author = {Bartocci, Ezio and Bloem, Roderick and Maderbacher, Benedikt and Manjunath, Niveditha and Nickovic, Dejan},
+  booktitle = {Proc. of 7th IFAC Conference on Analysis and Design of Hybrid Systems},
+  note = {accepted},
+  abstract = {Ensuring correctness of cyber-physical systems (CPS) is an extremely challenging
+      task that is in practice often addressed with simulation-based testing. Formal
+      specification languages, such as Signal Temporal Logic (STL), are used to
+      mathematically express CPS requirements and thus render the simulation activity
+      more systematic and principled. We propose a novel method for adaptive
+      generation of tests with specification coverage for STL. To achieve this goal,
+      we devise cooperative reachability games that we combine with numerical
+      optimization to create tests that explore the system in a way that exercise
+      various parts of the specification. To the best of our knowledge, our approach
+      is the first adaptive testing approach that can be applied directly to MATLAB
+      Simulink/Stafeflow models.
+      We implemented our approach in a prototype tool and evaluated it on several
+      illustrating examples and a case study from the avionics domain, demonstrating
+      the effectiveness of adaptive testing to (1) incrementally build a test case
+      that reaches a test objective, (2) generate a test suite that increases the
+      specification coverage, and (3) infer what part of the specification is actually
+      implemented.},
+  year = {2021},
+  papertype = {conference}
+}
+
+@ARTICLE{BMMMN21,
+  title = {{CPSDebug: Automatic Failure Explanation in CPS Models}},
+  author = {Bartocci, Ezio and Manjunath, Niveditha and Mariani, Leonardo and Mateis, Cristinel and Nickovic, Dejan},
+  journal = {International Journal on Software Tools for Technology Transfer},
+  note = {accepted},
+  abstract = {Debugging Cyber-Physical System (CPS) models is a cumbersome and costly
+      activity.
+      CPS models combine continuous and discrete dynamics --
+      a fault in a physical component manifests itself in a very different way
+      than a fault in a state machine. Furthermore, faults can propagate both in time
+      and space before they can be detected at the observable interface of the model.
+      As a consequence, explaining the reason of an observed failure is challenging
+      and often requires domain-specific knowledge.
+      In this paper we propose CPS Debug, a novel approach that combines
+      testing, specification mining, and failure analysis, to automatically explain
+      failures in Simulink/Stateflow models. In particular, we address the hybrid
+      nature of CPS models by using different methods to infer properties from
+      continuous and discrete state variables of the model.
+      We evaluate CPS Debug on two case studies, involving two main scenarios and
+      several classes of faults, demonstrating the potential value of our approach.},
+  year = {2021},
+  publisher = {Springer},
+  papertype = {journal}
+}
+
+@INPROCEEDINGS{BMMMNP20,
+  title = {{CPSDebug: A Tool for Failure Explanation in Cyber-Physical Systems}},
+  author = {Bartocci, Ezio and Manjunath, Niveditha and Mariani, Leonardo and Mateis, Cristinel and Nickovic, Dejan and Pastore, Fabrizio},
+  booktitle = {Proc. of ISSTA 2020: 29th ACM SIGSOFT International Symposium on Software Testing and Analysis},
+  pages = {569-572},
+  note = {Tool Demonstration Paper},
+  abstract = {Debugging Cyber-Physical System models is often challenging, as it requires
+      identifying a potentially long, complex and heterogenous combination of events
+      that resulted in a violation of the expected behavior of the system. In this
+      paper we present CPSDebug, a tool for supporting designers in the debugging of
+      failures in MATLAB Simulink/Stateflow models. CPSDebug implements a gray-box
+      approach that combines testing, specification mining, and failure analysis, to
+      identify the causes of failures and explain their propagation in time and space.
+      The evaluation of the tool, based on multiple usage scenarios and faults and
+      direct feedback from engineers, shows that CPSDebug can effectively aid
+      engineers during debugging tasks.},
+  year = {2020},
+  publisher = {ACM},
+  papertype = {conference},
+  doi = {10.1145/3395363.3404369}
+}
+
+@INPROCEEDINGS{BKS20,
+  title = {{Analysis of Bayesian Networks via Prob-Solvable Loops}},
+  author = {Bartocci, Ezio and Kovacs, Laura and Stankovic, Miroslav},
+  booktitle = {Proc. of ICTAC 2020: International Colloquium on Theoretical Aspects of Computing},
+  pages = {221--241},
+  abstract = {Prob-solvable loops are probabilistic programs with polynomial assignments over
+      random variables and parametrised distributions, for which the full automation
+      of moment-based invariant generation is decidable. In this paper we extend
+      Prob-solvable loops with new features essential for encoding Bayesian networks
+      (BNs). We show that various BNs, such as discrete, Gaussian, conditional linear
+      Gaussian and dynamic BNs, can be naturally encoded as Prob-solvable loops.
+      Thanks to these encodings, we can automatically solve several BN related
+      problems, including exact inference, sensitivity analysis, filtering and
+      computing the expected number of rejecting samples in sampling-based procedures.
+      We evaluate our work on a number of BN benchmarks, using automated invariant
+      generation within Prob-solvable loop analysis.},
+  volume = {12545},
+  year = {2020},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-030-64276-1_12}
+}
+
+@INPROCEEDINGS{ABBD20,
+  title = {{Probabilistic Hyperproperties with Nondeterminism}},
+  author = {Abraham, Erika and Bartocci, Ezio and Bonakdarpour, Borzoo and Dobe, Oyendrila},
+  booktitle = {Proc. of ATVA 2020: the 18th International Conference on Automated Technology for Verification and Analysis},
+  pages = {518-534},
+  abstract = {In this paper, we study the problem of model checking of probabilistic
+      hyperproperties on models that allow nondeterminism in actions. We extend
+      the temporal logic HyperPCTL whose semantics is described in terms of Markov
+      decision processes (MDP). We generalizes HyperPCTL by allowing explicit
+      and simultaneous quantification over schedulers and probabilistic computation
+      trees and can express important quantitative requirements in security and
+      privacy. We show that the HyperPCTL model checking over MDPs is in general
+      undecidable. On the positive side, we show that the problem becomes decidable
+      if schedulers are memoryless and nonprobabilistic. Subsequently, we propose an
+      SMT-based encoding to solve the problem and evaluate its performance.},
+  volume = {12302},
+  year = {2020},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  publisher = {Springer Berlin Heidelberg},
+  doi = {10.1007/978-3-030-59152-6_29}
+}
+
+@ARTICLE{BDGMNQ20,
+  title = {{Mining Shape Expressions from Positive Examples}},
+  author = {Bartocci, Ezio and Deshmukh, Jyotirmoy and Gliger, Felix and Mateis, Cristinel and Nickovic, Dejan and Qin, Xin},
+  journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+  pages = {3809 -20},
+  note = {This paper has been accepted at EMSOFT 2020: the International Conference on Embedded Software (to appear)},
+  abstract = {Shape expressions (SEs) is a novel specification language that was recently
+      introduced to express behavioral patterns over real-valued signals observed
+      during the execution of cyber-physical systems. A shape expression is a regular
+      expression composed of arbitrary parameterized shapes such as lines, exponential
+      curves, and sinusoids as atomic symbols with symbolic constraints on the shape
+      parameters. SEs enable a natural and intuitive specification of complex temporal
+      patterns over possibly noisy data. In this paper, we propose a novel method for
+      mining a broad and interesting fragment of SEs from time-series data using a
+      combination of techniques from linear regression, unsupervised clustering and
+      learning finite automata from positive examples. The learned SE for a given
+      dataset provides an explainable and intuitive model of the observed system
+      behavior. We demonstrate the applicability of our approach on two case studies
+      from different application domains and experimentally evaluate the implemented
+      specification mining procedure.},
+  volume = {39},
+  number = {11},
+  year = {2020},
+  publisher = {IEEE Computer Society},
+  papertype = {journal},
+  doi = {10.1109/TCAD.2020.3012240}
+}
+
+@INPROCEEDINGS{BBLNS20,
+  title = {{MoonLight: A Lightweight Tool for Monitoring Spatio-Temporal Properties}},
+  author = {Bartocci, Ezio and Bortolussi, Luca and Loreti, Michele and Nenzi, Laura and Silvetti, Simone},
+  booktitle = {Proc. of RV 2020: the 20th International Conference on Runtime Verification},
+  pages = {417-428},
+  abstract = {We present MoonLight, a tool for monitoring temporal and spatio-temporal
+      properties of mobile and spatially distributed cyber-physical systems (CPS). In
+      the proposed framework, space is represented as a weighted graph, describing the
+      topological configurations in which the single CPS entities (nodes of the graph)
+      are arranged.
+      Both nodes and edges have attributes modelling physical and logical quantities
+      that can change in time.
+      MoonLight is implemented in Java and supports the monitoring of Spatio-Temporal
+      Reach and Escape Logic (STREL) introduced in [6].
+      MoonLight can be used as a standalone command line tool, as a Java API, or via
+      Matlab interface.
+      We provide here some examples using the Matlab interface and we evaluate the
+      tool performance also by comparing with other tools specialized in monitoring
+      only temporal properties.},
+  volume = {12399},
+  year = {2020},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  publisher = {Springer-Verlag},
+  doi = {10.1007/978-3-030-60508-7_23}
+}
+
+@INPROCEEDINGS{ZBK20,
+  title = {{Runtime Verification of Autonomous Driving Systems in CARLA}},
+  author = {Zapridou, Eleni and Bartocci, Ezio and Katsaros, Panagiotis},
+  booktitle = {Proc. of RV 2020: the 20th International Conference on Runtime Verification},
+  pages = {172-183},
+  abstract = {Urban driving simulators, such as CARLA, provide 3-D environments and useful
+      tools to easily simulate
+      sensorimotor control systems in scenarios with complex multi-agent dynamics.
+      This enables the design exploration at the early system development stages,
+      reducing high infrastructure costs and high risks. However, due to the
+      high-dimensional input and state spaces of closed-loop autonomous driving
+      systems, their testing and verification is very challenging and it has not yet
+      taken advantage of the recent developments in theory and tools for runtime
+      verification. We show here how to integrate the recently introduced rtamt
+      library, for runtime verification of STL (Signal Temporal Logic) specifications,
+      with the CARLA simulator. Finally, we also present the obtained results from
+      monitoring quantitatively interesting requirements for an experimental Adaptive
+      Cruise Control system tested in CARLA.},
+  volume = {12399},
+  year = {2020},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-030-60508-7_9}
+}
+
+@INPROCEEDINGS{NBBLV20,
+  title = {{Monitoring Spatio-Temporal Properties (Invited Tutorial)}},
+  author = {Nenzi, Laura and Bartocci, Ezio and Bortolussi, Luca and Loreti, Michele and Visconti, Ennio},
+  booktitle = {Proc. of RV 2020: the 20th International Conference on Runtime Verification},
+  pages = {21-46},
+  abstract = {From the formation of traffic jams to the development of troublesome,
+      whirlpool-like spirals in heartâ€™s electrical activity, spatio-temporal
+      patterns are key in the understanding of how complex behaviours can emerge in a
+      network of locally interacting  dynamical systems.  One of the most important
+      and intriguing questions is how to  specify spatio-temporal behaviors in a
+      formal and human-understandable specification language, and how to efficiently
+      monitor their onset.  In this tutorial, we present the spatio-temporal logic
+      STREL and its expressivity to specify and monitor spatio-temporal behaviors over
+      complex dynamical and spatially distributed systems. We demonstrate the
+      applicability of our formalism to different  scenarios considering static or
+      dynamic spatial configuration and systems with deterministic or stochastic
+      dynamics.},
+  volume = {12399},
+  year = {2020},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {invited},
+  doi = {10.1007/978-3-030-60508-7_2}
+}
+
+@ARTICLE{SSPBLSZ20,
+  title = {{Automated Synthesis of Safe Digital Controllers for Sampled-Data Stochastic Nonlinear Systems}},
+  author = {Shmarov, Fedor and Soudjani, Sadegh and Paoletti, Nicola and Bartocci, Ezio and Lin, Shan and Smolka, Scott A. and Zuliani, Paolo},
+  journal = {IEEE Access},
+  pages = {180825-43},
+  abstract = {We present a new method for the automated synthesis of digital controllers with
+      formal safety guarantees for systems with nonlinear dynamics, noisy output
+      measurements, and stochastic disturbances. Our method derives digital
+      controllers such that the corresponding closed-loop system, modeled as a
+      \textit{sampled-data stochastic control system}, satisfies a safety
+      specification with probability above a given threshold. The proposed synthesis
+      method alternates between two steps: generation of a candidate controller, and
+      its verification. The candidate is found by maximizing a Monte Carlo estimate of
+      the safety probability, and by using a non-validated ODE solver for simulating
+      the system. Such a candidate is therefore likely to be sub-optimal but can be
+      generated very rapidly. To rule out unstable candidate controllers, we prove and
+      utilize Lyapunov's indirect method for instability of sampled-data nonlinear
+      systems. In the subsequent verification step, we use a validated solver based on
+      SMT (Satisfiability Modulo Theories) to compute a numerically and statistically
+      valid confidence interval for the safety probability of the candidate
+      controller. If the  probability so obtained is not above the threshold, we
+      expand the search space for candidates by increasing the controller degree.
+      We evaluate our technique on three case studies: an artificial pancreas model, a
+      powertrain control model, and a quadruple-tank process.},
+  volume = {8},
+  year = {2020},
+  publisher = {IEEE Computer Society},
+  papertype = {journal},
+  doi = {10.1109/ACCESS.2020.3028476}
+}
+
+@INPROCEEDINGS{MBLSF20,
+  title = {{SaSTL: Spatial Aggregation Signal Temporal Logic for Runtime Monitoring in Smart Cities}},
+  author = {Ma, Meiyi and Bartocci, Ezio and Lifland, Eli and Stankovic, John A. and Feng, Lu},
+  booktitle = {Proc. of ICCPS'20: the 11th IEEE/ACM Conference on Cyber-Physical Systems },
+  pages = {51-62},
+  note = {Acceptance rate < 24%},
+  abstract = {We present SaSTL---a novel Spatial Aggregation Signal Temporal Logic---for the
+      efficient runtime monitoring of safety and performance requirements in smart
+      cities. We first describe a study of over 1,000 smart city requirements, some of
+      which can not be specified using existing logics such as Signal Temporal Logic
+      (STL) and its variants. To tackle this limitation, we develop two new logical
+      operators in SaSTL to augment STL for expressing spatial aggregation and spatial
+      counting characteristics that are commonly found in real city requirements. We
+      also develop efficient monitoring algorithms that can check a SaSTL requirement
+      in parallel over multiple data streams (e.g., generated by multiple sensors
+      distributed spatially in a city). We evaluate our SaSTL monitor by applying to
+      two case studies with large-scale real city sensing data (e.g., up to 10,000
+      sensors in a requirement). The results show that SaSTL has a much higher
+      coverage expressiveness than other spatial-temporal logics, and with a
+      significant reduction of computation time for monitoring requirements. We also
+      demonstrate that the SaSTL monitor can help improve the safety and performance
+      of smart cities via simulated experiments. },
+  year = {2020},
+  publisher = {IEEE Computer Society},
+  papertype = {conference}
+}
+
+@INPROCEEDINGS{BKS20a,
+  title = {{MORA - Automatic Generation of Moment-Based Invariants}},
+  author = {Bartocci, Ezio and Kovacs, Laura and Stankovic, Miroslav},
+  booktitle = {Proc. of TACAS 2020: the 26th International Conference on Tools and Algorithms for the Construction and Analysis of Systems },
+  pages = {492--498},
+  abstract = {We introduce MORA, an automated tool for generating invariants of probabilistic
+      programs. Inputs to MORA are so-called Prob-solvable loops, that is
+      probabilistic programs with polynomial assignments over random variables and
+      parametrised distributions. Combining methods from symbolic computation and
+      statistics, MORA computes invariant properties over higher-order moments of loop
+      variables, expressing for example statistical properties, such as expected
+      values and variances, over the value distribution of loop variables.},
+  volume = {12078},
+  year = {2020},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  publisher = {Springer Berlin Heidelberg},
+  doi = {10.1007/978-3-030-45190-5_28}
+}
+
+@PROCEEDINGS{ABBD20a,
+  title = {{Parameter Synthesis for Probabilistic Hyperproperties}},
+  author = {Abraham, Erika and Bartocci, Ezio and Bonakdarpour, Borzoo and Dobe, Oyendrila},
+  booktitle = {Proc. of LPAR-23: 23rd International Conference on Logic for Programming, Artificial Intelligence and Reasoning},
+  pages = {12--31},
+  abstract = {In this paper, we study the parameter synthesis problem for probabilistic
+      hyperproperties. A probabilistic hyperproperty
+      stipulates quantitative dependencies among a set of executions. In particular,
+      we solve the following problem: given a probabilistic hyperproperty psi and
+      discrete-time Markov chain PDTMC with parametric transition probabilities,
+      compute regions of parameter configurations that instantiate PDTMC to satisfy
+      psi, and regions that lead to violation. We address this problem for a fragment
+      of the temporal logic HyperPCTL that allows expressing quantitative reachability
+      relation among a set of computation trees. We illustrate the application of our
+      technique in the areas of differential privacy, probabilistic nonintereference,
+      and probabilistic conformance.},
+  volume = {73},
+  year = {2020},
+  papertype = {conference},
+  publisher = {EasyChair},
+  series = {EPiC Series in Computing}
+}
+
+@INPROCEEDINGS{HMBB19,
+  title = {{Control from Signal Temporal Logic Specifications with Smooth Cumulative Quantitative Semantics}},
+  author = {Haghighi, Iman and Mehdipour, Noushin and Bartocci, Ezio and Belta, Calin},
+  booktitle = {Proc. of CDC 2019: the 58th Conference on Decision and Control },
+  pages = {4361-4366},
+  abstract = {We present a framework to synthesize control policies for nonlinear dynamical
+      systems from complex temporal constraints specified in a rich temporal logic
+      called Signal Temporal Logic (STL).
+      We propose a novel smooth and differentiable STL quantitative semantics called
+      cumulative robustness, and efficiently compute control policies through a series
+      of smooth optimization problems that are solved using gradient ascent
+      algorithms.
+      Furthermore, we demonstrate how these techniques can be incorporated in a model
+      predictive control framework in order to synthesize control policies over long
+      time horizons.
+      The advantages of combining the cumulative robustness function with smooth
+      optimization methods as well as model predictive control are illustrated in case
+      studies. },
+  year = {2019},
+  publisher = {IEEE Computer Society},
+  papertype = {conference},
+  doi = {10.1109/CDC40024.2019.9029429}
+}
+
+@INPROCEEDINGS{BKS19,
+  title = {{Automatic Generation of Moment-Based Invariants for Prob-Solvable Loops}},
+  author = {Bartocci, Ezio and Kovacs, Laura and Stankovic, Miroslav},
+  booktitle = {Proc. of ATVA 2019: the 17th International Conference on Automated Technology for Verification and Analysis},
+  pages = {69--86},
+  abstract = {One of the main challenges in the analysis of probabilistic programs is to
+      compute invariant properties that summarise loop behaviours. Automation of invariant
+      generation is still at its infancy and most of the times targets only expected values of
+      the program variables, which is insufficient to recover the full probabilistic program
+      behaviour. We present a method to automatically generate moment-based invariants of a
+      subclass of probabilistic programs, called Prob-Solvable loops, with polynomial
+      assignments over random variables and parametrised distributions. We combine methods from
+      symbolic summation and statistics to derive invariants as valid properties over
+      higher-order moments, such as expected values or variances, of program
+      variables.
+      We successfully evaluated our work on several examples where full automation for
+      computing higher-order moments and invariants over program variables was not yet
+      possible.},
+  volume = {11724},
+  year = {2019},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-030-30446-1_4}
+}
+
+@ARTICLE{ARMBSG19,
+  title = {{Quantitative Regular Expressions for Arrhythmia Detection}},
+  author = {Abbas, Houssam and Rodionova, Alena and Mamouras, Konstantinos and Bartocci, Ezio and Smolka, Scott and Grosu, Radu},
+  journal = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+  pages = {1586--1597},
+  abstract = {Implantable medical devices are safety-critical systems whose incorrect
+      operation can jeopardize a patient's health, and whose algorithms must meet
+      tight platform constraints like memory consumption and runtime.
+      In particular, we consider here the case of implantable cardioverter
+      defibrillators, where peak detection algorithms and various others
+      discrimination algorithms serve to distinguish fatal from non-fatal
+      arrhythmiasin a cardiac signal.
+      Motivated by the need for powerful formal methods to reason about the
+      performance of arrhythmia detection algorithms, we show how to specify
+      all these algorithms using Quantitative Regular Expressions (QREs).
+      QRE is a formal language to express complex numerical queries over data streams,
+      with provable runtime and memory consumption guarantees.
+      We show that QREs are more suitable than classical temporal logics to express in
+      a concise and easy way a range of peak detectors (in both the time and wavelet
+      domains) and various discriminators at the heart of today's arrhythmia detection
+      devices.
+      The proposed formalization also opens the way to formal analysis and rigorous
+      testing of these detectors' correctness and performance,
+      alleviating the regulatory burden on device developers when modifying their
+      algorithms.
+      We demonstrate the effectiveness of our approach by executing QRE-based monitors
+      on real patient data on which they yield results on par with the results
+      reported in the medical literature.},
+  volume = {16},
+  number = {5},
+  year = {2019},
+  publisher = {IEEE Computer Society},
+  papertype = {journal},
+  doi = {10.1109/TCBB.2018.2885274}
+}
+
+@ARTICLE{SSABBCFF19,
+  title = {{A Survey of Challenges for Runtime Verification from Advanced Application Domains (Beyond Software)}},
+  author = {Sanchez, Cesar and Schneider, Gerardo and Ahrendt, Wolfgang and Bartocci, Ezio and Bianculli, Domenico and Colombo, Christian and Falcone, Ylies and Francalanza, Adrian and Krstic, Srdan and LourenÃ§o, JoHao M. and Nickovic, Dejan and Pace, Gordon J. and Rufino, Jose and Signoles, Julien and Traytel, Dmitriy and Weiss, Alexander},
+  journal = {Formal Methods in Systems Design},
+  pages = {279-335},
+  abstract = {Runtime verification is an area of formal methods that studies the dynamic
+      analysis of execution traces against formal specifications. Typically, the two
+      main activities in runtime verification efforts are the process of creating
+      monitors from specifications, and the algorithms for the evaluation of traces
+      against the generated monitors. Other activities involve the instrumentation of
+      the system to generate the trace and the communication between the system under
+      analysis and the monitor. Most of the applications in runtime verification have
+      been focused on the dynamic analysis of software, even though there are many
+      more potential applications to other computational devices and target systems.
+      In this paper we present a collection of challenges for runtime verification
+      extracted from concrete application domains, focusing on the difficulties that
+      must be overcome to tackle these specific challenges. The computational models
+      that characterize these domains require to devise new techniques beyond the
+      current state of the art in runtime verification. },
+  volume = {54},
+  number = {3},
+  year = {2019},
+  publisher = {Springer},
+  papertype = {journal},
+  doi = {10.1007/s10703-019-00337-w}
+}
+
+@INPROCEEDINGS{BBBFGHHK19,
+  title = {{TOOLympics 2019: An Overview of Competitions in Formal Methods}},
+  author = {Bartocci, Ezio and Beyer, Dirk and Black, Paul E. and Fedyukovich, Grigory and Garavel, Hubert and Hartmanns, Arnd and Huisman, Marieke and Kordon, Fabrice and Nagele, Julian and Sighireanu, Mihaela and Steffen, Bernhard and Suda, Martin and Sutcliffe, Geoff and Weber, Tjark and Yamada, Akihisa},
+  booktitle = {Proc. of TACAS 2019: the 24th International Conference on Tools and Algorithms for the Construction and Analysis of Systems},
+  pages = {3-24},
+  abstract = {Evaluation of scientific contributions can be done in many different ways. For
+      the various research communities working on the verification of systems
+      (software, hardware, or the underlying involved mechanisms), it is important to
+      bring together the community and to compare the state of the art, in order to
+      identify progress of and new challenges in the research area. Competitions are a
+      suitable way to do that.
+      The first verification competition was created in 1992 (SAT competition),
+      shortly followed by the CASC competition in 1996. Since the year 2000, the
+      number of dedicated verification competitions is steadily increasing. Many of
+      these events now happen regularly, gathering researchers that would like to
+      understand how well their research prototypes work in practice. Scientific
+      results have to be reproducible, and powerful computers are becoming cheaper and
+      cheaper, thus, these competitions are becoming an important means for advancing
+      research in verification technology.
+      TOOLympics 2019 is an event to celebrate the achievements of the various
+      competitions, and to understand their commonalities and differences. This volume
+      is dedicated to the presentation of the 16 competitions that joined TOOLympics
+      as part of the celebration of the 25},
+  volume = {11429},
+  year = {2019},
+  url = {/files/https://doi.org/10.1007/978-3-030-17502-3},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {invited},
+  doi = {10.1007/978-3-030-17502-3_1}
+}
+
+@INPROCEEDINGS{PMBRH19,
+  title = {{Investigating a Hodgkin-Huxley type model for Drosophila larval neuromuscular junctions via particle swarm fitting}},
+  author = {Piho, Paul and Margetiny, Filip and Bartocci, Ezio and Ribchester, Richard and Hillston, Jane},
+  booktitle = {Proc. of CMSB 2019: the 17th International Conference on Computational Methods in Systems Biology},
+  pages = {23--32},
+  abstract = {We present a novel model of the neuromuscular junctions in larval Drosophila
+      muscles. This model, in the style of Hodgkin-Huxley, is adapted to represent
+      excitatory neuromuscular junction potentials rather than action potentials
+      observed in neutrons. It is an adaptation of a previous model of the firing
+      properties of muscle cells in mammalian cardiac atrioventricular nodes. The
+      model consists of a number of nonlinear differential equations containing
+      several unknown parameters. Thus we use a new implementation of particle swarm
+      optimisation to provide the fit the model to experimental data, which is in the
+      form of observed regenerative action potentials. This GPU-based implementation
+      allows us to adopt an ensemble model approach in which each observation is used
+      to find a plausible parameterisation, resulting in a set of models accounting
+      for cell-to-cell variability of response. },
+  year = {2019},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1109/SASO.2019.00013}
+}
+
+@ARTICLE{RPGB19,
+  title = {{Adaptive Fault Detection exploiting Redundancy with Uncertainties in Space and Time}},
+  author = {Ratasich, Denise and Platzer, Michael and Grosu, Radu and Bartocci, Ezio},
+  journal = {Proc. of SASO 2019: 13th IEEE International Conference on Self-Adaptive and Self-Organizing Systems},
+  pages = {23--32},
+  abstract = {The Internet of Things (IoT) connects millions of devices of different
+      cyber-physical systems (CPSs) providing the CPSs additional (implicit)
+      redundancy during runtime. However, the increasing level of dynamicity,
+      heterogeneity, and complexity adds to the system's vulnerability, and challenges
+      its ability to react to faults. Self-healing is an increasingly popular approach
+      for ensuring resilience, that is, a proper monitoring and recovery, in CPSs.
+      This work encodes and searches an adaptive knowledge base in Prolog/ProbLog that
+      models relations among system variables given that certain implicit redundancy
+      exists in the system. We exploit the redundancy represented in our knowledge
+      base to generate adaptive runtime monitors which compares related signals by
+      considering uncertainties in space and time. This enables the comparison of
+      uncertain, asynchronous, multi-rate and delayed measurements. The monitor is
+      used to trigger the recovery process of a self-healing mechanism. We demonstrate
+      our approach by deploying it in a real-world CPS prototype of a rover whose
+      sensors are susceptible to failure. },
+  year = {2019},
+  publisher = {IEEE Computer Society},
+  papertype = {conference}
+}
+
+@INPROCEEDINGS{BMMMN19,
+  title = {{Automatic Failure Explanation in CPS Models}},
+  author = {Bartocci, Ezio and Manjunath, Niveditha and Mariani, Leonardo and Mateis, Cristinel and Nickovic, Dejan},
+  booktitle = {Proc. of SEFM 2019: the 17th edition of the International Conference on Software Engineering and Formal Methods},
+  pages = {69--86},
+  abstract = {Debugging Cyber-Physical System (CPS) models can be extremely complex. Indeed,
+      the only detection of a failure is insufficient to know how to correct a faulty
+      model. Faults can propagate in time and in space producing observable
+      misbehaviours in locations completely different from the location of the fault.
+      Understanding the reason of an
+      observed failure is typically a challenging and laborious task left to the
+      experience and domain knowledge of the designer.
+      In this paper, we propose CPSDebug, a novel approach that by combining testing,
+      specification mining, and failure analysis, can automatically explain failures
+      in Simulink/State flow models. We evaluate CPSDebug on two case studies,
+      involving two use scenarios and several classes of faults, demonstrating the
+      potential value of our approach.},
+  volume = {11724},
+  year = {2019},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-030-30446-1}
+}
+
+@INPROCEEDINGS{KBJH19,
+  title = {{Piecewise Robust Barrier Tubes for Nonlinear Hybrid Systems with Uncertainty}},
+  author = {Kong, Hui and Bartocci, Ezio and Jiang, Yu and Henzinger, Thomas},
+  booktitle = {Proc. of FORMATS 2019: 17th International Symposium on Formal Modeling and Analysis of Timed Systems},
+  pages = {123--141},
+  abstract = {Piecewise Barrier Tubes (PBT) is a new technique for flowpipe overapproximation
+      for nonlinear systems with polynomial dynamics, which leverages a combination
+      of barrier certificates. PBT has advantages over traditional time-step based
+      methods in dealing with those nonlinear dynamical systems in which there is a large
+      difference in speed between trajectories, producing an overapproximation that is time
+      independent.
+      However, the existing approach for PBT is not efficient due to
+      the application of interval methods for enclosure-box computation, and it can
+      only deal with continuous dynamical systems without uncertainty. In this paper, we extend
+      the approach with the ability to handle both continuous and hybrid dynamical
+      systems with uncertainty that can reside in parameters and/or noise.
+      We also improve the efficiency of the method significantly, by avoiding
+      the use of interval-based methods for the enclosure-box computation without
+      loosing soundness.
+      We have developed a C++ prototype implementing the proposed approach and
+      we evaluate it on several benchmarks. The experiments show that
+      our approach is more efficient and precise than other methods in the literature.},
+  volume = {11750},
+  year = {2019},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-030-29662-9}
+}
+
+@BOOK{BGCS19,
+  title = {{Preface}},
+  author = {Bartocci, Ezio and Grosu, Radu and Cleaveland, Rance and Sokolsky, Oleg},
+  booktitle = {From Reactive Systems to Cyber-Physical Systems - Essays Dedicated to Scott A. Smolka on the Occasion of His 65th Birthday},
+  volume = {11500},
+  year = {2019},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {editorial},
+  doi = {10.1007/978-3-030-31514-6}
+}
+
+@ARTICLE{GRBBG18,
+  title = {{Parallel Reachability Analysis for Hybrid Systems Using XSpeed}},
+  author = {Gurung, Amit and Ray, Rajarshi and Bartocci, Ezio and Bogomolov, Sergiy and Grosu, Radu},
+  journal = {Journal of Software Tools for Technology Transfer},
+  pages = {401-423},
+  abstract = {We present parallel state-space exploration algorithm for linear continuous and
+      hybrid automaton (HA) models of systems. ParSup proposes a parallel
+      implementation of a support-function-based algorithm for linear continuous
+      systems by sampling functions in parallel. Time-Slice is a parallel state-space
+      exploration algorithm for linear continuous systems and proposes to compute the
+      reachable state-space in slices of the time horizon, in parallel. For HA model,
+      we propose three parallel exploration algorithms. An adaptation of
+      G.J.Holzmann's lock-free, parallel breadth-first-search algorithm (A-GJH) is
+      proposed for HA and symbolic states. We show that the adapted algorithm has a
+      drawback in load balancing and for this reason, we provide another algorithm
+      that improves considerably the load balancing, by estimating the cost of the
+      post operations (both discrete and continuous), and using this estimate to
+      balance the load by a task level parallelization (TP-BFS). Finally, an
+      asynchronous HA exploration algorithm which removes the thread synchronization
+      overhead necessary for a breadth first exploration, is proposed (PDFS). We
+      provide an empirical evaluation of the proposed parallel algorithms on various
+      benchmarks on continuous and hybrid systems and demonstrate the achieved
+      performance speed-up on multicore processors. We provide a comparison of the
+      proposed algorithm on the benchmarks and identify parameters to choose the ideal
+      algorithm to draw maximum performance on any benchmark.},
+  volume = {21},
+  number = {4},
+  year = {2019},
+  url = {/files/https://link.springer.com/article/10.1007/s10009-018-0485-6},
+  publisher = {Springer},
+  papertype = {journal},
+  doi = {https://doi.org/10.1007/s10009-018-0485-6}
+}
+
+@INPROCEEDINGS{HBG19,
+  title = {{Capacitive Soil Moisture Sensor Node for IoT in Agriculture and Home}},
+  author = {Hirsch, Christian and Bartocci, Ezio and Grosu, Radu},
+  booktitle = {Proc. of ICST 2019: the 2019 IEEE 23rd international symposium on consumer technologies},
+  abstract = {Growing food for nine billion people is a challenge we will face in near future.
+      Digital technologies hold a great promise to increase efficiency and use
+      resources effectively.
+      In this paper we present a low-power and scalable IoT-based architecture for
+      home farmers and scientific purposes that enables to verify the environmental
+      impact on plants developments by monitoring the soil moisture and temperature.
+      The measured values are transmitted via BLE to a gateway, e.g., a smartphone
+      running the gateway app, to a cloud platform that stores and processes the
+      data.
+      This data is useful to give home farmers vital information, e.g., when to water
+      a plant or when the plant is prune to get infected by a disease. This
+      information is of great importance because it helps to decrease crop failures
+      and thus farm more efficient.
+      The hardware and software architecture presented is scalable and designed to
+      consume low power.
+      Experiments show that it is possible to create a high-spatial resolution by
+      putting many sensor nodes on a small area, in order to help research to measure
+      micro-climate.},
+  year = {2019},
+  publisher = {IEEE Computer Society},
+  papertype = {conference}
+}
+
+@INPROCEEDINGS{BFR19,
+  title = {{International Competition on Runtime Verification (CRV)}},
+  author = {Bartocci, Ezio and Falcone, Ylies and Reger, Giles},
+  booktitle = {Proc. of TACAS 2019: the 24th International Conference on Tools and Algorithms for the Construction and Analysis of Systems},
+  pages = {41-49},
+  abstract = {We review the first five years of the international Competition on Runtime
+      Verification (CRV), which began in 2014. Runtime verification focuses on
+      verifying system executions directly and is a useful lightweight technique to
+      complement static verification techniques. The competition has gone through a
+      number of changes since its introduction, which we highlight in this paper.},
+  volume = {11429},
+  year = {2019},
+  url = {/files/https://link.springer.com/content/pdf/10.1007%2F978-3-030-17502-3_3.pdf},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {invited},
+  doi = {10.1007/978-3-030-17502-3_1}
+}
+
+@ARTICLE{BFBCDKHJ17,
+  title = {{First International Competition on Runtime Verification, Rules, Benchmarks, Tools, and Final Results of CRV 2014}},
+  author = {Bartocci, Ezio and Falcone, Ylies and Bonakdarpour, Borzoo and Colombo, Christian and Decker, Normann and Klaedtke, Felix and Havelund, Klaus and Joshi, Yogi and Milewicz, Reed and Reger, Giles and Rosu, Grigore and Signoles, Julien and Thoma, Daniel and Zalinescu, Eugen and Zhang, Yi},
+  journal = {Journal of Software Tools for Technology Transfer},
+  pages = {31-70},
+  abstract = {The first international Competition on Runtime Verification (CRV) was held in
+      September 2014, in Toronto, Canada, as a satellite event of the 14th
+      international conference on Runtime Verification (RV'14). The event was
+      organized in three tracks: (1) offline monitoring, (2) online monitoring of C
+      programs, and (3) online monitoring of Java programs. In this paper, we report
+      on the phases and rules, a description of the participating teams and their
+      submitted benchmark, the (full) results, as well as the lessons learned from the
+      competition.},
+  volume = {21},
+  number = {1},
+  year = {2019},
+  papertype = {journal},
+  publisher = {Springer-Verlag},
+  doi = {10.1007/s10009-017-0454-5}
+}
+
+@ARTICLE{RKGGSB19,
+  title = {{A Roadmap Towards Resilient Internet of Things for Cyber-Physical Systems}},
+  author = {Ratasich, Denise and Khalid, Faiq and Geissler, Florian and Grosu, Radu and Shafique, Muhammad and Bartocci, Ezio},
+  journal = {IEEE Access},
+  pages = {13260-83},
+  abstract = {The Internet of Things (IoT) is a ubiquitous system connecting many different
+      devices -- the things -- which can be accessed from the distance.
+
+      The cyber-physical systems (CPS) monitor and control the things from the
+      distance.
+      As a result, the concepts of dependability and security get deeply intertwined.
+      The increasing level of dynamicity, heterogeneity, and complexity
+      adds to the system's vulnerability, and challenges its ability to react to
+      faults.
+
+      This paper summarizes state-of-the-art
+      of existing work on anomaly detection, fault-tolerance and self-healing,
+      and adds a number of other methods applicable to achieve resilience in an IoT.
+      We particularly focus on non-intrusive methods ensuring data integrity in the
+      network.
+      Furthermore, this paper presents the main challenges in building a resilient IoT
+      for CPS
+      which is crucial in the era of smart CPS with enhanced connectivity
+      (an excellent example of such a system is connected autonomous vehicles).
+
+      It further summarizes our solutions, work-in-progress and future work to this
+      topic
+      to enable ``Trustworthy IoT for CPS''.
+      Finally, this framework is illustrated on a selected use case:
+      A smart sensor infrastructure in the transport domain.},
+  volume = {7},
+  number = {1},
+  year = {2019},
+  publisher = {IEEE Computer Society},
+  papertype = {journal},
+  doi = {10.1109/ACCESS.2019.2891969},
+}
+
+@ARTICLE{BLP18,
+  title = {{Guest Editors' Introduction to the Special Section on the 14th International Conference on Computational Methods in Systems Biology (CMSB 2016)}},
+  author = {Bartocci, Ezio and Liò, Pietro and Paoletti, Nicola},
+  journal = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+  pages = {1122-1123 },
+  abstract = {This special section includes a selection of eight papers presented at the 14th
+      International Conference  on Computational Methods in Systems Biology (CMSB
+      2016) held at the Computer Laboratory, University of Cambridge, UK, on September
+      21-23, 2016.
+
+      The CMSB annual conference series, created in 2003, provides a unique forum of
+      discussion for computer scientists, biologists,  mathematicians, engineers, and
+      physicists interested in a system-level understanding of biological processes.
+      Topics of interest include formalisms for modeling biological processes;
+      approaches for model verification, validation, analysis, and simulation;
+      high-performance methods; model inference from  experimental data; model
+      integration from biological databases; multi-scale modeling and analysis
+      methods; and computational approaches for synthetic biology. Case studies were
+      especially encouraged.
+
+      The CMSB series of conferences has contributed to making the  biological domain
+      an important test-bed of ideas for inter-disciplinary computer science
+      applications and, at the same time, showing to biologists common patterns of
+      circuit similarity across different areas (such as biomedical processes, animal,
+      plant and bacterial physiology) and across scales.
+
+      The conference program featured two main tracks: regular papers, and tool
+      papers.  The conference received 40 submissions,  out of which 17 regular papers
+      and three tool papers were chosen for presentation at the conference and
+      publication in the proceedings.
+      This special section contains a selection of eight papers, including the winners
+      of the Best Paper and Best Student
+      Paper awards. The invited papers have been significantly extended with respect
+      to the proceedings version and underwent a new peer-review process.  We are
+      extremely grateful to the members of the program committee and the external
+      reviewers for their excellent and meticulous work.
+      },
+  volume = {15},
+  number = {4},
+  year = {2018},
+  publisher = {IEEE Computer Society},
+  papertype = {editorial},
+  doi = {10.1109/TCBB.2018.2816979}
+}
+
+@ARTICLE{JBGN18,
+  title = {{An Algebraic Framework for Runtime Verification}},
+  author = {Jaksic, Stefan and Bartocci, Ezio and Grosu, Radu and Nickovic, Dejan},
+  journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (IEEE TCAD).},
+  pages = {2233--2243},
+  note = {This paper was accepted at EMSOFT 2018.},
+  abstract = {Runtime verification (RV) is a pragmatic and scalable, yet rigorous technique,
+      to assess the correctness of complex systems, including cyber-physical systems
+      (CPS).
+      Modern RV tools also allow to measure the distance of a CPS behavior from a
+      given formal requirement, thus, to quantify the robustness of a CPS with respect
+      to perturbations caused by the physical environment.
+      In this paper we propose Algebraic Runtime Verification (ARV), a general,
+      semantic framework for correctness and robustness monitoring. ARV implements an
+      abstract monitoring procedure, in which the specification language can be
+      instantiated with various qualitative and quantitative semantics.
+      This allows us to expose the core aspects of RV, by separating the monitoring
+      algorithm from the concrete choice of the specification language and its
+      semantics.
+      We demonstrate the effectiveness of our framework on two examples from the
+      automotive domain.  },
+  volume = {37},
+  number = {11},
+  year = {2018},
+  publisher = {IEEE Computer Society},
+  papertype = {journal},
+  doi = {10.1109/TCAD.2018.2858460}
+}
+
+@INPROCEEDINGS{BF18a,
+  title = {{RV-TheToP: Runtime Verification from Theory To the Industry Practice (Track Introduction)}},
+  author = {Bartocci, Ezio and Falcone, Ylies},
+  booktitle = {Proc. of ISoLA 2018: the 7th International Symposium on Leveraging Applications of Formal Methods, Verification and Validation: Foundational Technique},
+  pages = {3--8},
+  abstract = {This paper introduces the RV-TOP track at ISoLA'18.  The purpose of the track is
+      to bring together experts on runtime verification and industry practitioners
+      domains to (i) disseminate advanced research topics (ii) disseminate current
+      industrial challenges and (iii) get RV more attractive to industry and usable in
+      additional application domains.  The track consists of eight contributed papers
+      presented during three sessions.},
+  volume = {11247},
+  year = {2018},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {invited},
+  doi = {10.1007/978-3-030-03427-6}
+}
+
+@INPROCEEDINGS{Bar18,
+  title = {{Monitoring, Learning and Control of Cyber-Physical Systems with STL (Tutorial)}},
+  author = {Bartocci, Ezio},
+  booktitle = {Proc. of RV 2018: The 18th International Conference on Runtime Verification},
+  pages = {35--42},
+  abstract = {Signal Temporal Logic (STL) is a popular specification language to reason about
+      continuous-time trajectories of dynamical systems. STL was originally employed
+      to specify and to monitor requirements over the evolution of physical quantities
+      and discrete states characterizing the behavior of cyber-physical systems
+      (CPS).
+      More recently, this formalism plays a key role in several approaches for the
+      automatic design of safe systems and controllers satisfying an STL
+      specification. However, requirements for CPS may include behavioral properties
+      about the physical plant that are not always fully known a-priori and indeed
+      cannot be manually specified. This has opened also new research direction on
+      efficient methods for automatically mining and learning STL properties from data
+      measurements.
+      In this tutorial we provide an overview of the state-of-the-art approaches
+      available for monitoring, learning and control of CPS behaviors focusing on some
+      recent applications.},
+  volume = {11138},
+  year = {2018},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {invited},
+  doi = {10.1007/978-3-030-03769-7\_4}
+}
+
+@INPROCEEDINGS{SNBB18,
+  title = {{Signal Convolution Logic}},
+  author = {Silvetti, Simone and Nenzi, Laura and Bartocci, Ezio and Bortolussi, Luca},
+  booktitle = {Proc. of ATVA 2018: the 16th International Symposium on  Automated Technology for Verification and Analysis},
+  pages = {267--283},
+  abstract = {We introduce a new logic called Signal Convolution Logic (SCL) that combines
+      temporal logic with convolutional filters from digital signal processing. SCL
+      enables to reason about the percentage of time a formula is satisfied in a
+      bounded interval. We demonstrate that this new logic is a suitable formalism
+      to effectively express non-functional requirements in Cyber-Physical Systems
+      displaying noisy and irregular behaviours. We define both a qualitative and
+      quantitative semantics for it, providing an efficient monitoring procedure.
+      Finally,
+      we prove SCL at work to monitor the artificial pancreas controllers that are
+      employed to automate the delivery of insulin for patients with type-1 diabetes.},
+  volume = {11138},
+  year = {2018},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-030-01090-4}
+}
+
+@ARTICLE{JBGNN18,
+  title = {{Quantitative Monitoring of STL with Edit Distance}},
+  author = {Jaksic, Stefan and Bartocci, Ezio and Grosu, Radu and Nguyen, Thang and Nickovic, Dejan},
+  journal = {Formal Methods in Systems Design},
+  pages = {83--112},
+  abstract = {In cyber-physical systems (CPS), physical behaviors are typically controlled by
+
+      digital hardware. As a consequence, continuous behaviors are discretized by
+      sampling
+      and quantization prior to their processing. Quantifying the similarity between
+      CPS behaviors and their specification is an important ingredient in evaluating
+      correctness and quality of such systems.
+      We propose a novel procedure for measuring robustness between digitized CPS
+      signals
+      and Signal Temporal Logic (STL) specifications.
+      We first equip STL with quantitative semantics based on the weighted edit
+      distance
+      (WED), a metric that quantifies both space and time mismatches between digitized
+      CPS
+      behaviors. We then develop a dynamic programming algorithm for computing the
+      robustness
+      degree between digitized signals and STL specifications. In order to promote
+      hardware-based
+      monitors we implemented our approach in FPGA. We evaluated it on automotive
+      benchmarks
+      defined by research community, and also on realistic data obtained from magnetic
+      sensor used
+      in modern cars.},
+  volume = {53},
+  number = {1},
+  year = {2018},
+  url = {/files/https://link.springer.com/article/10.1007/s10703-018-0319-x#citeas},
+  publisher = {Springer},
+  papertype = {journal},
+  doi = {10.1007/s10703-018-0319-x}
+}
+
+@INPROCEEDINGS{FMMBMS18,
+  title = {{ Verifying nonlinear analog and mixed-signal circuits with inputs}},
+  author = {Fan, Chuchu and Meng, Yu and Maier, Jürgen and Bartocci, Ezio and Mitra, Sayan and Schmid, Ulrich},
+  booktitle = {Proc. of ADHS 2018 - IFAC Conference on Analysis and Design of Hybrid Systems},
+  pages = {241--246},
+  abstract = {We present a new technique for verifying nonlinear and hybrid models with
+      inputs.
+      We observe that once an input signal is fixed, the sensitivity analysis of the
+      model can be computed much more precisely. Based on this result, we propose a
+      new simulation-driven  verification algorithm and apply it to a suite of
+      nonlinear and hybrid models of CMOS digital circuits under different input
+      signals. The models are low-dimensional but with highly nonlinear ODEs, with
+      nearly hundreds of logarithmic and exponential terms. Some of our experiments
+      analyze the metastability of bistable circuits with very sensitive ODEs and
+      rigorously establish the  connection between metastability recovery time and
+      sensitivity.},
+  volume = {51},
+  number = {16},
+  year = {2018},
+  url = {/files/https://ac.els-cdn.com/S2405896318311571/1-s2.0-S2405896318311571-main.pdf?_tid=eeeacd3f-0426-4b71-8b5c-af968d3bfe13&acdnat=1535745740_b3ef0dc04bca7175d29e7594f8dc3cb4},
+  papertype = {conference},
+  doi = {10.1016/j.ifacol.2018.08.041}
+}
+
+@PROCEEDINGS{NSBB18,
+  title = {{ A Robust Genetic Algorithm for Learning Temporal Specifications from Data}},
+  author = {Nenzi, Laura and Silvetti, Simone and Bartocci, Ezio and Bortolussi, Luca},
+  booktitle = {Proc. of QEST 2018:  the 15th International Conference on Quantitative Evaluation of SysTems },
+  pages = {323--338},
+  abstract = {We consider the problem of mining signal temporal logical requirements from a
+      dataset of regular (good) and anomalous (bad) trajectories of a dynamical
+      system. We assume the training set to be labeled by human experts and that we
+      have access only to a limited amount of data, typically noisy.
+      We provide a systematic approach to synthesize both the syntactical structure
+      and the parameters of the temporal logic formula using a two-steps procedure:
+      first, we leverage a novel evolutionary algorithm for learning the structure of
+      the formula; second, we perform the parameter synthesis
+      operating on the statistical emulation of the average robustness for a candidate
+      formula w.r.t. its parameters.
+      We compare our results with our previous work and with a recently proposed
+      decision-tree  based method. We present experimental result on two case studies: an anomalous
+      trajectory detection problem of a naval surveillance system and the
+      characterisation of the dynamics of a biological circadian oscillator. Our
+      experiments indicate that the proposed approach
+      outperforms our previous work w.r.t. accuracy and show that it produces in
+      general smaller and more compact temporal logic specifications w.r.t. the
+      decision-tree based approach with a comparable speed and accuracy.},
+  volume = {11024},
+  year = {2018},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  publisher = {Springer-Verlag},
+  doi = {10.1007/978-3-319-99154-2}
+}
+
+@INPROCEEDINGS{ABCKS18,
+  title = {{Parameter-Independent Strategies for pMDPs via POMDPs}},
+  author = {Arming, Sebastian and Bartocci, Ezio and Chatterjee, Krishnendu and Katoen, J.-P. and Sokolova, Ana},
+  booktitle = {Proc. of QEST 2018:  the 15th International Conference on Quantitative Evaluation of SysTems},
+  pages = {53--70},
+  abstract = {Markov Decision Processes (MDPs) are a popular class of models suitable for
+      solving control decision problems in probabilistic reactive systems.
+      We consider parametric MDPs (pMDPs) that include parameters in some of the
+      transition probabilities to account for stochastic uncertainties of the
+      environment such as noise or input disturbances.
+
+      We study pMDPs with reachability objectives where the parameter values are
+      unknown and impossible to measure directly during execution, but there is a
+      probability distribution known over the parameter values. We study for the first
+      time computing parameter-independent strategies that are expectation optimal,
+      i.e., optimize the expected reachability probability under the probability
+      distribution over the parameters. We present an encoding of our problem to
+      partially observable MDPs (POMDPs), i.e., a reduction of our problem to
+      computing optimal strategies in POMDPs.
+
+      We evaluate our method experimentally on several benchmarks: a motivating
+      (repeated) learner model; a series of benchmarks of varying configurations of a
+      robot moving on a grid; and a consensus protocol.},
+  volume = {11024},
+  year = {2018},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-99154-2},
+}
+
+@INPROCEEDINGS{KBH18,
+  title = {{Reachable Set Over-approximation for Nonlinear Systems Using Piecewise Barrier Tubes}},
+  author = {Kong, Hui and Bartocci, Ezio and Henzinger, Thomas},
+  booktitle = {Proc. of CAV 2018: the 30th International Conference on Computer-Aided Verification},
+  pages = {449-467},
+  abstract = {We address the problem of analyzing the reachable set of a polynomial nonlinear
+      continuous system by
+       over-approximating the flowpipe of its dynamics.
+      The common approach to tackle this problem is to perform a numerical integration
+      over a given time horizon based on Taylor expansion and interval arithmetic.
+      However, this method results to be very conservative when there is a  large
+      difference in speed between trajectories as time progresses.  In this paper, we
+      propose to use combinations of barrier functions, which we call piecewise
+      barrier tube (PBT), to over-approximate flowpipe.  The basic idea of PBT is that
+      for each segment of a flowpipe, a coarse box which is big enough to contain the
+      segment is constructed using sampled simulation and then in the box we compute
+      by linear programming a set of barrier functions (called barrier tube or BT for
+      short) which work together to form a tube surrounding the flowpipe. The benefit
+      of using PBT is that: (a) BT is independent of time and hence can avoid being
+      stretched and deformed by time; (b) a small number of BTs can form a tight
+      over-approximation for the flowpipe, which means that the computation required
+      to decide whether the BTs intersect the
+      unsafe set can be reduced significantly.  We implemented a prototype called PBTS
+      in C++. Experiments on some benchmark systems show that our approach is
+      effective.},
+  volume = {10981},
+  year = {2018},
+  url = {/files/https://link.springer.com/content/pdf/10.1007%2F978-3-319-96145-3_24.pdf},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-96145-3_24},
+}
+
+@INPROCEEDINGS{BBNR18,
+  title = {{A Counting Semantics for Monitoring LTL Specifications over Finite Traces}},
+  author = {Bartocci, Ezio and Bloem, Roderick and Nickovic, Dejan and Roeck, Franz},
+  booktitle = {Proc. of CAV 2018: the 30th International Conference on Computer-Aided Verification},
+  pages = {547-564},
+  abstract = {We consider the problem of monitoring a Linear Time Logic (LTL) specification
+      that is defined on infinite paths, over finite traces.
+      For example, we may need to draw a verdict on whether the system satisfies or
+      violates the property 'p holds
+      infinitely often.'  The problem is that there is always a continuation of a
+      finite trace that satisfies the property and a different continuation that
+      violates it.
+      We propose a two-step approach to address this problem. First, we introduce a
+      counting semantics that computes the number of steps to witness the satisfaction
+      or violation of a formula for each position in the trace.  Second, we use this
+      information to make a prediction on inconclusive suffixes.  In particular, we
+      consider a good suffix to be one that is shorter than the longest witness for a
+      satisfaction, and a bad suffix to be shorter than or equal to the longest
+      witness for a violation. Based on this assumption, we provide a verdict
+      assessing whether a continuation of the execution on the same system will
+      presumably satisfy or violate the property.},
+  volume = {10981},
+  year = {2018},
+  url = {/files/https://link.springer.com/content/pdf/10.1007%2F978-3-319-96145-3_29.pdf},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-96145-3_29}
+}
+
+@INBOOK{BDDFMNS18,
+  title = {{Specification-based Monitoring of Cyber-Physical Systems: A Survey on Theory, Tools and Applications}},
+  author = {Bartocci, Ezio and Deshmukh, Jyotirmoy and Donzé, Alexandre and Fainekos, Georgios and Maler, Oded and Nickovic, Dejan and Sankaranarayanan, Sriram},
+  booktitle = {Lectures on Runtime Verification - Introductory and Advanced Topics},
+  editor = {Ezio Bartocci and  Ylies Falcone},
+  pages = {128--168},
+  abstract = {The term Cyber-Physical Systems (CPS) typically refers to engineered, physical
+      and biological systems monitored and/or controlled by an embedded computational
+      core. The behaviour of a CPS over time is generally characterised by the
+      evolution of physical quantities, and discrete software and hardware states. In
+      general, these can be mathematically modelled by the evolution of continuous
+      state variables for the physical components interleaved with discrete events.
+      Despite large effort and progress in the exhaustive verification of such hybrid
+      systems, the complexity of CPS models limits formal verification of safety of
+      their behaviour only to small instances. An alternative approach, closer to the
+      practice of simulation and testing, is to monitor and to predict CPS behaviours
+      at simulation-time or at runtime. In this chapter, we summarise the
+      state-of-the-art techniques for qualitative and quantitative monitoring of CPS
+      behaviours. We present an overview of some of the important applications and,
+      finally, we describe the tools supporting CPS monitoring and compare their main
+      features.},
+  volume = {10457},
+  year = {2018},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {bookchapter},
+  doi = {10.1007/978-3-319-75632-5_5},
+}
+
+@BOOK{BF18,
+  title = {{Preface}},
+  author = {Bartocci, Ezio and Falcone, Ylies},
+  booktitle = {Lectures on Runtime Verification - Introductory and Advanced Topics},
+  editor = {Ezio Bartocci and YliÃ¨s Falcone},
+  abstract = {The idea of this volume originated from the need to have a book for students to
+      support their training with several tutorials on different aspects of RV. The
+      volume has been organized into seven chapters and the topics covered include an
+      introduction on runtime verification, dynamic analysis of concurrency errors,
+      monitoring events that carry data, runtime error reaction and prevention,
+      monitoring of cyber-physical systems, runtime verification for decentralized and
+      distributed systems and an industrial application of runtime verification
+      techniques in financial transaction systems.},
+  volume = {10457},
+  year = {2018},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {editorial},
+  doi = {10.1007/978-3-319-75632-5},
+}
+
+@INPROCEEDINGS{BFMN18,
+  title = {{Localizing Faults in Simulink/Stateflow Models with Signal Temporal Logic}},
+  author = {Bartocci, Ezio and Ferrère, T. and Manjunath, Niveditha and Nickovic, Dejan},
+  booktitle = {Proc. of HSCC 2018: the 21st ACM International Conference on Hybrid Systems: Computation and Control},
+  pages = {197--206},
+  abstract = {Fault-localization is considered to be a very tedious and time-consuming
+      activity in the design of complex Cyber-Physical Systems (CPS). This laborious
+      task essentially requires expert knowledge of the system in order to discover
+      the cause of the fault. In this context, we propose a new procedure that aids
+      designers in debugging Simulink/Stateflow hybrid system models, guided by Signal
+      Temporal Logic (STL) specifications. The proposed method relies on three main
+      ingredients: (1) a monitoring and a trace diagnostics procedure that checks
+      whether a tested behavior satisfies or violates an STL specification, localizes
+      time segments and interfaces variables contributing to the property violations;
+      (2) a slicing procedure that maps these observable behavior segments to the
+      internal states and transitions of the Simulink model; and (3) a spectrum-based
+      fault-localization method that combines the previous analysis from multiple
+      tests to identify the internal states and/or transitions that are the most
+      likely to explain the fault. We demonstrate the applicability of our approach on
+      two Simulink models from the automotive and the avionics domain.},
+  year = {2018},
+  publisher = {ACM},
+  papertype = {conference},
+  doi = {10.1145/3178126.3178131},
+}
+
+@INBOOK{BFFR18,
+  title = {{An Introduction to Runtime Verification}},
+  author = {Bartocci, Ezio and Falcone, Ylies and Francalanza, Adrian and Reger, Giles},
+  booktitle = {Lectures on Runtime Verification - Introductory and Advanced Topics},
+  editor = {Ezio Bartocci and YliÃ¨s Falcone},
+  pages = {1--32},
+  abstract = {The aim of this chapter is to act as a primer for those wanting to learn about
+      Runtime Verification (RV). We start by providing an overview of the main
+      specification languages used for RV. We then introduce the standard terminology
+      necessary to describe the monitoring problem, covering the pragmatic issues of
+      monitoring and instrumentation, and discussing extensively the monitorability
+      problem.},
+  volume = {10457},
+  year = {2018},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {bookchapter},
+  doi = {10.1007/978-3-319-75632-5_1},
+}
+
+@ARTICLE{BAHB16,
+  title = {{A Formal Methods Approach to Pattern Recognition and Synthesis in Reaction Diffusion Networks}},
+  author = {Bartocci, Ezio and Aydin Gol, Ebru and Haghighi, Iman and Belta, Calin},
+  journal = {IEEE Transactions on Control of Network Systems},
+  abstract = {We introduce a formal framework for specifying, detecting, and generating
+      spatial patterns in reaction diffusion networks. Our approach is based on a
+      novel spatial superposition logic, whose semantics is defined over the quad-tree
+      representation of a partitioned image. We demonstrate how to use rule-based
+      classifiers to efficiently learn spatial superposition logic formulas for
+      several types of patterns from positive and negative examples. We implement
+      pattern detection as a model-checking algorithm and we show that it achieves
+      very good results on test data sets which are different from the training sets.
+      We provide a quantitative semantics for our logic and we develop computational
+      framework where our quantitative model-checking algorithm works in synergy with
+      a particle swarm optimization technique to synthesize the parameters leading to
+      the formation of desired patterns in reaction diffusion networks.},
+  volume = {5},
+  number = {1},
+  year = {2018},
+  url = {http://ieeexplore.ieee.org/document/7565496/},
+  publisher = {IEEE Computer Society},
+  papertype = {journal},
+  doi = {10.1109/TCNS.2016.2609138}
+}
+
+@INPROCEEDINGS{LEHBYTSG17,
+  title = {{ARES: Adaptive Receding-Horizon Synthesis of Optimal Plans}},
+  author = {Lukina, Anna and Esterle, Lukas and Hirsch, Christian and Bartocci, Ezio and Yang, Junxing and Tiwari, Ashish and Smolka, Scott A. and Grosu, Radu},
+  booktitle = {Proc. of TACAS 2017: the 23rd International Conference on Tools and Algorithms for the Construction and Analysis of Systems},
+  pages = {286--302},
+  abstract = {We introduce ARES, an efficient approximation algorithm for generating optimal
+      plans (action sequences) that take an initial state of a Markov Decision Process
+      (MDP) to a state whose cost is below a specified (convergence) threshold. ARES
+      uses Particle Swarm Optimization, with adaptive sizing for both the receding
+      horizon and the particle swarm. Inspired by Importance Splitting, the length of
+      the horizon and the number of particles are chosen such that at least one
+      particle reaches a next-level state, that is, a state where the cost decreases
+      by a required delta from the previous-level state. The level relation on states
+      and the plans constructed by ARES implicitly define a Lyapunov function and an
+      optimal policy, respectively, both of which could be explicitly generated by
+      applying ARES to all states of the MDP, up to some topological equivalence
+      relation. We also assess the effectiveness of ARES by statistically evaluating
+      its rate of success in generating optimal plans. The ARES algorithm resulted
+      from our desire to clarify if flying in V-formation is a flocking policy that
+      optimizes energy conservation, clear view, and velocity alignment. That is, we
+      were interested to see if one could find optimal plans that bring a flock from
+      an arbitrary initial state to a state exhibiting a single connected V-formation.
+      For flocks with 7 birds, ARES is able to generate a plan that leads to a
+      V-formation in 95% of the 8,000 random initial configurations within 63 s, on
+      average. ARES can also be easily customized into a model-predictive controller
+      (MPC) with an adaptive receding horizon and statistical guarantees of
+      convergence. To the best of our knowledge, our adaptive-sizing approach is the
+      first to provide convergence guarantees in receding-horizon techniques.},
+  volume = {10206},
+  year = {2017},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-662-54580-5_17}
+}
+
+@INPROCEEDINGS{SJNRHBNG17,
+  title = {{Runtime Monitoring with Recovery of the SENT Communication Protocol}},
+  author = {Selyunin, Konstantin and Jaksic, Stefan and Nguyen, Thang and Reidl, C. and Hafner, U. and Bartocci, Ezio and Nickovic, Dejan and Grosu, Radu},
+  booktitle = {Proc. of CAV 2017: the 29th International Conference on Computer-Aided Verification},
+  pages = {336--355},
+  abstract = {We show how the requirements of a communication protocol between a magnetic
+      sensor and an electronic control unit (ECU) can be monitored in real time, with
+      a monitor capable of processing 70 million samples per second. We elaborate on a
+      complete flow from formalizing electrical and timing requirements using Signal
+      Temporal Logic (STL) and Timed Regular Expressions (TRE), to implementing
+      runtime monitors in FPGA hardware and evaluating the results in the lab. For a
+      class of asynchronous serial protocols, we define a procedure to obtain monitors
+      with recovery after violations of the specification. We elaborate on two
+      different approaches to monitor the requirements of interest: (i) temporal
+      testers with SystemC, STL and High-Level Synthesis; (ii) automata-based approach
+      with TRE in HDL. We also present how the results of the monitoring can be used
+      for error logging to provide user with extensive debugging information. Our
+      approach allows to monitor requirements-specification conformance in real time
+      for long-term tests.},
+  volume = {10426},
+  year = {2017},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-63387-9_17}
+}
+
+@INPROCEEDINGS{ARBSG17,
+  title = {{ Quantitative Regular Expressions for Arrhythmia Detection Algorithms}},
+  author = {Abbas, Houssam and Rodionova, Alena and Bartocci, Ezio and Smolka, Scott A. and Grosu, Radu},
+  booktitle = {Proc. of CMSB 2017: the 15th International Conference on Computational Methods in Systems Biology},
+  pages = {23--39},
+  abstract = {Motivated by the problem of verifying the correctness of arrhythmia-detection
+      algorithms, we present a formalization of these algorithms in the language of
+      Quantitative Regular Expressions. QREs are a flexible formal language for
+      specifying complex numerical queries over data streams, with provable runtime
+      and memory consumption guarantees. The medical-device algorithms of interest
+      include peak detection (where a peak in a cardiac signal indicates a heartbeat)
+      and various discriminators, each of which uses a feature of the cardiac signal
+      to distinguish fatal from non-fatal arrhythmias. Expressing these algorithms'
+      desired output in current temporal logics, and implementing them via monitor
+      synthesis, is cumbersome, error-prone, computationally expensive, and sometimes
+      infeasible.
+
+      In contrast, we show that a range of peak detectors (in both the time and
+      wavelet domains) and various discriminators at the heart of today's
+      arrhythmia-detection devices are easily expressible in QREs. The fact that one
+      formalism (QREs) is used to describe the desired end-to-end operation of an
+      arrhythmia detector opens the way to formal analysis and rigorous testing of
+      these detectors' correctness and performance. Such analysis could alleviate the
+      regulatory burden on device developers when modifying their algorithms. The
+      performance of the peak-detection QREs is demonstrated by running them on real
+      patient data, on which they yield results on par with those provided by a
+      cardiologist.},
+  volume = {10545},
+  year = {2017},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  publisher = {Springer Berlin Heidelberg},
+  doi = {10.1007/978-3-319-67471-1}
+}
+
+@INPROCEEDINGS{ABS17,
+  title = {{SEA-PARAM: Exploring Schedulers in Parametric MDPs}},
+  author = {Arming, Sebastian and Bartocci, Ezio and Sokolova, Ana},
+  booktitle = {Proc. of QAPL 2017: the 15 International Workshop on Quantitative Aspects of  Programming Languages and Systems},
+  note = {to appear},
+  abstract = {We study parametric Markov decision processes (PMDPs) and their reachability
+      probabilities 'independent' of the parameters. Different to existing work on
+      parameter synthesis (implemented in the tools PARAM and PRISM), our main focus
+      is on describing different types of optimal deterministic memoryless schedulers
+      for the whole parameter range. We implement a simple prototype tool SEA-PARAM
+      that computes these optimal schedulers and show experimental results. },
+  year = {2017},
+  series = {EPTCS},
+  papertype = {workshop}
+}
+
+@INPROCEEDINGS{BBLN17,
+  title = {{Monitoring Mobile and Spatially Distributed Cyber-Physical Systems}},
+  author = {Bartocci, Ezio and Bortolussi, Luca and Loreti, Michele and Nenzi, Laura},
+  booktitle = {Proc. of MEMOCODE 2017: the 15th ACM-IEEE International Conference on Formal Methods and Models for System Design },
+  pages = {146--155},
+  abstract = {Cyber-Physical Systems (CPS) consist of collaborative, networked and tightly
+      intertwined computational (logical) and physical components, each operating at
+      different spatial and temporal scales. Hence, the spatial and temporal
+      requirements play an essential role for their correct and safe execution.
+      Furthermore, the local interactions among the system components result in global
+      spatio-temporal emergent behaviors often impossible to predict at the design
+      time. In this work, we pursue a complementary approach by introducing STREL a
+      novel spatio-temporal logic that enables the specification of spatio-temporal
+      requirements and their monitoring over the execution of mobile and spatially
+      distributed CPS. Our logic extends the Signal Temporal Logic [15]with two novel
+      spatial operators reach and escape from which is possible to derive other
+      spatial modalities such as everywhere, somewhere and surround. These operators
+      enable a monitoring procedure where the satisfaction of the property at each
+      location depends only on the satisfaction of its neighbours, opening the way to
+      future distributed online monitoring algorithms. We propose both a qualitative
+      and quantitative semantics based on constraint semirings, an algebraic structure
+      suitable for constraint satisfaction and optimisation. We prove that, for a
+      subclass of models, all the spatial properties expressed with reach and escape,
+      using euclidean distance, satisfy all the model transformations using rotation,
+      reflection and translation. Finally, we provide an offline monitoring algorithm
+      for STREL and, to demonstrate the feasibility of our approach, we show its
+      application using the monitoring of a simulated mobile ad-hoc sensor network as
+      running example.},
+  year = {2017},
+  publisher = {ACM},
+  papertype = {conference},
+  doi = {10.1145/3127041.3127050}
+}
+
+@INPROCEEDINGS{SHRBG17,
+  title = {{Computing with Biophysical and Hardware-efficient Neural Models}},
+  author = {Selyunin, Konstantin and Hasani, Ramin M. and Ratasich, Denise and Bartocci, Ezio and Grosu, Radu},
+  booktitle = {Proc. of IWANN 2017: 14th International Work-Conference on Artificial Neural Networks - Advances in Computational Intelligence},
+  pages = {535--547},
+  abstract = {In this paper we evaluate how seminal biophysical Hodgkin Huxley model and
+      hardware-efficient TrueNorth model of spiking neurons can be used to perform
+      computations on spike rates in frequency domain. This side-by-side evaluation
+      allows us to draw connections how fundamental arithmetic operations can be
+      realized by means of spiking neurons and what assumptions should be made on
+      input to guarantee the correctness of the computed result. We validated our
+      approach in simulation and consider this work as a first step towards FPGA
+      hardware implementation of neuromorphic accelerators based on spiking models.},
+  volume = {10305},
+  year = {2017},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-59153-7}
+}
+
+@INPROCEEDINGS{BBCCSSS17,
+  title = {{A Probabilistic Small Model Theorem to Assess Confidentiality of Dispersed Cloud Storage}},
+  author = {Baldi, Marco and Bartocci, Ezio and Chiaraluce, Franco and Cucchiarelli, Alessandro and Senigagliesi, Linda and Spalazzi, Luca and Spegni, Francesco},
+  booktitle = {Proc. of QEST 2017: the 14th International Conference on Quantitative Evaluation of SysTems},
+  abstract = {Recent developments in cloud architectures have originated new models of online
+      storage clouds based on data dispersal algorithms. According to these algorithms
+      the data is divided into several slices that are distributed among remote and
+      independent storage nodes. Ensuring confidentiality in this context is crucial:
+      only legitimate users should access any part of information they distribute
+      among storage nodes.
+
+      To the best of our knowledge, the security analysis and assessment of existing
+      solutions always assume homogeneous networks and honest-but-curious nodes as
+      attacker model. We analyze more complex scenarios with heterogeneous network
+      topologies and a passive attacker eavesdropping the channel between user and
+      storage nodes.
+
+      We use parameterized Markov Decision Processes to model such a class of systems
+      and Probabilistic Model Checking to assess the likelihood of breaking the
+      confidentiality. Even if, generally speaking, the parameterized model checking
+      is undecidable, in this paper, however, we proved a Small Model Theorem that
+      makes such a problem decidable for the class of models adopted in this work. We
+      discovered that confidentiality is highly affected by parameters such as the
+      number of slices and the number of write and read requests. At design-time, the
+      presented methodology helps to determine the optimal values of parameters
+      affecting the likelihood of a successful attack to confidentiality.},
+  volume = {10503},
+  year = {2017},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-66335-7}
+}
+
+@INPROCEEDINGS{BBS17,
+  title = {{A Linear Programming-based iterative approach to Stabilizing Polynomial Dynamics}},
+  author = {Ben Sassi, Mohamed Amin and Bartocci, Ezio and Sankaranarayanan, Sriram},
+  booktitle = {Proc. of IFAC 2017: the 20th World Congress of the International Federation of Automatic Control},
+  pages = {10462-469},
+  abstract = {In this paper, we consider the problem of synthesizing static output feedback
+      controllers for stabilizing polynomial systems. We jointly synthesize a Lyapunov
+      function and a static output feedback controller that stabilizes the system over
+      a given subset of the state-space. Motivated by the numerical issues that are
+      commonly faced using SOS (Sum of Squares)/SDP (Semi-Definite Programming)
+      solvers, we examine a linear programming (LP) based alternative approach that
+      can yield more precise results, in practice. Our approach uses Bernstein
+      polynomials to relax parametric polynomial optimization problems into bilinear
+      optimization problems (BP). Subsequently, we approach the bilinear inequalities
+      using a modified alternating minimization approach that alternates between
+      solving linear programs on complementary sets of variables. Finally, we provide
+      a comparison between our approach and BMI (bilinear matrix inequalities) solvers
+      that tackle the same problem. We conclude that LP/BP relaxation approach is
+      promising and can be more efficient than SDP/BMI relaxations.},
+  volume = {50},
+  number = {1},
+  year = {2017},
+  papertype = {conference},
+  publisher = {Elsevier},
+  doi = {10.1016/j.ifacol.2017.08.1976}
+}
+
+@ARTICLE{BBBMS17,
+  title = {{Policy learning in Continuous-Time Markov Decision Processes using Gaussian Processes}},
+  author = {Bartocci, Ezio and Bortolussi, Luca and Brazdil, Tomas and Milos, Dimitrios and Sanguinetti, Guido},
+  journal = {International Journal of Performance Evaluation},
+  pages = {84--100},
+  abstract = {Continuous-time Markov decision processes provide a very powerful
+      mathematical framework to solve policy-making problems
+      in a wide range of applications, ranging from the control of
+      populations to cyber-physical systems.  The key problem to solve
+      for these models is to efficiently compute an optimal policy
+      to control the system in order to maximise the probability of satisfying a
+      set of temporal logic specifications.  Here we introduce a novel
+      method based on statistical model checking and an
+      unbiased estimation of a functional gradient in the
+      space of possible policies.  Our approach presents
+      several advantages over the classical methods
+      based on discretisation techniques, as it does
+      not assume the a-priori knowledge of a model that can be replaced by
+      a black-box, and does not suffer from state-space explosion.
+      The  use of a stochastic moment-based gradient ascent algorithm
+      to guide our search considerably improves the
+      efficiency of learning policies and accelerates
+      the convergence using the momentum term.  We demonstrate
+      the strong performance of our approach on two examples
+      of non-linear population models: an epidemiology model
+      with no permanent recovery and a queuing system
+      with non-deterministic choice.},
+  volume = {116},
+  year = {2017},
+  papertype = {journal},
+  publisher = {Elsevier},
+}
+
+@INPROCEEDINGS{SPBLSZ17,
+  title = {{SMT-based Synthesis of Safe and Robust PID Controllers for Stochastic Hybrid Systems}},
+  author = {Shmarov, Fedor and Paoletti, Nicola and Bartocci, Ezio and Lin, Shan and Smolka, Scott A. and Zuliani, Paolo},
+  booktitle = {Proc. of HVC 2017: the 13th IBM Haifa Verification Conference, Haifa, Israel},
+  pages = {131--146},
+  abstract = {We present a new method for the automated synthesis of safe and robust
+      Proportional-Integral-Derivative
+      (PID) controllers for stochastic hybrid systems. Despite their widespread use in
+      industry, no automated
+      method currently exists for deriving a PID controller (or any other type of
+      controller, for that matter) with
+      safety and performance guarantees for such a general class of systems.  In
+      particular, we consider
+      hybrid systems with nonlinear dynamics (Lipschitz-continuous ordinary
+      differential equations) and
+      random parameters, and we synthesize PID controllers such that the resulting
+      closed-loop systems
+      satisfy safety and performance constraints given as probabilistic bounded
+      reachability properties.
+      Our technique leverages SMT solvers over the reals and nonlinear differential
+      equations to provide
+      formal guarantees that the synthesized controllers satisfy such properties.
+      These controllers are also
+      robust by design since they minimize the probability of reaching an unsafe state
+      in the presence of
+      random disturbances.
+      We apply our approach to the problem of insulin regulation for type~1 diabetes,
+      synthesizing
+      controllers with robust responses to large random meal disturbances, thereby
+      enabling them to
+      maintain blood glucose levels within healthy, safe ranges. },
+  volume = {10629},
+  year = {2017},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+}
+
+@ARTICLE{BM17,
+  title = {{Introduction to the Special Issue on Runtime Verification}},
+  author = {Bartocci, Ezio and Majumdar, Rupak},
+  journal = {Formal Methods in System Design},
+  editor = {Bartocci and  Ezio; Majumdar and  Rupak },
+  pages = {1--4},
+  abstract = {Runtime verification (RV) consists of a broad collection of light-weight
+      scalable analysis techniques to verify and to guarantee at runtime important
+      properties such as correctness, safety, reliability, security, and robustness.
+      The papers in this special issue address some of the RV core problems providing
+      an overview of a wide range of application domains where RV tools and techniques
+      are currently employed. The papers are based on selected contributions from the
+      2015 Conference on Runtime Verification, an annual forum for scientists from
+      both academia and industry to discuss on how to monitor, analyze and guide the
+      execution of programs and from the 2015 Workshop on Static Analysis meets
+      Runtime Verification.},
+  volume = {51},
+  number = {1},
+  year = {2017},
+  publisher = {Springer},
+  papertype = {editorial},
+  doi = {10.1007/s10703-017-0287-6}
+}
+
+@INPROCEEDINGS{SNBNG16,
+  title = {{Monitoring of MTL Specifications With IBM's Spiking-Neuron Model}},
+  author = {Selyunin, Konstantin and Nguyen, Thang and Bartocci, Ezio and Nickovic, Dejan and Grosu, Radu},
+  booktitle = {Proc. of the 2016 Design, Automation & Test in Europe Conference & Exhibition},
+  pages = {924-929},
+  abstract = {This paper shows how to use the IBM's TrueNorth spiking neuron model, for
+      monitoring if a digital signal satisfies a metric temporal-logic (MTL)
+      specification. TrueNorth spiking neurons are universal computation blocks, which
+      can perform a variety of deterministic or stochastic tasks (e.g.,
+      Boolean/arithmetic opera- tions, filtering, and convolution) depending on the
+      configuration of their parameters. We show how to set these parameters for the
+      deterministic TrueNorth neural-model in order to recognize MTL operators. A
+      TrueNorth circuit then behaves as a runtime MTL monitor. We demonstrate how to
+      translate the neural monitor to synthesizable HDL-code on Xilinx's Zedboard
+      using high-level synthesis. To the best of our knowledge, this is the first
+      application of the IBM's TrueNorth model for runtime monitoring. It also
+      demonstrates the complete flow from a high- level specification to the
+      implementation of a neural monitor in FPGA. As a byproduct, the paper also
+      introduces the first open- source FPGA implementation of the deterministic
+      TrueNorth model. We demonstrate the usefulness of our approach on a case study,
+      the launching of a missile from a battle ship.
+      Index Termsâ€”Runtime Monitoring, TrueNorth, MTL},
+  year = {2016},
+  url = {/files/https://ti.tuwien.ac.at/cps/people/grosu/files/date16.pdf},
+  publisher = {IEEE Computer Society},
+  papertype = {conference}
+}
+
+@INPROCEEDINGS{GABBGR16,
+  title = {{Parallel Reachability Analysis for Hybrid Systems}},
+  author = {Gurung, Amit and Arup Kumar, Deka and Bartocci, Ezio and Bogomolov, Sergiy and Grosu, Radu and Ray, Rajarshi},
+  booktitle = {Proc. of MEMOCODE 2016: the 14th ACM-IEEE International Conference on Formal Methods and Models for System Design},
+  abstract = {We propose two parallel state-space-exploration algorithms for hybrid automaton
+      (HA), with the goal of enhancing performance on multi-core shared-memory
+      systems. The first uses the parallel, breadth-first-search algorithm (PBFS) of
+      the SPIN model checker, when traversing the discrete modes of the HA, and
+      enhances it with a parallel exploration of the continuous states within each
+      mode. We show that this simple-minded extension of PBFS does not provide the
+      desired load balancing in many HA benchmarks. The second algorithm is a
+      task-parallel BFS algorithm (TP-BFS), which uses a cheap precomputation of the
+      cost associated with the post operations (both continuous and discrete) in order
+      to improve load balancing. We illustrate the TP-BFS and the cost precomputation
+      of the post operators on a support-function-based algorithm for state-space
+      exploration. The performance comparison of the two algorithms shows that, in
+      general, TP-BFS provides a better utilization/load-balancing of the CPU. Both
+      algorithms are implemented in the model checker XSpeed. Our experiments show a
+      maximum speed-up of more than 2000 Ï‡ on a navigation benchmark, with respect to
+      SpaceEx LGG scenario. In order to make the comparison fair, we employed an equal
+      number of post operations in both tools. To the best of our knowledge, this
+      paper represents the first attempt to provide parallel, reachability-analysis
+      algorithms for HA.},
+  year = {2016},
+  publisher = {ACM},
+  papertype = {conference}
+}
+
+@ARTICLE{BL16,
+  title = {{Computational modeling, formal analysis and tools for systems biology}},
+  author = {Bartocci, Ezio and Liò, Pietro},
+  journal = {PLOS Computational Biology},
+  pages = { e1004591},
+  abstract = {As the amount of biological data in the public domain grows,
+      so does the range of modeling and analysis techniques employed
+      in systems biology. In recent years, a number of theoretical computer
+      science developments have enabled modeling methodology to keep pace.
+      The growing interest in systems biology in executable models and their
+      analysis has necessitated the borrowing of terms and methods from
+      computer science, such as formal analysis, model checking, static analysis,
+      and runtime verification. Here, we discuss the most important and exciting
+      computational methods and tools currently available to systems biologists.
+      We believe that a deeper understanding of the concepts and theory highlighted
+      in this review will produce better software practice, improved investigation of
+
+      complex biological processes, and even new ideas and better feedback
+      into computer science. },
+  volume = {12},
+  number = {1},
+  year = {2016},
+  url = {http://www.eziobartocci.com/papers/plos.pdf},
+  url = {http://journals.plos.org/ploscompbiol/article/asset?id=10.1371%2Fjournal.pcbi.1004591.PDF},
+  papertype = {journal},
+  doi = {10.1371/journal.pcbi.1004591}
+}
+
+@ARTICLE{BR16,
+  title = {{Preface of the Special Issue on Model Checking of Software - Selected papers of the 20th International SPIN Symposium on Model Checking of Software}},
+  author = {Bartocci, Ezio and Ramakrishnan, C. R.},
+  journal = {Software Tools for Technology Transfer (STTT)},
+  pages = {355--357},
+  volume = {18},
+  number = {4},
+  year = {2016},
+  url = {http://link.springer.com/content/pdf/10.1007%2Fs10009-016-0414-5.pdf},
+  publisher = {Springer},
+  papertype = {editorial},
+  doi = {10.1007/s10009-016-0414-5}
+}
+
+@INPROCEEDINGS{KBBGHJS16,
+  title = {{Discrete Abstraction of Multiaffine Systems}},
+  author = {Kong, Hui and Bartocci, Ezio and Bogomolov, Sergiy and Grosu, Radu and Henzinger, Thomas and Jiang, Yu and Schilling, Christian},
+  booktitle = {Proc. of HSB 2016: the Fifth International Workshop on Hybrid Systems Biology },
+  pages = {128--144},
+  volume = {9957},
+  year = {2016},
+  series = {Lecture Notes in Computer Science},
+  papertype = {workshop},
+  publisher = {Springer-Verlag}
+}
+
+@INPROCEEDINGS{BF16,
+  title = {{Runtime Verification and Enforcement, the (Industrial) Application Perspective  (Track Introduction)}},
+  author = {Bartocci, Ezio and Falcone, Ylies},
+  booktitle = {Proc. of ISoLA 2016: the 7th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation},
+  pages = {333-338},
+  abstract = {During the last decade, the runtime verification  and  enforcement (RVE)
+      community has been incredibly prolific in producing
+      many theories, tools and techniques  aiming  towards the efficient analysis of
+      systems' executions and guaranteeing
+      their correctness w.r.t. some desired properties.
+      With the major strides made in recent years, much effort is  still needed to
+      make RVE attractive and viable methodologies for industrial use. In addition to
+      industry, numerous other domains, such as security, bio-health monitoring, etc.,
+      can gain from RVE. The purpose of the "Runtime Verification  and Enforcement:
+      the (industrial) application perspective" track at ISoLA'16 is to
+      bring together RVE experts and potential application domains to try and advance
+      the state-of-the-art on how to make RVE
+      more useable and attractive to industry and other disciplines. },
+  volume = {9953},
+  year = {2016},
+  url = {http://link.springer.com/chapter/10.1007/978-3-319-47169-3_24},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {invited},
+  doi = {10.1007/978-3-319-47169-3_24}
+}
+
+@INPROCEEDINGS{BGJNNS16,
+  title = {{The HARMONIA project: Hardware Monitoring  for Automotive Systems-of-Systems}},
+  author = {Bartocci, Ezio and Grosu, Radu and Jaksic, Stefan and Nguyen, Thang and Nickovic, Dejan and Selyunin, Konstantin},
+  booktitle = {Proc. of ISoLA 2016: the 7th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation},
+  pages = {371-379},
+  abstract = {The verification of complex mixed-signal integrated circuit products in the
+      automotive industry accounts for around 60\%-70\% of the total development
+      time.
+      In such scenario, any effort to reduce the design and  verification costs and to
+      improve the time-to-market and the  product quality will play an important role
+      to  boost up the competitiveness of the automotive industry.
+
+      The aim of the HARMONIA project is to provide a framework for assertion-based
+      monitoring of  automotive systems-of-systems with mixed criticality.
+      It will enable a uniform way to reason about both safety-critical correctness
+      and non-critical robustness properties of such systems.
+      Observers embedded on FPGA hardware will be generated from assertions, and used
+      for monitoring automotive designs emulated on hardware.
+      The project outcome will improve the competitiveness of the automotive
+      application oriented nano and microelectronics industry by reducing verification
+      time and cost in the development process.},
+  volume = {9953},
+  year = {2016},
+  url = {http://localhost/phpbibliography/files/link.springer.com/chapter/10.1007/978-3-319-47169-3_28},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {invited},
+  doi = {10.1007/978-3-319-47169-3_28}
+}
+
+@INPROCEEDINGS{SNBG16,
+  title = {{Applying Runtime Monitoring for Automotive Electronic Development}},
+  author = {Selyunin, Konstantin and Nguyen, Thang and Bartocci, Ezio and Grosu, Radu},
+  booktitle = {Proc. of RV 2016: the 7th International Conference on Runtime Verification},
+  pages = {462--469},
+  abstract = {The paper shows how runtime monitoring can be applied at different phases of
+      electronic product development in automotive industry.  Starting at a concept
+      development, runtime monitors are generated from the product requirements and
+      then embedded in a chip simulation to track the specification compliance at an
+      early stage. In the later phase when a prototype or a product is available, the
+      runtime monitors from the concept development are then re-used for synthesis
+      into FPGA hardware for monitoring the implementation correctness of the
+      product/system during runtime tests at real-time speeds.
+      This is advantageous for long-term test scenarios where simulation becomes
+      impractical or where evaluation of
+      large amounts of data is required: e.g., about 480K frames/min are exchanged
+      between a sensor and an ECU and it is beyond
+      the capability of an engineer to check the specification conformance of every
+      frame even for one minute of the system run.
+      We embed monitors in a real-world industrial case study, where we runtime-check
+      the requirements of an automotive sensor
+      interface both in simulation and for the test chip.},
+  volume = {10012},
+  year = {2016},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-46982-9_30}
+}
+
+@INPROCEEDINGS{KJLBLSG16,
+  title = {{Model Checking as Control: Feedback Control for Statistical Model Checking of Cyber-Physical Systems}},
+  author = {Kalajdzic, Kenan and Jegourel, Cyrille and Legay, Axel and Bartocci, Ezio and Lukina, Anna and Smolka, Scott A. and Grosu, Radu},
+  booktitle = {Proc. of ISoLA 2016: the 7th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation},
+  pages = {46--61},
+  abstract = {We introduce \emph{feedback-control statistical system checking (FC-SSC)}, a new
+      approach to statistical model checking that exploits principles of
+      feedback-control for the analysis of cyber-physical systems (CPS).  FC-SSC uses
+      stochastic system identification to learn a CPS model, importance sampling to
+      estimate the CPS state, and importance splitting to control the CPS so that the
+      probability that the CPS satisfies a given property can be efficiently inferred.
+       We illustrate the utility of FC-SSC on two example applications, each of which
+      is simple enough to be easily understood, yet complex enough to exhibit all of
+      FC-SCC's features.  To the best of our knowledge, FC-SSC is the first
+      statistical system checker to efficiently estimate the probability of rare
+      events in realistic CPS applications or in any complex probabilistic program
+      whose model is either not available, or is infeasible to derive through
+      static-analysis techniques.},
+  volume = {9952},
+  year = {2016},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-47166-2_4}
+}
+
+@INPROCEEDINGS{JBGN16,
+  title = {{Quantitative Monitoring of STL with Edit Distance}},
+  author = {Jaksic, Stefan and Bartocci, Ezio and Grosu, Radu and Nickovic, Dejan},
+  booktitle = {Proc. of RV 2016: the 7th International Conference on Runtime Verification},
+  pages = {201-218},
+  abstract = {In cyber-physical systems (CPS), physical behaviors are typically controlled by
+      digital hardware. As a consequence, continuous behaviors are discretized by
+      sampling and quantization prior to their processing. Quantifying the similarity
+      between CPS behaviors and their specification is an important ingredient in
+      evaluating correctness and quality of such systems.
+
+      We propose a novel procedure for measuring robustness between digitized CPS
+      signals and Signal Temporal Logic (STL) specifications. We first equip STL with
+      quantitative semantics based on the weighted edit distance, a metric that
+      quantifies both space and time mismatches between digitized CPS behaviors. We
+      then develop a dynamic programming algorithm for computing the robustness degree
+      between digitized signals and STL specifications. We implemented our approach
+      and evaluated it on an automotive case study.},
+  volume = {10012},
+  year = {2016},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-46982-9_13}
+}
+
+@INPROCEEDINGS{BBBMS16,
+  title = {{Policy learning for time-bounded reachability in Continuous-Time Markov Decision Processes via doubly-stochastic gradient ascent}},
+  author = {Bartocci, Ezio and Bortolussi, Luca and Brazdil, Tomas and Milios, Dimitrios and Sanguinetti, Guido},
+  booktitle = {Proc. of QEST 2016: the 13th International Conference on Quantitative Evaluation of SysTems},
+  pages = {244--259},
+  volume = {9826},
+  year = {2016},
+  url = {http://arxiv.org/abs/1605.09703},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference}
+}
+
+@INPROCEEDINGS{BLP16,
+  title = {{Preface (CMSB 2016)}},
+  author = {Bartocci, Ezio and Liò, Pietro and Paoletti, Nicola},
+  booktitle = {Proc. of CMSB 2016: the 14th conference on Computational Methods in Systems Biology, Cambridge, UK},
+  pages = {V-VI},
+  volume = {9859},
+  year = {2016},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {editorial}
+}
+
+@INPROCEEDINGS{RBNG16,
+  title = {{Temporal Logic as Filtering}},
+  author = {Rodionova, Alena and Bartocci, Ezio and Nickovic, Dejan and Grosu, Radu},
+  booktitle = {Proc. of HSCC'16: the 19th International Conference on Hybrid Systems: Computation and Control},
+  pages = {11--20},
+  note = {Honorable mention for the HSCC 2016 Best Student Paper Award},
+  abstract = {  We show that metric temporal logic (MTL)
+        can be viewed as linear time-invariant
+        filtering, by interpreting addition, multiplication, and their
+        neutral elements, over the idempotent dioid (max,min,0,1). Moreover,
+        by interpreting these operators over the field of reals
+        (+,$\times$,0,1), one can associate various quantitative semantics
+        to a metric-temporal-logic formula, depending on the filter's kernel
+        used: square, rounded-square, Gaussian, low-pass, band-pass, or
+        high-pass. This remarkable connection between filtering and metric
+        temporal logic allows us to freely navigate between the two, and to
+        regard signal-feature detection as logical inference.
+
+        To the best of our knowledge, this connection has not been
+        established before. We prove that our qualitative, filtering
+        semantics is identical to the classical MTL semantics. We also
+        provide a quantitative semantics for MTL, which measures the
+        normalized, maximum number of times a formula is satisfied within
+        its associated kernel, by a given signal. We show that this
+        semantics is sound, in the sense that, if its measure is 0, then the
+        formula is not satisfied, and it is satisfied otherwise. We have
+        implemented both of our semantics in Matlab, and illustrate their
+        properties on various formulas and signals, by plotting their
+        computed measures.},
+  year = {2016},
+  url = {http://dl.acm.org/ft_gateway.cfm?id=2883839&ftid=1708152&dwn=1&#URLTOKEN#},
+  publisher = {ACM},
+  papertype = {conference},
+  doi = {10.1145/2883817.2883839}
+}
+
+@ARTICLE{IDFGMS16,
+  title = {{Model Checking Tap Withdrawal in C. Elegans}},
+  author = {Islam, Md. Ariful and Defrancisco, Richard and Fan, Chuchu and Grosu, Radu and Mitra, Sayan and Smolka, Scott A.},
+  journal = {Proc. of HSB 2015: the Fourth International Workshop on Hybrid Systems Biology},
+  pages = {195-210},
+  abstract = {We present what we believe to be the first formal verification of a biologically
+      realistic (nonlinear ODE) model of a neural circuit in a multicellular organism:
+      Tap Withdrawal (TW) in C. Elegans, the common roundworm. TW is a reflexive
+      behavior exhibited by C. Elegans in response to vibrating the surface on which
+      it is moving; the neural circuit underlying this response is the subject of this
+      investigation. Specially, we perform reach-tube-based reachability analysis on
+      the TW circuit model of Wicks et al. (1996) to estimate key model parameters.
+      Underlying our approach is the use of Fan and Mitraâ€™s recently developed
+      technique for automatically computing local discrepancy (convergence and
+      divergence rates) of general nonlinear systems.
+      The results we obtain are a significant extension of those of Wicks et al.
+      (1996), who equip their model with fixed parameter values that reproduce the
+      predominant TW response they observed experimentally in a population of 590
+      worms. In contrast, our techniques allow us to much more fully explore the
+      modelâ€™s parameter space, identifying in the process the parameter ranges
+      responsible for the predominant behavior as well as the non-dominant ones. The
+      verification framework we developed to conduct this analysis is model-agnostic,
+      and can thus be re-used on other complex nonlinear systems.},
+  volume = {9271},
+  year = {2016},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-26916-0_11}
+}
+
+@ARTICLE{Hodge201623,
+  title = {{A Digital Repository and Execution Platform for Interactive Scholarly Publications in Neuroscience}},
+  author = {Hodge, V. and Jessop, M. and Fletcher, M. and Weeks, M. and Turner, A. and Jackson, T. and Ingram, C. and Smith, L. and Austin, J.},
+  journal = {Neuroinformatics},
+  pages = {23-40},
+  volume = {14},
+  number = {1},
+  year = {2016},
+  papertype = {journal},
+  doi = {10.1007/s12021-015-9276-3}
+}
+
+@ARTICLE{GÃ³mez2016367,
+  title = {{Assuring safety in air traffic control systems with argumentation and model checking}},
+  author = {GÃ³mez, S.A. and Goron, A. and Groza, A. and Letia, I.A.},
+  journal = {Expert Systems with Applications},
+  pages = {367-385},
+  volume = {44},
+  year = {2016},
+  url = {http://www.scopus.com/inward/record.url?eid=2-s2.0-84944097249&partnerID=40&md5=82e131f7648ba2c80d67cb21b00c15ff},
+  papertype = {journal}
+}
+
+@INPROCEEDINGS{SRBISG15,
+  title = {{Neural Programming: Towards Adaptive Control in Cyber-Physical Systems}},
+  author = {Selyunin, Konstantin and Ratasich, Denise and Bartocci, Ezio and Islam, Md. Ariful and Smolka, Scott A. and Grosu, Radu},
+  booktitle = {Proc. of CDC 2015: the 54th IEEE Conference on Decision and Control},
+  pages = {6978-6985},
+  abstract = {We introduce Neural Programming (NP), a novel paradigm for writing
+      adaptive controllers for Cyber-Physical Systems (CPSs). In NP, if and
+      while statements, whose discontinuity is responsible for frailness in
+      CPS design and implementation, are replaced with their smooth
+      (probabilistic) neural nif and nwhile counterparts. This allows one to
+      write robust and adaptive CPS controllers as dynamic neural networks
+      (DNN).  Moreover, with NP, one can relate the thresholds occurring in
+      soft decisions with a Gaussian Bayesian network (GBN). We provide a
+      technique for learning these GBNs using available domain knowledge. We
+      demonstrate the utility of NP on three case studies: an adaptive
+      controller for the parallel parking of a Pioneer rover; the neural
+      circuit for tap withdrawal in C.  elegans; and a neural-circuit
+      encoding of parallel parking which corresponds to an adaptive
+      proportional controller. To the best of our knowledge, NP is the first
+      programming paradigm linking neural networks (artificial or
+      biological) to programs in a way that explicitly highlights a
+      program's neural-network structure.
+      },
+  year = {2015},
+  url = {http://ti.tuwien.ac.at/cps/people/grosu/files/cdc15.pdf},
+  publisher = {IEEE Computer Society},
+  papertype = {conference},
+  doi = {10.1109/CDC.2015.7403319}
+}
+
+@INPROCEEDINGS{Haghighi2015189,
+  title = {{SpaTeL: A novel spatial-temporal logic and its applications to networked systems}},
+  author = {Haghighi, Iman and Jones, Austin and Kong, Zhaodan and Bartocci, Ezio and Grosu, Radu and Belta, Calin},
+  booktitle = {Proc. of HSCC 2015: the 18th International Conference on Hybrid Systems: Computation and Control},
+  pages = {189-198},
+  abstract = {Networked dynamical systems are increasingly used as models for a variety of
+      processes ranging from robotic teams to collections of genetically engineered
+      living cells. As the complexity of these systems increases, so does the range of
+      emergent properties that they exhibit. In this work, we define a new logic
+      called Spatial-Temporal Logic (SpaTeL) that is a unification of signal temporal
+      logic (STL) and tree spatial superposition logic (TSSL). SpaTeL is capable of
+      describing high-level spatial patterns that change over time, e.g., "Power
+      consumption in the northwest quadrant of the city drops below 100 megawatts if
+      the power consumption in the southwest quadrant remains above 200 megawatts for
+      two hours." We present a statistical model checking procedure that evaluates the
+      probability with which a networked system satisfies a SpaTeL formula. We also
+      develop a synthesis procedure that determines system parameters maximizing the
+      average degree of satisfaction, a continuous measure that quantifies how
+      strongly a system execution satisfies a given formula. We demonstrate our
+      algorithms on two systems: a biochemical reaction-diffusion system and a
+      demand-side management system for a smart neighborhood.},
+  year = {2015},
+  url = {/files/https://ti.tuwien.ac.at/cps/people/grosu/files/hscc15-spatel.pdf},
+  publisher = {ACM},
+  papertype = {conference},
+  doi = {10.1145/2728606.2728633}
+}
+
+@INPROCEEDINGS{BBMNS15,
+  title = {{Studying Emergent Behaviours in Morphogenesis using Signal Spatio-Temporal Logic }},
+  author = {Bartocci, Ezio and Bortolussi, Luca and Milios, Dimitrios and Nenzi, Laura and Sanguinetti, Guido},
+  booktitle = {Proc. of HSB 15: the 4th International Workshop on Hybrid Systems Biology},
+  pages = {156-172},
+  abstract = {Pattern formation is an important spatio-temporal emergent behaviour in biology.
+      Mathematical models of pattern formation in
+      the stochastic setting are extremely challenging to execute and analyse. Here we
+      propose a formal analysis of the emergent
+      behaviour of stochastic reaction diffusion systems in terms of Signal
+      Spatio-Temporal Logic, a recently proposed logic for reasoning on
+      spatio-temporal systems.
+      We present a formal analysis of the spatio- temporal dynamics of the Bicoid
+      morphogen in Drosophila melanogaster, one
+      of the most important proteins in the formation of the horizontal segmentation
+      in
+      the development of the fly embryo. We use a recently proposed framework for
+      statistical model checking of stochastic
+      systems with uncertainty on parameters to characterise the parametric dependence
+      and robustness of the French Flag pattern,
+      highlighting non-trivial correlations between the parameter values and the
+      emergence of the patterning. },
+  volume = {9271},
+  year = {2015},
+  url = {http://www.bortolussi.dmg.units.it/sites/bortolussi.dmg.units.it/files/papers/HSB2015-2.pdf},
+  series = {Lecture Notes in Computer Science},
+  papertype = {workshop},
+  publisher = {Springer Berlin Heidelberg},
+  doi = {10.1007/978-3-319-26916-0_9}
+}
+
+@INPROCEEDINGS{RGDBBG15,
+  title = {{XSpeed: Accelerating Reachability Analysis on MultiCore Processors}},
+  author = {Ray, Rajarshi and Gurung, Amit and Das, Binayak and Bartocci, Ezio and Bogomolov, Sergiy and Grosu, Radu},
+  booktitle = {Proc. of HVC 2015: the 11th Haifa Verification Conference, Haifa, Israel, November, 2015},
+  pages = {3-18},
+  abstract = {We present XSpeed a parallel state-space exploration algorithm for continuous
+      systems with linear
+      dynamics and nondeterministic inputs. The motivation of having parallel
+      algorithms is to exploit the
+      computational power of multicore processors to speed-up performance. The
+      parallelization is achieved
+      on two fronts. First we propose a parallel implementation of the support
+      function algorithm by sampling
+      functions in parallel. Second, we propose a parallel state-space exploration by
+      slicing the time horizon
+      and computing the reachable states in the time slices in parallel. The second
+      method can be however
+      applied only to a class of linear systems with invertible dynamics and fixed
+      input. A GP-GPU implementation
+      is also presented following a lazy evaluation strategy on support functions. The
+      parallel algorithms are
+      implemented in the tool XSpeed. We evaluated the performance on two benchmarks
+      including an 28
+      dimension Helicopter model. Comparison with the sequential counterpart shows a
+      maximum speed-up
+      of almost $7 \times$ on a 6 core, 12 thread Intel Xeon CPU E5-2420 processor.
+      Our GP-GPU implementation
+      shows a maximum speed-up of $12 \times$ over the sequential implementation and
+      $53 \times$ over
+      SpaceEx (LGG scenario), the state of the art tool for reachability analysis of
+      linear hybrid systems.
+      Experiments illustrate that our parallel algorithm with time slicing not only
+      speeds-up performance
+      but also improves precision.},
+  volume = {9434},
+  year = {2015},
+  url = {/files/https://ti.tuwien.ac.at/cps/people/grosu/files/hvc15-2.pdf},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-26287-1_1}
+}
+
+@ARTICLE{Bogomolov201519,
+  title = {{Abstraction-based parameter synthesis for multiaffine systems}},
+  author = {Bogomolov, Sergiy and Schilling, Christian and Bartocci, Ezio and Batt, Grégory and Kong, H and Grosu, Radu},
+  journal = {In Proc. of HVC 2015: the 11th Haifa Verification Conference, Haifa, Israel, November, 2015},
+  pages = {19-35},
+  abstract = {Multiaffine hybrid automata (MHA) represent a powerful formalism to model
+      complex dynamical systems. This formalism is particularly suited for the
+      representation of biological systems which often exhibit highly non-linear
+      behavior. In this paper, we consider the problem of parameter identification for
+      MHA. We present an abstraction of MHA based on linear hybrid automata, which can
+      be analyzed by the SpaceEx model checker. This abstraction enables a precise
+      handling of time-dependent properties. We demonstrate the potential of our
+      approach on a model of a genetic regulatory network and a myocyte model.},
+  volume = {9434},
+  year = {2015},
+  url = {http://ti.tuwien.ac.at/cps/people/grosu/files/hvc15-1.pdf},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-26287-1_2}
+}
+
+@INPROCEEDINGS{JBGKNN15,
+  title = {{From Signal Temporal Logic to FPGA Monitors}},
+  author = {Jaksic, Stefan and Bartocci, Ezio and Grosu, Radu and Kloibhofer, Reinhard and Nguyen, Thang and Nickovic, Dejan},
+  booktitle = {Proc. of MEMOCODE 2015: the 13th ACM-IEEE International Conference on Formal Methods and Models for System Design},
+  pages = {218-227},
+  abstract = {Due to the heterogeneity and complexity of systems-of- systems (SoS), their
+      simulation is becoming very time consuming, expensive and hence impractical. As
+      a result, design simulation is increasingly being complemented with more
+      efficient design em- ulation. Runtime monitoring of emulated designs would
+      provide a precious support in the verification activities of such complex
+      systems.
+      We propose novel algorithms for translating signal temporal logic (STL)
+      assertions to hardware runtime monitors imple- mented in field programmable gate
+      array (FPGA). In order to accommodate to this hardware specific setting, we
+      restrict ourselves to past and bounded future temporal operators interpreted
+      over discrete time. We evaluate our approach on two examples: the mixed signal
+      bounded stabilization property; and the serial peripheral interface (SPI)
+      communication protocol. These case studies demonstrate the suitability of our
+      approach for runtime monitoring of both digital and mixed signal systems. },
+  year = {2015},
+  url = {/files/https://ti.tuwien.ac.at/cps/people/grosu/files/memcode15.pdf},
+  publisher = {ACM},
+  papertype = {conference},
+  doi = {10.1109/MEMCOD.2015.7340489}
+}
+
+@ARTICLE{Bartocci20153,
+  title = {{System design of stochastic models using robustness of temporal properties}},
+  author = {Bartocci, Ezio and Bortolussi, Luca and Nenzi, Laura and Sanguinetti, Guido},
+  journal = {Theoretical Computer Science},
+  pages = {3-25},
+  volume = {587},
+  year = {2015},
+  url = {http://www.bortolussi.dmg.units.it/sites/bortolussi.dmg.units.it/files/papers/TCS2015.pdf},
+  url = {http://www.sciencedirect.com/science/article/pii/S0304397515002224},
+  papertype = {journal},
+  publisher = {Elsevier},
+  doi = {10.1016/j.tcs.2015.02.046}
+}
+
+@INPROCEEDINGS{BM15,
+  title = {{Preface (RV 2015)}},
+  author = {Bartocci, Ezio and Majumdar, Rupak},
+  booktitle = {Proc. of RV 2015: the 15th International Conference on Runtime Verification, Vienna, Austria},
+  pages = {V-VI},
+  volume = {9333},
+  year = {2015},
+  url = {http://www.springer.com/cda/content/document/cda_downloaddocument/9783319238197-p1.pdf?SGWID=0-0-45-1546502-p177662183},
+  series = {Lecture Notes in Computer Science},
+  publisher = {Springer Berlin Heidelberg},
+  papertype = {editorial},
+  doi = {10.1007/978-3-319-23820-3}
+}
+
+@ARTICLE{ArifulIslam201534,
+  title = {{Model-order reduction of ion channel dynamics using approximate bisimulation}},
+  author = {Islam, Md. Ariful and Smolka, Scott A. and Bartocci, Ezio and Cherry, Elizabeth M. and Fenton, Flavio H. and Glimm, James and Grosu, Radu and Murthy, Abhishek},
+  journal = {Theoretical Computer Science},
+  pages = {34-46},
+  volume = {599},
+  year = {2015},
+  url = {/files/https://ti.tuwien.ac.at/cps/people/grosu/files/tcs14.pdf},
+  papertype = {journal},
+  publisher = {Elsevier},
+  doi = {10.1016/j.tcs.2014.03.018}
+}
+
+
+
+@INPROCEEDINGS{ABB14,
+  title = {{A formal methods approach to pattern synthesis in reaction diffusion systems}},
+  author = {Aydin Gol, Ebru and Bartocci, Ezio and Belta, Calin},
+  booktitle = {Proc. of CDC'14: the 53rd {IEEE} Conference on Decision and Control},
+  pages = {108--113},
+  abstract = {We propose a technique to detect and generate patterns in a network of locally
+      interacting dynamical systems. Central to our approach is a novel spatial
+      superposition logic, whose semantics is defined over the quad-tree of a
+      partitioned image. We show that formulas in this logic can be efficiently
+      learned from positive and negative examples of several types of patterns. We
+      also demonstrate that pattern detection, which is implemented as a model
+      checking algorithm, performs very well for test data sets different from the
+      learning sets. We define a quantitative semantics for the logic and integrate
+      the model checking algorithm with particle swarm optimization in a computational
+      framework for synthesis of parameters leading to desired patterns in
+      reaction-diffusion systems.},
+  year = {2014},
+  publisher = {IEEE Computer Society},
+  papertype = {conference},
+  doi = {10.1109/CDC.2014.7039367},
+}
+
+@ARTICLE{BHG14,
+  title = {{Cyber-Physical Systems: Theoretical and Practical Challenges}},
+  author = {Bartocci, Ezio and Hoftberger, Oliver and Grosu, Radu},
+  journal = {ERCIM News},
+  pages = {8-9},
+  volume = {97},
+  year = {2014},
+  papertype = {invited},
+}
+
+@PROCEEDINGS{IDMBSSG14,
+  title = {{Tracking Action Potentials of Nonlinear Excitable Cells using Model Predictive Control}},
+  author = {Islam, Md. Ariful and Deshpande, Tushar and Murthy, Abhishek and Bartocci, Ezio and Smolka, Scott A. and Stoller, Scott D. and Grosu, Radu},
+  booktitle = {Proc. of BIOTECHNO 2014: The Sixth International Conference on Bioinformatics, Biocomputational Systems and Biotechnologies},
+  pages = {52-58},
+  year = {2014},
+  url = {/files/https://ti.tuwien.ac.at/cps/people/grosu/files/biotechno14.pdf},
+  papertype = {conference},
+}
+
+@INPROCEEDINGS{BBSBLB14,
+  title = {{Temporal Logic based Monitoring of Assisted Ventilaion in Intensive Care Patients}},
+  author = {Bufo, Sara and Bartocci, Ezio and Sanguinetti, Guido and Borelli, Massimo and Lucangelo, Umberto and Bortolussi, Luca},
+  booktitle = {Proc. of ISoLA 2014: the 6th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation},
+  pages = {391-403},
+  abstract = {We present a novel approach to learn logical formulae characterising the
+      emergent behaviour of a dynamical system from system observations. At a high
+      level, the approach starts by devising a data-driven statistical abstraction of
+      the system. We then propose general optimisation strategies for selecting
+      formulae with high satisfaction probability, either within a discrete set of
+      formulae of bounded complexity, or a parametric family of formulae. We
+      illustrate and apply the methodology on two real world case studies:
+      characterising the dynamics of a biological circadian oscillator, and
+      discriminating different types of cardiac malfunction from electro-cardiogram
+      data. Our results demonstrate that this approach provides a statistically
+      principled and generally usable tool to logically characterise dynamical systems
+      in terms of temporal logic formulae.},
+  volume = {8803},
+  year = {2014},
+  url = {/files/https://pdfs.semanticscholar.org/48ac/afc91f167f0e4466dad1c3d231e281c0f8a8.pdf},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {invited},
+  doi = {10.1007/978-3-319-10512-3_3},
+}
+
+@INPROCEEDINGS{Bartocci201487,
+  title = {{Towards a GPGPU-parallel SPIN model checker}},
+  author = {Bartocci, Ezio and Defrancisco, Richard and Smolka, Scott A.},
+  booktitle = {Proc. of SPIN 2014: the International SPIN Symposium on Model Checking of Software},
+  pages = {87-96},
+  abstract = {As General-Purpose Graphics Processing Units (GPGPUs)become more powerful, they
+      are being used increasingly often in high-performance computing applications.
+      State space exploration, as employed in model-checking and other verification
+      techniques, is a large, complex problem that has successfully been ported to a
+      variety of parallel architectures. Use of the GPU for this purpose, however, has
+      only recently begun to be studied. We show how the 2012 multicore CPU-parallel
+      state-space exploration algorithm of the SPIN model checker can be re-engineered
+      to take advantage of the unique parallel-processing capabilities of the GPGPU
+      architecture, and demonstrate how to overcome the non-trivial design obstacles
+      presented by this task. Our preliminary results demonstrate significant
+      performance improvements over the traditional sequential model checker for state
+      spaces of appreciable size (>10 million unique states).},
+  year = {2014},
+  url = {http://spinroot.com/spin/Workshops/ws14/spin20140_submission_24.pdf},
+  publisher = {ACM},
+  papertype = {conference},
+  doi = {10.1145/2632362.2632379},
+}
+
+@INPROCEEDINGS{Bartocci201423,
+  title = {{Data-driven statistical learning of temporal logic properties}},
+  author = {Bartocci, Ezio and Bortolussi, Luca and Sanguinetti, Guido},
+  booktitle = {Proc. of FORMATS 2014: the 12th International Conference on Formal Modeling and Analysis of Timed Systems},
+  pages = {23-37},
+  abstract = {We present a novel approach to learn logical formulae characterising the
+      emergent behaviour of a dynamical system from system observations. At a high
+      level, the approach starts by devising a data-driven statistical abstraction of
+      the system. We then propose general optimisation strategies for selecting
+      formulae with high satisfaction probability, either within a discrete set of
+      formulae of bounded complexity, or a parametric family of formulae. We
+      illustrate and apply the methodology on two real world case studies:
+      characterising the dynamics of a biological circadian oscillator, and
+      discriminating different types of cardiac malfunction from electro-cardiogram
+      data. Our results demonstrate that this approach provides a statistically
+      principled and generally usable tool to logically characterise dynamical systems
+      in terms of temporal logic formulae.},
+  volume = {8711},
+  year = {2014},
+  url = {http://link.springer.com/chapter/10.1007%2F978-3-319-10512-3_3},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-319-10512-3_3},
+}
+
+@ARTICLE{BBS14,
+  title = {{Hybrid Systems and Biology (Preface)}},
+  author = {Bartocci, Ezio and Bortolussi, Luca and Smolka, Scott A.},
+  journal = {Information and Computation},
+  pages = {1-2},
+  volume = {236},
+  year = {2014},
+  url = {http://www.sciencedirect.com/science/article/pii/S0890540114000091},
+  publisher = {Elsevier},
+  papertype = {editorial},
+}
+
+
+@INPROCEEDINGS{Bartocci2014353,
+  title = {{Medical cyber-physical systems (Track introduction)}},
+  author = {Bartocci, Ezio and Gao, Sicun and Smolka, Scott A.},
+  booktitle = {Proc. of  ISoLA 2014: the 6th International Symposium on Leveraging Applications of Formal Methods, Verification and Validation. Specialized Technique},
+  pages = {353-355},
+  abstract = {The design of bug-free and safe medical device software is challenging,
+      especially in complex implantable devices that control and actuate organs
+      whoâ€™s response is not fully understood. Safety recalls of pacemakers and
+      implantable cardioverter defibrillators between 1990 and 2000 affected over
+      600,000 devices. Of these, 200,000 or 41%, were due to firmware issues that
+      continue to increase in frequency. According to the FDA, software failures
+      resulted in 24% of all medical device recalls in 2011. There is currently no
+      formal methodology or open experimental platform to test and verify the correct
+      operation of medical-device software within the closed-loop context of the
+      patient.
+      The goal of this effort is to develop the foundations of modeling, synthesis and
+      development of verified medical device software and systems from verified
+      closed-loop models of the device and organ(s). Our research spans both
+      implantable medical devices such as cardiac pacemakers and physiological control
+      systems such as drug infusion pumps which have multiple networked medical
+      systems. These devices are physically connected to the body and exert direct
+      control over the physiology and safety of the patient. The focus of this effort
+      is on (a) Extending current binary safety properties to quantitative
+      verification; (b) Development of patient-specific models and therapies; (c)
+      Multi-scale modeling of complex physiological phenomena and compositional
+      reasoning across a range of model abstractions and refinements; and (d) Bridging
+      the formal reasoning and automated generation of safe and effective software for
+      future medical devices.},
+  volume = {8803},
+  year = {2014},
+  url = {http://www.scopus.com/inward/record.url?eid=2-s2.0-84910618312&partnerID=40&md5=8de64abd45589c9f69fb28b651c51b75},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {invited},
+  doi = {10.1007/978-3-662-45231-8_25},
+}
+
+@INPROCEEDINGS{BBF14,
+  title = {{First International Competition of Software for Runtime Verification}},
+  author = {Bartocci, Ezio and Bonakdarpour, Borzoo and Falcone, Ylies},
+  booktitle = {Proc. of RV 2014: the 14th International Conference on Runtime Verification},
+  pages = {1-9},
+  volume = {8734},
+  year = {2014},
+  series = {Lecture Notes in Computer Science},
+  publisher = {Springer-Verlag},
+  papertype = {invited},
+}
+
+@ARTICLE{MBFGGCSG13,
+  title = {{Curvature Analysis of Cardiac Excitation Wavefronts}},
+  author = {Murthy, Abhishek and Bartocci, Ezio and Fenton, Flavio H. and Glimm, James and Gray, Richard A. and Cherry, Elizabeth M. and Smolka, Scott A. and Grosu, Radu},
+  journal = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+  pages = {323-336},
+  abstract = {We present the Spiral Classification Algorithm (SCA), a fast and accurate
+      algorithm for classifying electrical spiral waves and their associated breakup
+      in cardiac tissues. The classification performed by SCA is an essential
+      component of the detection and analysis of various cardiac arrhythmic disorders,
+      including ventricular tachycardia and fibrillation. Given a digitized frame of a
+      propagating wave, SCA constructs a highly accurate representation of the front
+      and the back of the wave, piecewise interpolates this representation with cubic
+      splines, and subjects the result to an accurate curvature analysis. This
+      analysis is more comprehensive than methods based on spiral-tip tracking, as it
+      considers the entire wave front and back. To increase the smoothness of the
+      resulting symbolic representation, the SCA uses weighted overlapping of adjacent
+      segments which increases the smoothness at join points. SCA has been applied to
+      a number of representative types of spiral waves, and, for each type, a distinct
+      curvature evolution in time (signature) has been identified. Distinct signatures
+      have also been identified for spiral breakup. These results represent a
+      significant first step in automatically determining parameter ranges for which a
+      computational cardiac-cell network accurately reproduces a particular kind of
+      cardiac arrhythmia, such as ventricular fibrillation.},
+  volume = {10},
+  number = {2},
+  year = {2013},
+  url = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6319286},
+  publisher = {IEEE Computer Society},
+  papertype = {journal},
+  doi = {10.1109/TCBB.2012.125},
+}
+
+@INPROCEEDINGS{BBN13,
+  title = {{A temporal logic approach to modular design of synthetic biological circuits}},
+  author = {Bartocci, Ezio and Bortolussi, Luca and Nenzi, Laura},
+  booktitle = {Proc. of CMSB 2013: the 11th International Conference on Computational Methods in Systems Biology, IST Austria, Klosterneuburg, Austria},
+  pages = {164-178},
+  abstract = {We present a new approach for the design of a synthetic biological circuit whose
+      behaviour is specified in terms of signal temporal logic (STL) formulae. We
+      first show how to characterise with STL formulae the input/output behaviour of
+      biological modules miming the classical logical gates (AND, NOT, OR). Hence, we
+      provide the regions of the parameter space for which these specifications are
+      satisfied. Given a STL specification of the target circuit to be designed and
+      the networks of its constituent components, we propose a methodology to
+      constrain the behaviour of each module, then identifying the subset of the
+      parameter space in which those constraints are satisfied, providing also a
+      measure of the robustness for the target circuit design. This approach, which
+      leverages recent results on the quantitative semantics of Signal Temporal Logic,
+      is illustrated by synthesising a biological implementation of an half-adder.},
+  volume = {8130},
+  year = {2013},
+  url = {http://arxiv.org/pdf/1306.4493v1.pdf},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  publisher = {Springer-Verlag},
+  doi = {10.1007/978-3-642-40708-6_13},
+}
+
+@INPROCEEDINGS{Bar13,
+  title = {{Sampling-based Decentralized Monitoring for Networked Embedded Systems,}},
+  author = {Bartocci, Ezio},
+  booktitle = {Proceedings of HAS 2013: the 3rd Intern. Workshop of Hybrid Autonomous Systems},
+  pages = {85--99},
+  abstract = {Decentralized monitoring (DM) refers to a monitoring technique, where each
+      component must infer, based on a set of partial observations if the global
+      property is satisfied. Our work is inspired by the theoretical results presented
+      by Baurer and Falcone at FM 2012, where the authors introduced an algorithm for
+      distributing and monitoring LTL formulae, such that satisfaction or violation of
+      specifications can be detected by local monitors alone. However, their work is
+      based on the main assumption that neither the computation nor communication take
+      time, hence it does not take into account how to set a sampling time among the
+      components such that their local traces are consistent. In this work we provide
+      a timed model in UPPAAL and we show a case study on a networked embedded systems
+      board. },
+  volume = {124},
+  number = {9},
+  year = {2013},
+  url = {http://arxiv.org/pdf/1308.5337.pdf},
+  series = {EPTCS},
+  papertype = {workshop},
+  doi = {10.4204/EPTCS.124},
+}
+
+@INPROCEEDINGS{BBNS13,
+  title = {{On the Robustness of Temporal Properties for Stochastic Models}},
+  author = {Bartocci, Ezio and Bortolussi, Luca and Nenzi, Laura and Sanguinetti, Guido},
+  booktitle = {Proceedings of HSB 2013: the 2nd Intern. Workshop on Hybrid Systems and Biology, Taormina, Italy,},
+  pages = {3--19},
+  volume = {125},
+  number = {1},
+  year = {2013},
+  url = {http://arxiv.org/pdf/1309.0866.pdf},
+  series = {EPTCS},
+  papertype = {workshop},
+  doi = {10.4204/EPTCS.125.1},
+}
+
+@INPROCEEDINGS{KBSSG13,
+  title = {{Runtime Verification with Particle Filtering}},
+  author = {Kalajdzic, Kenan and Bartocci, Ezio and Smolka, Scott A. and Stoller, Scott D. and Grosu, Radu},
+  booktitle = {Proc. of RV 2013: the 4th International Conference on Runtime Verification, INRIA Rennes, France, September, 2013},
+  pages = {149-166},
+  abstract = {We introduce Runtime Verification with Particle Filtering (RVPF), a powerful and
+      versatile method for controlling the tradeoff between uncertainty and overhead
+      in runtime verification. Overhead and accuracy are controlled by adjusting the
+      frequency and duration of observation gaps, during which program events are not
+      monitored, and by adjusting the number of particles used in the RVPF algorithm.
+      We succinctly represent the program model, the program monitor, their
+      interaction, and their observations as a dynamic Bayesian network (DBN). Our
+      formulation of RVPF in terms of DBNs is essential for a proper formalization of
+      peek events: low-cost observations of parts of the program state, which are
+      performed probabilistically at the end of observation gaps. Peek events provide
+      information that our algorithm uses to reduce the uncertainty in the monitor
+      state after gaps.
+
+      We estimate the internal state of the DBN using particle filtering (PF) with
+      sequential importance resampling (SIR). PF uses a collection of conceptual
+      particles (random samples) to estimate the probability distribution for the
+      systemâ€™s current state: the probability of a state is given by the sum of the
+      importance weights of the particles in that state. After an observed event, each
+      particle chooses a state transition to execute by sampling the DBNâ€™s joint
+      transition probability distribution; particles are then redistributed among the
+      states that best predicted the current observation. SIR exploits the DBN
+      structure and the current observation to reduce the variance of the PF and
+      increase its performance.
+
+      We experimentally compare the overhead and accuracy of our RVPF algorithm with
+      two previous approaches to runtime verification with state estimation: an exact
+      algorithm based on the forward algorithm for HMMs, and an approximate version of
+      that algorithm, which uses precomputation to reduce runtime overhead. Our
+      results confim RVPFâ€™s versatility, showing how it can be used to control the
+      tradeoff between execution time and memory usage while, at the same time, being
+      the most accurate of the three algorithms.},
+  volume = {8174},
+  year = {2013},
+  url = {/files/https://ti.tuwien.ac.at/cps/people/grosu/files/rv13.pdf},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  publisher = {Springer-Verlag},
+  doi = {10.1007/978-3-642-40787-1_9},
+}
+
+@PROCEEDINGS{BR13,
+  title = {{Preface (SPIN 2013)}},
+  author = {Bartocci, Ezio and Ramakrishnan, C. R.},
+  booktitle = {Proc. of SPIN 2013: the 20th International Symposium of SPIN Model Checking Software, Stony Brook, NY, USA},
+  pages = {V-VI},
+  volume = {7976},
+  year = {2013},
+  url = {http://link.springer.com/content/pdf/bfm%3A978-3-642-39176-7%2F1.pdf},
+  series = {Lecture Notes in Computer Science},
+  publisher = {Springer-Verlag},
+  papertype = {editorial},
+  doi = {10.1007/978-3-642-39176-7},
+}
+
+@PROCEEDINGS{BB13,
+  title = {{Preface (HSB 2012)}},
+  author = {Bartocci, Ezio and Bortolussi, Luca},
+  booktitle = {Proc. of the First International Workshop on Hybrid Systems and Biology},
+  abstract = {This volume contains the proceedings of the First International Workshop on
+      Hybrid Systems and Biology (HSB 2012), that will be held in Newcastle upon Tyne,
+      UK, on the 3rd September, 2012. HSB 2012 is a satellite event of the 23rd
+      International Conference on Concurrency Theory (CONCUR 2012).
+      This workshop aims at collecting scientists working in the area of hybrid
+      modeling applied to systems biology, in order to discuss about current achieved
+      goals, current challenges and future possible developments.},
+  volume = {92},
+  year = {2013},
+  url = {http://arxiv.org/abs/1208.3151},
+  series = {EPTCS},
+  papertype = {editorial},
+  doi = {10.4204/EPTCS.92},
+}
+
+
+
+@INPROCEEDINGS{BG13,
+  title = {{Monitoring with uncertainty}},
+  author = {Bartocci, Ezio and Grosu, Radu},
+  booktitle = {Proceedings of HAS 2013: the 3rd Intern. Workshop of Hybrid Autonomous Systems},
+  pages = {3--19},
+  volume = {125},
+  number = {1},
+  year = {2013},
+  series = {EPTCS},
+  papertype = {invited},
+}
+
+
+
+@inproceedings{DBLP:conf/atva/DonzeMBNGS12,
+  author    = {Alexandre Donz{\'e} and
+               Oded Maler and
+               Ezio Bartocci and
+               Dejan Nickovic and
+               Radu Grosu and
+               Scott A. Smolka},
+  title     = {On Temporal Logic and Signal Processing},
+  booktitle = {ATVA},
+  year      = {2012},
+  pages     = {92-106},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-33386-6_9},
+  crossref  = {DBLP:conf/atva/2012},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/cmsb/MurthyIBCFGSG12,
+  author    = {Abhishek Murthy and
+               Md. Ariful Islam and
+               Ezio Bartocci and
+               Elizabeth Cherry and
+               Flavio H. Fenton and
+               James Glimm and
+               Scott A. Smolka and
+               Radu Grosu},
+  title     = {Approximate Bisimulations for Sodium Channel Dynamics},
+  booktitle = {CMSB},
+  year      = {2012},
+  pages     = {267-287},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-33636-2_16},
+  crossref  = {DBLP:conf/cmsb/2012},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@INPROCEEDINGS{BGKSSZS12,
+  title = {{Adaptive Runtime Verification}},
+  author = {Bartocci, Ezio and Grosu, Radu and Kamarkar, Atul and Smolka, Scott A. and Stoller, Scott D. and Zadok, Erez and Seyster, Justin},
+  booktitle = {Proc. of RV 2012: the 3rd International Conference on Runtime Verification, Istanbul, Turkey, September},
+  pages = {pp. 168-18},
+  abstract = {We present Adaptive Runtime Verification (ARV), a new approach to runtime
+      verification in which overhead control, runtime verification with state
+      estimation, and predictive analysis are synergistically combined. Overhead
+      control maintains the overhead of runtime verification at a specified target
+      level, by enabling and disabling monitoring of events for each monitor instance
+      as needed. In ARV, predictive analysis based on a probabilistic model of the
+      monitored system is used to estimate how likely each monitor instance is to
+      violate a given temporal property in the near future, and these criticality
+      levels are fed to the overhead controllers, which allocate a larger fraction of
+      the target overhead to monitor instances with higher criticality, thereby
+      increasing the probability of violation detection. Since overhead control causes
+      the monitor to miss events, we use Runtime Verification with State Estimation
+      (RVSE) to estimate the probability that a property is satisfied by an
+      incompletely monitored run. A key aspect of the ARV framework is a new algorithm
+      for RVSE that performs the calculations in advance, dramatically reducing the
+      runtime overhead of RVSE, at the cost of introducing some approximation error.
+      We demonstrate the utility of ARV on a significant case study involving runtime
+      monitoring of concurrency errors in the Linux kernel.},
+  volume = {7687},
+  year = {2012},
+  url = {/files/https://ti.tuwien.ac.at/cps/people/grosu/files/rv12.pdf},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  papertype = {conference},
+  doi = {10.1007/978-3-642-35632-2_18},
+}
+
+@article{DBLP:journals/jib/BartocciCBMV12,
+  author    = {Ezio Bartocci and
+               Diletta Cacciagrano and
+               Maria Rita Di Berardini and
+               Emanuela Merelli and
+               Leonardo Vito},
+  title     = {UBioLab: a web-LABoratory for Ubiquitous in-silico experiments},
+  journal   = {J. Integrative Bioinformatics},
+  volume    = {9},
+  number    = {1},
+  year      = {2012},
+  ee        = {http://dx.doi.org/10.2390/biecoll-jib-2012-192},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tcsb/BartocciLMP12,
+  author    = {Ezio Bartocci and
+               Pietro Li{\`o} and
+               Emanuela Merelli and
+               Nicola Paoletti},
+  title     = {Multiple Verification in Complex Biological Systems: The
+               Bone Remodelling Case Study},
+  journal   = {T. Comp. Sys. Biology},
+  volume    = {14},
+  year      = {2012},
+  pages     = {53-76},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-35524-0_3},
+  crossref  = {DBLP:journals/tcsb/2012-14},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:journals/corr/abs-1208-3151,
+  editor    = {Ezio Bartocci and
+               Luca Bortolussi},
+  title     = {Proceedings First International Workshop on Hybrid Systems
+               and Biology},
+  booktitle = {HSB},
+  series    = {EPTCS},
+  volume    = {92},
+  year      = {2012},
+  ee        = {http://dx.doi.org/10.4204/EPTCS.92},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:journals/corr/abs-1208-3151,
+  editor    = {Ezio Bartocci and
+               Luca Bortolussi},
+  title     = {Proceedings First International Workshop on Hybrid Systems
+               and Biology},
+  booktitle = {HSB},
+  series    = {EPTCS},
+  volume    = {92},
+  year      = {2012},
+  ee        = {http://dx.doi.org/10.4204/EPTCS.92},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@proceedings{DBLP:journals/corr/abs-1208-3151,
+  editor    = {Ezio Bartocci and
+               Luca Bortolussi},
+  title     = {Proceedings First International Workshop on Hybrid Systems
+               and Biology},
+  booktitle = {HSB},
+  series    = {EPTCS},
+  volume    = {92},
+  year      = {2012},
+  ee        = {http://dx.doi.org/10.4204/EPTCS.92},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:journals/corr/abs-1208-3151,
+  editor    = {Ezio Bartocci and
+               Luca Bortolussi},
+  title     = {Proceedings First International Workshop on Hybrid Systems
+               and Biology},
+  booktitle = {HSB},
+  series    = {EPTCS},
+  volume    = {92},
+  year      = {2012},
+  ee        = {http://dx.doi.org/10.4204/EPTCS.92},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/cav/GrosuBFGGSB11,
+  author    = {Radu Grosu and
+               Gr{\'e}gory Batt and
+               Flavio H. Fenton and
+               James Glimm and
+               Colas Le Guernic and
+               Scott A. Smolka and
+               Ezio Bartocci},
+  title     = {From Cardiac Cells to Genetic Regulatory Networks},
+  booktitle = {CAV},
+  year      = {2011},
+  pages     = {396-411},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-22110-1_31},
+  crossref  = {DBLP:conf/cav/2011},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/tacas/BartocciGKRS11,
+  author    = {Ezio Bartocci and
+               Radu Grosu and
+               Panagiotis Katsaros and
+               C. R. Ramakrishnan and
+               Scott A. Smolka},
+  title     = {Model Repair for Probabilistic Systems},
+  booktitle = {TACAS},
+  year      = {2011},
+  pages     = {326-340},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-19835-9_30},
+  crossref  = {DBLP:conf/tacas/2011},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/sew/GrosuFSB11,
+  author    = {Radu Grosu and
+               Flavio H. Fenton and
+               Scott A. Smolka and
+               Ezio Bartocci},
+  title     = {A Change of Perspective Yields Formal Analysis},
+  booktitle = {SEW},
+  year      = {2011},
+  pages     = {69-76},
+  ee        = {http://doi.ieeecomputersociety.org/10.1109/SEW.2011.16},
+  crossref  = {DBLP:conf/sew/2011},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/cmsb/BartocciCGGSF11,
+  author    = {Ezio Bartocci and
+               Elizabeth Cherry and
+               James Glimm and
+               Radu Grosu and
+               Scott A. Smolka and
+               Flavio H. Fenton},
+  title     = {Toward real-time simulation of cardiac dynamics},
+  booktitle = {CMSB},
+  year      = {2011},
+  pages     = {103-112},
+  ee        = {http://doi.acm.org/10.1145/2037509.2037525},
+  crossref  = {DBLP:conf/cmsb/2011},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/rv/StollerBSGHSZ11,
+  author    = {Scott D. Stoller and
+               Ezio Bartocci and
+               Justin Seyster and
+               Radu Grosu and
+               Klaus Havelund and
+               Scott A. Smolka and
+               Erez Zadok},
+  title     = {Runtime Verification with State Estimation},
+  booktitle = {RV},
+  year      = {2011},
+  pages     = {193-207},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-29860-8_15},
+  crossref  = {DBLP:conf/rv/2011},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{DBLP:conf/cmsb/MurthyBFGGSG11,
+  author    = {Abhishek Murthy and
+               Ezio Bartocci and
+               Flavio H. Fenton and
+               James Glimm and
+               R. Gray and
+               Scott A. Smolka and
+               Radu Grosu},
+  title     = {Curvature analysis of cardiac excitation wavefronts},
+  booktitle = {CMSB},
+  year      = {2011},
+  pages     = {151-160},
+  ee        = {http://doi.acm.org/10.1145/2037509.2037532},
+  crossref  = {DBLP:conf/cmsb/2011},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@ARTICLE{Bartocci2011427,
+  title = {{Teaching cardiac electrophysiology modeling to undergraduate students: Laboratory exercises and GPU programming for the study of arrhythmias and spiral wave dynamics}},
+  author = {Bartocci, Ezio and Singh, R. and von Stein, F.B. and Amedome, A. and Caceres, A.J.J. and Castillo, J. and Closser, E. and Deards, G. and Goltsev, A. and Ines, R.S. and Isbilir, C. and Marc, J.K. and Moore, D. and Pardi, D. and Sadhu, S. and Sanchez, S. and Sharma, P. and Singh, A. and Rogers, J. and Wolinetz, A. and Grosso-Applewhite, T. and Zhao, K. and Filipski, A.B. and Gilmour Jr., R.F. and Grosu, Radu and Glimm, James and Smolka, Scott A. and Cherry, Elizabeth M. and Clarke, Edmund M. and Griffeth, Nancy and Fenton, Flavio H.},
+  journal = {American Journal of Physiology - Advances in Physiology Education},
+  pages = {427-437},
+  note = {cited By (since 1996) 0},
+  volume = {35},
+  number = {4},
+  year = {2011},
+  url = {http://advan.physiology.org/content/ajpadvan/35/4/427.full.pdf},
+  papertype = {journal},
+  doi = {10.1152/advan.00034.2011},
+}
+
+@article{DBLP:journals/biosystems/AlfieriBMM11,
+  author    = {Roberta Alfieri and
+               Ezio Bartocci and
+               Emanuela Merelli and
+               Luciano Milanesi},
+  title     = {Modeling the cell cycle: From deterministic models to hybrid
+               systems},
+  journal   = {Biosystems},
+  volume    = {105},
+  number    = {1},
+  year      = {2011},
+  pages     = {34-40},
+  ee        = {http://dx.doi.org/10.1016/j.biosystems.2011.03.002},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
