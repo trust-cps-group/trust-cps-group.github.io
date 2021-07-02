@@ -176,11 +176,20 @@ img.lazy {
     font-size: 1em;
     color: #404040;
   }
-
  /*
   a:hover {
     p {
       color: map-get($foundation-palette, primary);
     }
   }*/
+}
+
+.person-image {
+
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  float: left;
+
 }

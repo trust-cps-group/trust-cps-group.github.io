@@ -1,8 +1,8 @@
 ---
-layout: default
-format: person-fullwidth
+layout: page-fullwidth
 ---
 
+<!--
 <div class="row t30">
 	<div class="medium-12 columns">
 		<article>
@@ -16,10 +16,12 @@ format: person-fullwidth
 				{{ page.teaser }}
 			</p>
 			{% endif %}
-
-			<img src="{{ site.urlimg }}{{ page.image.homepage }}" width="200" alt="{{ page.title | escape_once }}">
+-->
+			<img src="{{ site.urlimg }}{{ page.image.homepage }}" class="person-image" alt="{{ page.title | escape_once }}">
 
 			{{ content }}
+<!--
 		</article>
-	</div><!-- /.medium-12.columns -->
-</div><!-- /.row -->
+	</div>
+</div>
+-->
