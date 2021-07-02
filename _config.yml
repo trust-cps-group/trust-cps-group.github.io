@@ -217,12 +217,12 @@ scholar:
   sort_by: none
   order: ascending
 
-  group_by: none
-  group_order: ascending
+  group_by: year
+  group_order: descending
 
   source: ./_bibliography
   bibliography: ezio.bib
-  bibliography_template: ""
+  bibliography_template: single_reference
 
   replace_strings: true
   join_strings:    true
