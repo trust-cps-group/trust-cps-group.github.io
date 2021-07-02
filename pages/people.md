@@ -6,3 +6,5 @@ teaser: "Everybody working at the group"
 permalink: "/people/"
 header: no
 ---
+
+This is my content here

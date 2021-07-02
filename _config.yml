@@ -97,8 +97,9 @@ defaults:
       type: "pages"
     values:
       header: no
-      layout: page-fullwidth
+      layout: person-fullwidth
       categories: "people"
+      prio: "0"
   - scope:
       path: "pages/alumni"
       type: "pages"
