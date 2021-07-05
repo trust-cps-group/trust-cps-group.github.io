@@ -25,6 +25,10 @@
   url: "/publications/"
   side: left
 
+- title: "Tools"
+  url: "/tools/"
+  side: left
+
 - title: "Openings"
   url: "/openings/"
   side: left
