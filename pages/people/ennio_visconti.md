@@ -3,7 +3,7 @@ subheadline: "Univ. assistant"
 title:  ""
 first: "Ennio"
 family: "Visconti"
-mail: "name.surname@tuwien.ac.at"
+mail: ""
 role: "PhD Student"
 image:
   thumb: "people_pictures/visconti.png"

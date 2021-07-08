@@ -3,7 +3,7 @@ subheadline: "Univ. assistant"
 title:  ""
 first: "Drishti"
 family: "Yadav"
-mail: "name.surname@tuwien.ac.at"
+mail: ""
 role: "PhD Student"
 image:
   thumb: "people_pictures/drishti.png"

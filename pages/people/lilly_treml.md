@@ -3,7 +3,7 @@ subheadline: "Univ. assistant"
 title:  ""
 first: "Lilly"
 family: Treml
-mail: "nome.surname@tuwien.ac.at"
+mail: ""
 role: "PhD Student"
 image:
   thumb: "people_pictures/treml.png"

@@ -3,7 +3,7 @@ subheadline: "Univ. assistant"
 title:  "Dr."
 first: "Stefan"
 family: "Schupp"
-mail: "name.surname@tuwien.ac.at"
+mail: ""
 role: "University Assistant"
 image:
   thumb: "people_pictures/schupp.png"

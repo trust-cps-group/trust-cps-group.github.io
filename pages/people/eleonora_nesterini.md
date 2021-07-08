@@ -4,7 +4,7 @@ title:  ""
 first: "Eleonora"
 family: "Nesterini"
 role: "PhD Student"
-mail: "name.surname@tuwien.ac.at"
+mail: ""
 image:
   thumb: "people_pictures/nesterini.png"
   homepage: "people_pictures/nesterini.png"

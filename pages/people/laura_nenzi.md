@@ -4,7 +4,7 @@ title:  "Dr."
 first: "Laura"
 family: "Nenzi"
 role:   "Project Assistant (Part-time)"
-mail: "nome.cognome@tuwien.ac.at"
+mail: ""
 image:
   thumb: "people_pictures/laura.png"
   homepage: "people_pictures/laura.png"

@@ -3,7 +3,7 @@ subheadline: ""
 title:  ""
 first: "Ana"
 family: "Oliveira da Costa"
-mail: "nome.cognome@tuwien.ac.at"
+mail: ""
 role: "PhD Student"
 image:
   thumb: "people_pictures/oli_costa.png"
