@@ -5,6 +5,7 @@ first: "Laura"
 family: "Nenzi"
 role:   "Project Assistant (Part-time)"
 mail: ""
+website: "https://lauranenzi.github.io/"
 image:
   thumb: "people_pictures/laura.png"
   homepage: "people_pictures/laura.png"
