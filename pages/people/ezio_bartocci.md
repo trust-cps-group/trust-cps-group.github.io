@@ -7,6 +7,8 @@ role:   "Group Leader"
 prio: "1"
 mail: ""
 website: "http://www.eziobartocci.com/"
+hasdblp: "yes"
+dblp:    "https://dblp.org/pid/b/EzioBartocci.html"
 image:
   thumb: "people_pictures/bartocci.png"
   homepage: "people_pictures/bartocci.png"
