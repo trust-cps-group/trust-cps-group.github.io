@@ -1,9 +1,9 @@
 ---
 subheadline: "Univ. assistant"
-title:  "Eleonora Nesterini"
+title:  ""
 first: "Eleonora"
 family: "Nesterini"
-role: "PhD student"
+role: "PhD Student"
 mail: "name.surname@tuwien.ac.at"
 image:
   thumb: "people_pictures/nesterini.png"
