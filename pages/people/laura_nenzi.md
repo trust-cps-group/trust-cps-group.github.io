@@ -3,7 +3,7 @@ subheadline: ""
 title:  "Dr."
 first: "Laura"
 family: "Nenzi"
-role:   "co-PI of [YIRG Z35](http://www.eziobartocci.com/) project"
+role:   "Project Assistant (Part-time)"
 mail: "nome.cognome@tuwien.ac.at"
 image:
   thumb: "people_pictures/laura.png"

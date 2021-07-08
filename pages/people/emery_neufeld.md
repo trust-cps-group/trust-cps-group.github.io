@@ -1,9 +1,10 @@
 ---
 subheadline: "Univ. assistant"
-title:  "Emery Neufeld"
+title:  ""
 first: "Emery"
 family: "Neufeld"
-mail: "a@b.c"
+mail: "name.surname@tuwien.ac.at"
+role: "PhD Student"
 image:
   thumb: "people_pictures/neufeld.png"
   homepage: "people_pictures/neufeld.png"

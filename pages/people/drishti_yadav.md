@@ -1,9 +1,10 @@
 ---
 subheadline: "Univ. assistant"
-title:  "Drishti Yadav"
+title:  ""
 first: "Drishti"
 family: "Yadav"
-mail: "a@b.c"
+mail: "name.surname@tuwien.ac.at"
+role: "PhD Student"
 image:
   thumb: "people_pictures/drishti.png"
   homepage: "people_pictures/drishti.png"

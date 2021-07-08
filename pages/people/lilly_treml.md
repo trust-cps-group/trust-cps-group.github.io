@@ -1,9 +1,10 @@
 ---
 subheadline: "Univ. assistant"
-title:  "Lilly Treml"
+title:  ""
 first: "Lilly"
 family: Treml
-mail: "a@b.c"
+mail: "nome.surname@tuwien.ac.at"
+role: "PhD Student"
 image:
   thumb: "people_pictures/treml.png"
   homepage: "people_pictures/treml.png"

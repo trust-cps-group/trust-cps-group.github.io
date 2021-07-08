@@ -1,6 +1,6 @@
 ---
 subheadline: ""
-title:  "Dott. Mag."
+title:  ""
 first: "Ana"
 family: "Oliveira da Costa"
 mail: "nome.cognome@tuwien.ac.at"

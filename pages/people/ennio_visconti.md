@@ -1,9 +1,10 @@
 ---
 subheadline: "Univ. assistant"
-title:  "Ennio Visconti"
+title:  ""
 first: "Ennio"
 family: "Visconti"
-mail: "a@b.c"
+mail: "name.surname@tuwien.ac.at"
+role: "PhD Student"
 image:
   thumb: "people_pictures/visconti.png"
   homepage: "people_pictures/visconti.png"
