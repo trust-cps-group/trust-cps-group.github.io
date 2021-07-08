@@ -1,8 +1,9 @@
 ---
 subheadline: "Univ.-Prof"
-title:  "Prof. Ezio Bartocci"
+title:  "Univ.-Prof. Dr."
 first: "Ezio"
 family: "Bartocci"
+role:   "Group Leader"
 prio: "1"
 mail: "name.surname@tuwien.ac.at "
 image:
