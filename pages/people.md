@@ -1,7 +1,7 @@
 ---
 layout: people-tiles
-title: "People"
-subheadline: "Trustworthy CPS Group members"
+title: "Group Members"
+subheadline: ""
 teaser: ""
 permalink: "/people/"
 header: no
