@@ -7,7 +7,7 @@ mail: ""
 role: "University Assistant"
 website: "https://stefanschupp.de/"
 hasdblp: "yes"
-dblp: "https://dblp.org/pid/26/5038.html"
+dblp: "https://dblp.org/pid/160/7823.html"
 image:
   thumb: "people_pictures/schupp.png"
   homepage: "people_pictures/schupp.png"
