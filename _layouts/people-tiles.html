@@ -32,12 +32,16 @@ layout: page-fullwidth
             {% if post.categories contains 'alumni' %}
             <div class="person-tile small-12 medium-6 large-6 column">
               <div class="small-6 medium-6 large-6 column">
-              <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img  width="970" class="figure" src="{{ site.urlimg }}{{ post.image.thumb }}" alt="{{ page.title | escape_once }}"></a>
+              <a href="{{ post.website }}" title="{{ post.family | escape_once }}"><img  style="height: 10vw; min-height: 25px;" class="figure" src="{{ site.urlimg }}{{ post.image.thumb }}" alt="{{ page.title | escape_once }}"></a>
               </div>
               <div class="small-6 medium-6 large-6 column">
-                {{ post.title }}
+                {{ post.title }} {{ post.first }} {{ post.family }}
                 <br>
-                {{ post.mail }}
+                {{ post.role }}
+                <br>
+               {% if post.hasdblp contains 'yes' %}
+                <a href="{{post.dblp}}">DBLP</a>
+               {% endif %}
               </div>
             </div>
             {% endif %}
