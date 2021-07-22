@@ -1,7 +1,7 @@
 ---
-subheadline:  "Research Project 3"
-title:  "Incredible Project 3"
-teaser: "This is a teaser for project 3 ..."
+subheadline:  "Hardware Monitoring for Automotive (2014-2017)"
+title:  "HARMONIA (2014-2017)"
+teaser: "HARMONIA provides a framework for assertion-based monitoring of automotive systems-of-systems with mixed criticality."
 tags:
     - post format
 image:
@@ -27,18 +27,5 @@ gallery:
 
 <!--more-->
 
-I have kept the gallery for exemplary purposes. We can and should put real content here.
+HARMONIA will provide a framework for assertion-based monitoring of automotive systems-of-systems with mixed criticality. It will enable a uniform way to reason about both safety-critical correctness and non-critical robustness properties of such systems. Observers embedded on FPGA hardware will be generated from assertions, and used for monitoring automotive designs emulated on hardware. The project outcome will improve the competitiveness of the automotive application oriented nano and microelectronics industry by reducing verification time and cost in the design process.
 
-{% include gallery %}
-
-
-## Other Post Formats
-{: .t60 }
-{% include list-posts tag='post format' %}
-
-
-
- [1]: http://foundation.zurb.com/docs/components/clearing.html
- [2]: http://foundation.zurb.com/docs/components/block_grid.html
- [3]: {{ site.url }}{{ site.baseurl }}/design/page/
- [4]: {{ site.url }}{{ site.baseurl }}/design/page-fullwidth/
