@@ -1,13 +1,13 @@
 ---
 subheadline: ""
-title:  ""
-first: "Ana"
-family: "Oliveira da Costa"
+title:  "Dr."
+first: "Mohamed Amin"
+family: "Ben Sassi"
 mail: ""
 role: "PhD Student"
 image:
-  thumb: "people_pictures/oli_costa.png"
-  homepage: "people_pictures/oli_costa.png"
+  thumb: "people_pictures/bensassi.jpg"
+  homepage: "https://sites.google.com/site/bensassipersonalpage/"
 ---
 
 <!--more-->
