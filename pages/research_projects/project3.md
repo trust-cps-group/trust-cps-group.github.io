@@ -1,15 +1,15 @@
 ---
-subheadline:  "Doctoral College on Resilient Embedded Systems (2018-2024)"
-title:  "DK RES Doctoral College (2018-2024)"
-teaser: "The research field of Resilient Embedded Systems investigates novel methods to design, verify and implement safe, secure and dependable computing architectures subject to real-time constraints."
+subheadline:  "Distribution Recovery for Invariant Generation of Probabilistic Programs"
+title:  "ProbInG (2020-2024)"
+teaser: "Our project aims at developing novel and fully automated approaches to generate invariants over higher-order moments and the value distribution of program variables, without any user guidance."
 tags:
     - cps
     - resilience
 image:
-  thumb: "images/project_logos/dkres.png"
-  homepage: "https://informatics.tuwien.ac.at/doctoral/resilient-embedded-systems/"
+  thumb: "images/project_logos/probing.svg"
+  homepage: "https://probing-lab.github.io/"
 ---
 
 <!--more-->
 
-The research field of Resilient Embedded Systems investigates novel methods to design, verify and implement safe, secure and dependable computing architectures subject to real-time constraints. The topical span of the doctoral college covers all aspects of the direct interaction of computer systems and their environment, from the lowest level of circuit and hardware architectures to safety-critical cyber-physical systems like industrial automation, building automation & smart grids, healthcare, spacecraft, and automotive including networking infrastructures. Designing such systems is challenging, both from a scientific and technological perspective: Many functions are directly implemented in hardware for performance reasons, distributed and parallel processing is omnipresent, digital signal processing is often required, real-time and power/thermal constraints must be met, energy-efficiency is crucial, stopping operation in the case of failures is often not feasible, unique security issues and threats exist, "trial-and-error-style programming" is not an option in many applications, asserting system correctness by means of testing may be insufficient for the required dependability reliability level, emergent behavior originating from autonomous operation must be understood and controlled, integration and complexity issues created by the upcoming Internet of Things must be managed, etc. 
+Probabilistic programming is a new emerging paradigm adopted by high-tech giants, such as Google, Amazon and Uber, to simplify the development of AI/machine learning based applications, such as route planning and detecting cyber intrusions. Probabilistic programming languages include native constructs for sampling distributions allowing to freely mix deterministic and stochastic elements. The resulting flexible framework comes at the price of programs with behaviors hard to analyze, leading to unpredictable adverse consequences in safety-critical applications. One of the main challenges in the analysis of these programs is to compute invariant properties that summarize loop behaviors. Despite recent results, full automation of invariant generation is at its infancy and only targets expected values of the program variables, which is insufficient to recover the full probabilistic program behavior. Our project aims at developing novel and fully automated approaches to generate invariants over higher-order moments and the value distribution of program variables, without any user guidance. We will employ methods from symbolic summation, polynomial algebra and statistics and combine them with static analysis techniques. Our results will reduce the need of expert knowledge in ensuring the safety and security of computer systems and will cut the design costs of applications based on probabilistic programs, bringing crucial intellectual and economic benefits to our society. 

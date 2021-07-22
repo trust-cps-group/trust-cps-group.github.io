@@ -1,15 +1,23 @@
 ---
-subheadline:  "Doctoral College for Secure and Intelligent Human-Centric Digital Technologies"
-title:  "SecInt Doctoral College (2020-2024)"
-teaser: "The goal of SecInt is to develop the scientific foundations of secure and intelligent human-centric digital technologies. This requires interdisciplinary research, establishing synergies different research fields (Security and Privacy, Machine Learning, and Formal Methods)."
+subheadline:  "Doctoral College for Logical methods in Computer Science at TU Wien"
+title:  "LogiCS@TU Wien Doctoral College (2022-2027)"
+teaser: "LogiCS@TUWien is a novel interdisciplinary EC H2020 Marie Skłodowska-Curie COFUND doctoral training programme for international high-potential early-stage researchers (ESRs) with a focus on Logical methods in Computer Science at TU Wien."
 tags:
     - cps
     - trust
 image:
-  thumb: "secint.png"
-  homepage: "https://secint.visp.wien/"
+  thumb: "images/project_logos/logics2.png"
+  homepage: "http://www.vcla.at/?page_id=8564&preview=1&_ppp=a8acfe3c97"
 ---
 
 <!--more-->
 
-Digitalization is transforming our society, making our everyday life more and more dependent on computing platforms and online services. These are built so as to sense and process the environment in which we live as well as the activities we carry on, with the ultimate goal of returning predictions and taking actions to support and enhance our life. Prominent examples of this trend are autonomous systems (e.g., self-driving cars and robots), cyber-physical systems (e.g., implanted medical devices), apps in wearable devices (e.g., Coronavirus contact tracing apps), and so on. Despite the interest of stake holders and the attention of media, digital technologies that so intimately affect the human life are not yet ready for widespread deployment, as key technical and ethical questions are open, such as trustworthiness, security, and privacy. If these problems are not solved, supposedly intelligent human-centric technologies can lead to death or to other undesirable consequences: e.g., the learning algorithms of autonomous cars can be fooled so as to cause crash accidents, implanted medical devices can be remotely hacked to trigger unwanted defibrillations, and contact tracing apps can be misused towards an Orwellian surveillance system or to inject false at-risk alerts. The goal of SecInt is to develop the scientific foundations of secure and intelligent human-centric digital technologies. This requires interdisciplinary research, establishing synergies different research fields (Security and Privacy, Machine Learning, and Formal Methods). Research highlights brought forward by the synergies across projects include the design of machine learning algorithms resistant to adversarial attacks, the design of machine learning algorithms for security and privacy analysis, the security analysis of personal medical devices, the design of secure and privacy-preserving contact tracing apps, and the enforcement of safety for dynamic robots. The research development is accompanied by a supporting educational and training programme, which encompasses the ethics of secure and intelligent digital technologies, interdisciplinary technical knowledge, as well as internships in international elite research partners, which expressed interest to collaborate with SecInt. 
+# Innovative Doctoral Training in the Heart of Europe
+
+LogiCS@TUWien is a novel interdisciplinary EC H2020 Marie Skłodowska-Curie COFUND doctoral training programme for international high-potential early-stage researchers (ESRs) with a focus on Logical methods in Computer Science at the Technische Universität Wien (TU Wien)  in Vienna,  Austria.
+
+LogiCS@TUWien will be a top international graduate program implementing a unique combination of disciplines where logical methods have a decisive impact on practical computer science and society in the coming decades. It builds upon the highly successful LogiCS program which is funded by the Austrian Science Fund FWF.
+
+As a doctoral program and a hotspot for innovative logic-related research in Europe, it will establish an internationally outstanding center of excellence for Logical Methods in Computer Science. The structure of LogiCS@TUWien reflects our faculty and doctoral supervisors’ scientific strength in Logical Methods in Computer Science and their applications, particularly to Artificial Intelligence, Databases, Verification, Algorithms, Security, Distributed and Cyber-Physical Systems.
+
+These research topics are driven by demand from industry and real-world problems. The programme provides a 4-year long doctoral training for international PhD candidates at the Faculty of Informatics at TU Wien, offering an English language curriculum. LogiCS@TUWien will run for 60 months and foresees the recruitment of 20 PhD candidates.

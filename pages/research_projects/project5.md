@@ -1,15 +1,15 @@
 ---
-subheadline:  "Doctoral Program Logical Methods in Computer Science (2018-2022)"
-title:  "LogiCS Doctoral College (2018-2022)"
-teaser: "The LogiCS doctoral program is a PhD degree program funded by the Austrian Science Fund FWF and run jointly by the three Austrian universities Vienna University of Technology, Graz University of Technology and Johannes Kepler University Linz."
+subheadline:  "Trustworthy Internet of Things for Cyber-Physical Systems"
+title:  "IoT4CPS (2017-2020)"
+teaser: "IoT4CPS developed guidelines, methods and tools to enable safe and secure IoT-based applications for automated driving and for smart production."
 tags:
     - cps
     - resilience
 image:
-  thumb: "images/project_logos/dkres.png"
-  homepage: "https://logic-cs.at/phd/faculty/"
+  thumb: "images/project_logos/iot4cps.jpg"
+  homepage: "https://iot4cps.at/"
 ---
 
 <!--more-->
 
-The LogiCS doctoral program is a PhD degree program funded by the Austrian Science Fund FWF and run jointly by the three Austrian universities Vienna University of Technology, Graz University of Technology and Johannes Kepler University Linz. This program is aimed at highly motivated students who want to work in one of three fundamental fields of computer science: Logic is a powerful reasoning tool. Originally invented as an aid for sound argumentation, it reached maturity in the form of mathematical logic and analytic philosophy in the early 20th century, with significant contributions from Vienna. We continue this tradition, using logic as a tool that enables computer programs to reason about the world. These reasoning tasks allow a natural classification into two broad areas: In Databases and Artificial Intelligence, logic is used to model, store, analyze and predict information about the outside world including the Internet. In Verification, logic is used to model, analyze and construct computer programs themselves. The logical and algorithmic questions which underlie both application areas are studied in the area of Computational Logic.  
+IoT4CPS developed guidelines, methods and tools to enable safe and secure IoT-based applications for automated driving and for smart production. The project addressed safety and security aspects in a holistic approach both along the specific value chains and the product life cycles. To ensure the outreach of the project activities and results, the relevant stakeholders were involved throughout the project and results were disseminated to expert groups and standardization bodies. IoT4CPS supported digitalization along the entire product lifecycle, leading to a time-to-market acceleration for connected and autonomous vehicles. IoT4CPS provided innovative components, leading to efficiency increases for the deployment of autonomous driving functions and in smart production environments, which were validated in a vehicle and in a smart production demonstrator. 

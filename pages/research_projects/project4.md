@@ -1,15 +1,15 @@
 ---
-subheadline:  "Trustworthy Internet of Things for Cyber-Physical Systems"
-title:  "IoT4CPS (2017-2020)"
-teaser: "IoT4CPS developed guidelines, methods and tools to enable safe and secure IoT-based applications for automated driving and for smart production."
+subheadline:  "Doctoral College on Resilient Embedded Systems (2018-2024)"
+title:  "DK RES Doctoral College (2018-2024)"
+teaser: "The research field of Resilient Embedded Systems investigates novel methods to design, verify and implement safe, secure and dependable computing architectures subject to real-time constraints."
 tags:
     - cps
     - resilience
 image:
-  thumb: "images/project_logos/iot4cps.jpg"
-  homepage: "https://iot4cps.at/"
+  thumb: "images/project_logos/dkres.png"
+  homepage: "https://informatics.tuwien.ac.at/doctoral/resilient-embedded-systems/"
 ---
 
 <!--more-->
 
-IoT4CPS developed guidelines, methods and tools to enable safe and secure IoT-based applications for automated driving and for smart production. The project addressed safety and security aspects in a holistic approach both along the specific value chains and the product life cycles. To ensure the outreach of the project activities and results, the relevant stakeholders were involved throughout the project and results were disseminated to expert groups and standardization bodies. IoT4CPS supported digitalization along the entire product lifecycle, leading to a time-to-market acceleration for connected and autonomous vehicles. IoT4CPS provided innovative components, leading to efficiency increases for the deployment of autonomous driving functions and in smart production environments, which were validated in a vehicle and in a smart production demonstrator. 
+The research field of Resilient Embedded Systems investigates novel methods to design, verify and implement safe, secure and dependable computing architectures subject to real-time constraints. The topical span of the doctoral college covers all aspects of the direct interaction of computer systems and their environment, from the lowest level of circuit and hardware architectures to safety-critical cyber-physical systems like industrial automation, building automation & smart grids, healthcare, spacecraft, and automotive including networking infrastructures. Designing such systems is challenging, both from a scientific and technological perspective: Many functions are directly implemented in hardware for performance reasons, distributed and parallel processing is omnipresent, digital signal processing is often required, real-time and power/thermal constraints must be met, energy-efficiency is crucial, stopping operation in the case of failures is often not feasible, unique security issues and threats exist, "trial-and-error-style programming" is not an option in many applications, asserting system correctness by means of testing may be insufficient for the required dependability reliability level, emergent behavior originating from autonomous operation must be understood and controlled, integration and complexity issues created by the upcoming Internet of Things must be managed, etc. 
