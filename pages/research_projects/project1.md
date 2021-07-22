@@ -6,8 +6,8 @@ tags:
     - cps
     - trust
 image:
-  thumb: "gallery-example-1-thumb.jpg"
-  homepage: "gallery-example-1.jpg"
+  thumb: "secint.png"
+  homepage: "https://secint.visp.wien/"
 ---
 
 <!--more-->

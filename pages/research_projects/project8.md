@@ -1,0 +1,44 @@
+---
+subheadline:  "Research Project 3"
+title:  "Incredible Project 3"
+teaser: "This is a teaser for project 3 ..."
+tags:
+    - post format
+image:
+   thumb: "gallery-example-1-thumb.jpg"
+gallery:
+    - image_url: gallery-example-1.jpg
+      caption: Great images by Unsplash.com
+    - image_url: gallery-example-2.jpg
+      caption: Great images by Unsplash.com
+    - image_url: gallery-example-3.jpg
+      caption: Great images by Unsplash.com
+    - image_url: gallery-example-4.jpg
+      caption: Great images by Unsplash.com
+    - image_url: gallery-example-5.jpg
+      caption: Great images by Unsplash.com
+    - image_url: gallery-example-6.jpg
+      caption: Great images by Unsplash.com
+    - image_url: gallery-example-7.jpg
+      caption: Great images by Unsplash.com
+    - image_url: gallery-example-8.jpg
+      caption: Great images by Unsplash.com
+---
+
+<!--more-->
+
+I have kept the gallery for exemplary purposes. We can and should put real content here.
+
+{% include gallery %}
+
+
+## Other Post Formats
+{: .t60 }
+{% include list-posts tag='post format' %}
+
+
+
+ [1]: http://foundation.zurb.com/docs/components/clearing.html
+ [2]: http://foundation.zurb.com/docs/components/block_grid.html
+ [3]: {{ site.url }}{{ site.baseurl }}/design/page/
+ [4]: {{ site.url }}{{ site.baseurl }}/design/page-fullwidth/
