@@ -1,10 +1,13 @@
 ---
 subheadline:  "Distribution Recovery for Invariant Generation of Probabilistic Programs"
-title:  "ProbInG"
+title:  "ProbInG (2020-2024)"
 teaser: "Our project aims at developing novel and fully automated approaches to generate invariants over higher-order moments and the value distribution of program variables, without any user guidance."
 tags:
     - cps
     - resilience
+image:
+  thumb: "images/project_logos/probing.svg"
+  homepage: "https://probing-lab.github.io/"
 ---
 
 <!--more-->
