@@ -1,13 +1,13 @@
 ---
-subheadline: "Univ. assistant"
-title:  ""
-first: "Drishti"
-family: "Yadav"
+subheadline: ""
+title:  "Dr."
+first: "Konstantin"
+family: "Selyunin"
 mail: ""
-role: "PhD Student"
+role: ""
 image:
-  thumb: "people_pictures/drishti.png"
-  homepage: "people_pictures/drishti.png"
+  thumb: "people_pictures/selyunin.png"
+  homepage: "https://selyunin.ru/"
 ---
 
 <!--more-->

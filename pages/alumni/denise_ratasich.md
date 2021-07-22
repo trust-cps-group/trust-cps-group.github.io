@@ -1,13 +1,13 @@
 ---
-subheadline: "Univ. assistant"
-title:  ""
-first: "Drishti"
-family: "Yadav"
+subheadline: ""
+title:  "Dr."
+first: "Denise"
+family: "Ratasich"
 mail: ""
-role: "PhD Student"
+role: ""
 image:
-  thumb: "people_pictures/drishti.png"
-  homepage: "people_pictures/drishti.png"
+  thumb: "people_pictures/ratasich.png"
+  homepage: "https://www.linkedin.com/in/denise-ratasich-6708b689/?originalSubdomain=at"
 ---
 
 <!--more-->
