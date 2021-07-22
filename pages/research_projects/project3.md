@@ -1,6 +1,6 @@
 ---
 subheadline:  "Doctoral College on Resilient Embedded Systems (2018-2024)"
-title:  "DK RES (2018-2024)"
+title:  "DK RES Doctoral College (2018-2024)"
 teaser: "The research field of Resilient Embedded Systems investigates novel methods to design, verify and implement safe, secure and dependable computing architectures subject to real-time constraints."
 tags:
     - cps
