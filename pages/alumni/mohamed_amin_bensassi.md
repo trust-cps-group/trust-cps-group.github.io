@@ -4,7 +4,7 @@ title:  "Dr."
 first: "Mohamed Amin"
 family: "Ben Sassi"
 mail: ""
-role: "Assistant Professor at MedTech, Tunisia"
+role: "Now Assistant Professor at MedTech, Tunisia"
 hasdblp: "yes"
 dblp:    "https://dblp.org/pid/22/8910.html"
 image:

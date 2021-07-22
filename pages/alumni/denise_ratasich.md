@@ -4,7 +4,7 @@ title:  "Dr."
 first: "Denise"
 family: "Ratasich"
 mail: ""
-role: "Now Data Scientist at ÖBB"
+role: "Now Data Scientist at ÖBB, Austria"
 hasdblp: "yes"
 dblp:    "https://dblp.org/pid/159/1755.html"
 image:
