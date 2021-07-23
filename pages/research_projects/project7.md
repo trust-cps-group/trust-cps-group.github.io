@@ -6,7 +6,7 @@ tags:
     - cps
     - resilience
 image:
-  thumb: "project_logos/dkres.png"
+  thumb: "project_logos/zk35.png"
   homepage: "https://zk35.org/"
 ---
 
