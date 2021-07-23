@@ -6,7 +6,7 @@ family: "Lukina"
 mail: ""
 role: "Now PostDoc at IST, Austria"
 hasdblp: "yes"
-dblp:    "https://dblp.org/pid/b/EzioBartocci.html"
+dblp:    "https://dblp.org/pid/186/9691.html"
 image:
   thumb: "people_pictures/lukina.png"
   homepage: "https://annalukina.com/"
