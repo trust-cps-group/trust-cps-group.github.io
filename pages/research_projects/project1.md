@@ -6,7 +6,7 @@ tags:
     - cps
     - trust
 image:
-  thumb: "images/project_logos/logics2.png"
+  thumb: "project_logos/logics2.png"
   homepage: "http://www.vcla.at/?page_id=8564&preview=1&_ppp=a8acfe3c97"
 ---
 
