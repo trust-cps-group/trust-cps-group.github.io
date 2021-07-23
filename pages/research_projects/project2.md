@@ -6,7 +6,7 @@ tags:
     - cps
     - trust
 image:
-  thumb: "project_logos/secint.png"
+  thumb: "project_logos/zk35.png"
   homepage: "https://secint.visp.wien/"
 ---
 
