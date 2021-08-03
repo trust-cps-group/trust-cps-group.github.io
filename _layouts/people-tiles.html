@@ -14,10 +14,19 @@ layout: page-fullwidth
                 {{ post.title }} {{ post.first }} {{ post.family }}
                 <br>
                 {{ post.role }}
-                <br>
-               {% if post.hasdblp contains 'yes' %}
-                <a href="{{post.dblp}}">DBLP</a>
-               {% endif %}
+                  {% if post.hasdblp contains 'yes' %}
+                  <br><a href="{{post.dblp}}"><i class="ai ai-dblp-square ai-1x"></i> DBLP</a>
+                  {% endif %}
+                  {% if post.hasgithub contains 'yes' %}
+                  <br><a href="{{post.github}}"><i class="fa fa-github" aria-hidden="true"></i> github</a>
+                  {% endif %}
+                  {% if post.hasgscholar contains 'yes' %}
+                  <br><a href="{{post.gscholar}}"><i class="ai ai-google-scholar-square ai-1x"></i>
+                      google-scholar</a>
+                  {% endif %}
+                  {% if post.hasscopus contains 'yes' %}
+                  <br><a href="{{post.scopus}}"><i class="ai ai-scopus-square ai-1x"></i> scopus</a>
+                  {% endif %}
               </div>
             </div>
             {% endif %}
@@ -37,9 +46,18 @@ layout: page-fullwidth
               <div class="small-6 medium-6 large-6 column">
                 {{ post.title }} {{ post.first }} {{ post.family }}
                 <br>
-               {% if post.hasdblp contains 'yes' %}
-                <a href="{{post.dblp}}">DBLP</a>
-               {% endif %}
+                  {% if post.hasdblp contains 'yes' %}
+                  <a href="{{post.dblp}}"><i class="ai ai-dblp-square ai-1x"></i> DBLP</a>
+                  {% endif %}
+                  {% if post.hasgithub contains 'yes' %}
+                  <a href="{{post.github}}"><i class="fab fa-github"></i> github</a>
+                  {% endif %}
+                  {% if post.hasgscholar contains 'yes' %}
+                  <a href="{{post.gscholar}}"><i class="ai ai-google-scholar-square ai-1x"></i> google-scholar</a>
+                  {% endif %}
+                  {% if post.hasscopus contains 'yes' %}
+                  <a href="{{post.scopus}}"><i class="ai ai-scopus-square ai-1x"></i> scopus</a>
+                  {% endif %}
                 <br>
                 {{ post.role }}
                 <br>
