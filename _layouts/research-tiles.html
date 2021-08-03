@@ -8,7 +8,7 @@ layout: page-fullwidth
             <div class="medium-12 columns border-dotted t10">
               <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><h3>{{  post.title}}</h3></a>
             {% if post.image.homepage %}
-            <div class="medium-6 columns">
+            <div class="medium-9 columns">
               <p>
                 {% if post.teaser %}
                 <br>
@@ -18,7 +18,7 @@ layout: page-fullwidth
                 {% endif %}
               </p>
             </div><!-- /.medium-6.columns -->
-            <div class="medium-6 columns">
+            <div class="medium-3 columns">
               <p>
                   <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img  width="970" src="{{ site.urlimg }}{{ post.image.thumb }}" alt="{{ page.title | escape_once }}"></a>
                 </p>
