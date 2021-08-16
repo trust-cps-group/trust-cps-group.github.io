@@ -29,7 +29,13 @@ format: frontpage
 	{% endif %}
 </div><!-- /.row -->
 
+{% comment %}
+* Finally, if there is content, spit it out.
+{% endcomment %}
 
+<div class="row">
+    {{ content }}
+</div><!-- /.row -->
 
 {% comment %}
 *
@@ -51,11 +57,6 @@ format: frontpage
 
 
 
-{% comment %}
-*
-* First check, if there are any posts at all
-* Stefan: Commented!
-
 {% unless site.posts == empty %}
     <div class="row t30 b20 homepage">
         <div class="small-12 columns">
@@ -71,7 +72,7 @@ format: frontpage
             </p>
             {% endif %}
             {% else post.image.homepage == NULL %}
-            <h2>{{ site.data.language.new_blog_entries }}</h2>
+            <h2>{{ site.data.language.news }}</h2>
             {% endif %}
             {% endfor %}
         </div><!-- /.small-12.columns -->
@@ -92,21 +93,8 @@ format: frontpage
 
 
         <div class="medium-6 columns">
-            <p><strong>{{ site.data.language.more_articles }}</strong></p>
+            <p><strong>{{ site.data.language.more_news }}</strong></p>
             {% include list-posts entries='3' offset='1' %}
         </div><!-- /.medium-7.columns -->
     </div><!-- /.row -->
 {% endunless %}
-
-
-{% endcomment %}
-
-{% comment %}
-*
-* Finally, if there is content, spit it out.
-*
-{% endcomment %}
-
-<div class="row">
-    {{ content }}
-</div><!-- /.row -->

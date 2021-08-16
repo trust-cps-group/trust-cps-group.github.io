@@ -5,22 +5,21 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-#header:
-#  title: Trustworthy Cyber-Physical Systems Group
-widget1:
-  title: "Widget No 1"
-  url: '/research/project1'
-  #image: widget-1-302x182.jpg
-  text: 'This is the description to the first widget. The link leads to our first research project.'
-widget2:
-  title: "Widget No 2"
-  url: '/research/project2'
-  text: 'The description of the second image. The link should actually lead to the second research project.'
-widget3:
-  title: "Widget No 3"
-  url: '/research/project3'
-  #image: widget-github-303x182.jpg
-  text: 'The link should lead to the third research project.'
+teaser: Welcome
+#widget1:
+#  title: "Widget No 1"
+#  url: '/research/project1'
+#  #image: widget-1-302x182.jpg
+#  text: 'This is the description to the first widget. The link leads to our first research project.'
+#widget2:
+#  title: "Widget No 2"
+#  url: '/research/project2'
+#  text: 'The description of the second image. The link should actually lead to the second research project.'
+#widget3:
+#  title: "Widget No 3"
+#  url: '/research/project3'
+#  #image: widget-github-303x182.jpg
+#  text: 'The link should lead to the third research project.'
 #
 # Use the call for action to show a button on the frontpage
 #
@@ -42,3 +41,5 @@ permalink: /index.html
 #
 homepage: true
 ---
+
+Welcome to the web-presentation of the TrustCPS-Group at TU Wien!
