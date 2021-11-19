@@ -2,7 +2,7 @@
 layout: page-fullwidth
 title: "Openings"
 subheadline: "Open positions"
-teaser: "We are always looking for talented people who like to contribute their knowledge ..."
+teaser: "Logics@TU Wien Doctoral College"
 permalink: "/openings/"
 header: no
 ---

@@ -42,4 +42,7 @@ permalink: /index.html
 homepage: true
 ---
 
-Welcome to the web-presentation of the TrustCPS-Group at TU Wien!
+
+"Cyber-Physical Systems are engineering, physical and biological systems whose operations are integrated, monitored, and/or controlled by a computational core. Components are networked at every scale. Computing is deeply embedded into every physical component, possibly even into materials. The computational core is an embedded system, usually demands real-time response, and is most often distributed. The behavior of a cyber-physical system is a fully-integrated hybridisation of computational (logical) and physical action."
+
+(Helen Gill, US National Science Foundation)
