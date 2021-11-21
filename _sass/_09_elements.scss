@@ -194,16 +194,6 @@ img.lazy {
 
 }
 
-// This should make the profile-images pleasant enough.
-// Should replace the previously-defined .person-image,
-// but it seems there is some unfinished work using it.
-// TODO: Refactor this into a class when definitive.
-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-
 /*
 Collapsible
 */
