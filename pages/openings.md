@@ -18,8 +18,6 @@ a 4-years full-time (40h) contract, starting from June 2022,
 with a competitive salary according to the national Austrian government rules. 
 Research topics include probabilistic hyperproperties, verification and synthesis of probabilistic
 systems, and automatic repair explanation and solutions' proposals for the debugging of cyber-physical
-systems. If you are interested, please refer to the 
-[Logics official page](http://www.vcla.at/msca/programme/)
+systems. If you are interested, please refer to [Logics official page](http://www.vcla.at/msca/programme/)
 and feel free to contact the reference professor [Ezio Bartocci](mailto:ezio.bartocci@tuwien.ac.at).
 The deadline of the online application procedure is December 30, 2021.
-
