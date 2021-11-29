@@ -8,7 +8,7 @@ role: "Project Assistant"
 hasgithub: "yes"
 github: "https://github.com/francescopont"
 image:
-  thumb: "people_pictures/pontiggia.PNG"
+  thumb: "people_pictures/pontiggia.png"
   homepage: "people_pictures/pontiggia.png"
 ---
 
