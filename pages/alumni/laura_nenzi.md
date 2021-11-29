@@ -3,7 +3,7 @@ subheadline: ""
 title:  "Dr."
 first: "Laura"
 family: "Nenzi"
-role:   "Project Assistant (Part-time)"
+role:   "Now Assistant Professor at University of Trieste"
 mail: ""
 website: "https://lauranenzi.github.io/"
 hasdblp: "yes"
@@ -14,7 +14,6 @@ hasgscholar: "yes"
 gscholar: "https://scholar.google.de/citations?user=3xNQYkkAAAAJ"
 image:
   thumb: "people_pictures/laura.png"
-  homepage: "people_pictures/laura.png"
 ---
 
 <!--more-->
