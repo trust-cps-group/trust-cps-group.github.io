@@ -221,7 +221,7 @@ scholar:
   group_order: descending
 
   source: ./_bibliography
-  bibliography: ezio.bib
+  bibliography: publications.bib
   bibliography_template: single_reference
 
   replace_strings: true
