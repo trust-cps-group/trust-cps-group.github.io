@@ -27,13 +27,23 @@ $body-bg: 			#fdfdfd;
 
    https://pigment.shapefactory.co/?d=2&a=D2E9F5&b=FFFFFFs
 ------------------------------------------------------------------- */
+$ci-1: #993300;      // dark blue -- the original one
+$ci-2: #ffb27f;      // light blue -- the orange one
+$ci-4: #F0A202;      // orange
+$ci-5: #AF1B3F;      // dark red
+$ci-6: #ffd9bf;      // gray-blue  -- the brightest
 
+
+
+
+
+/* Original palette 
 $ci-1: #7EA0B6;		// dark blue
 $ci-2: #D2E9F5;		// light blue
-$ci-3: #D5D5D5;		// gray
 $ci-4: #F0A202;		// orange
 $ci-5: #AF1B3F;		// dark red
-$ci-6: #A8C4D5;   // gray-blue
+$ci-6: #A8C4D5;      // gray-blue
+------------------------------------------------------------------- */
 
 
 
@@ -49,9 +59,29 @@ $info-color: $ci-1;
 
 
 
-/* Grey Scale
+/* Grey Scale (they are not grey anymore, but it's boring to change variable names)
 ------------------------------------------------------------------- */
+$grey-1: #ffb27f;
+$grey-2: #ff9966;
+$grey-3: #e57f4c;
+$grey-4: #cc6633;
+$grey-5: #b24c19;
+$grey-6: #993300;
+$grey-7: #913608;
+$grey-8: #8a380f;
+$grey-9: #823b17;
+$grey-10: #7a3d1f;
+$grey-11: #734026;
+$grey-12: #6b422e;
+$grey-13: #634536;
+$grey-14: #5c473d;
+$grey-15: #544a45;
+$grey-16: #544a45;
 
+
+
+
+/* original palette
 $grey-1: #E4E4E4;
 $grey-2: #D7D7D7;
 $grey-3: #CBCBCB;
@@ -67,7 +97,11 @@ $grey-12: #3E3E3E;
 $grey-13: #313131;
 $grey-14: #242424;
 $grey-15: #171717;
-$grey-16: #0B0B0B;
+$grey-16: #993300;
+------------------------------------------------------------------- */
+
+
+
 
 
 
@@ -115,8 +149,8 @@ $footer-link-color: $ci-2;
 
 
 $subfooter-bg: $grey-13;
-$subfooter-color: $grey-8;
-$subfooter-link-color: $grey-8;
+$subfooter-color: #ffd9bf; /* previously: $grey-8; */
+$subfooter-link-color: #ffd9bf; /* previously: $grey-8; */
 
 
 
