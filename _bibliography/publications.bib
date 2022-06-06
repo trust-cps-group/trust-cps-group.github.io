@@ -12,6 +12,17 @@
   doi       = {10.46298/lmcs-18(1:4)2022}
 }
 
+@inproceedings{Neufeld22,
+  author    = {Emery A. Neufeld},
+  title     = {Reinforcement Learning Guided by Provable Normative Compliance},
+  booktitle = {Proc. of {ICAART} 2022: the 14th International Conference on Agents and Artificial
+               Intelligence},
+  pages     = {444--453},
+  year      = {2022},
+  publisher = {{SCITEPRESS}},
+  doi       = {10.5220/0010835600003116}
+}
+
 @article{StankovicBK22,
   author    = {Miroslav Stankovic and
                Ezio Bartocci and
@@ -41,6 +52,101 @@
   doi       = {10.1007/978-3-030-99429-7\_1}
 }
 
+@inproceedings{BartocciFHNC22,
+  author    = {Ezio Bartocci and
+               Thomas Ferr{\`{e}}re and
+               Thomas A. Henzinger and
+               Dejan Nickovic and
+               Ana Oliveira da Costa},
+  title     = {Flavors of Sequential Information Flow},
+  booktitle = {Proc. of {VMCAI} 2022: the 23rd International
+               Conference on Verification, Model Checking, and Abstract Interpretation},
+  pages     = {1--19},
+  year      = {2022},
+  series    = {LNCS},
+  volume    = {13182},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-030-94583-1}
+}
+
+
+
+
+@inproceedings{DobeWABB22,
+  author    = {Oyendrila Dobe and
+               Lukas Wilke and
+               Erika {\'{A}}brah{\'{a}}m and
+               Ezio Bartocci and
+               Borzoo Bonakdarpour},
+  title     = {Probabilistic Hyperproperties with Rewards},
+  booktitle = {Proc. of {NFM} 2022: the 14th International Symposium on {NASA} Formal Methods},
+  pages     = {656--673},
+  year      = {2022},
+  series    = {LNCS},
+  volume    = {13260},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-031-06773-0}
+}
+
+@article{MaBLSF21,
+  author    = {Meiyi Ma and
+               Ezio Bartocci and
+               Eli Lifland and
+               John A. Stankovic and
+               Lu Feng},
+  title     = {A Novel Spatial-Temporal Specification-Based Monitoring System for
+               Smart Cities},
+  journal   = {{IEEE} Internet Things J.},
+  volume    = {8},
+  number    = {15},
+  pages     = {11793--11806},
+  year      = {2021},
+  doi       = {10.1109/JIOT.2021.3069943}
+}
+
+
+@article{BartocciB21,
+  author    = {Ezio Bartocci and
+               Michael A. Bender},
+  title     = {A Perspective on "CCS Expressions, Finite State Processes, and Three
+               Problems of Equivalence"},
+  journal   = {{SIGACT} News},
+  volume    = {52},
+  number    = {4},
+  pages     = {76--77},
+  year      = {2021},
+  doi       = {10.1145/3510382.3510394}
+}
+
+@article{BartocciMMMN21,
+  author    = {Ezio Bartocci and
+               Niveditha Manjunath and
+               Leonardo Mariani and
+               Cristinel Mateis and
+               Dejan Nickovic},
+  title     = {CPSDebug: Automatic failure explanation in {CPS} models},
+  journal   = {Int. J. Softw. Tools Technol. Transf.},
+  volume    = {23},
+  number    = {5},
+  pages     = {783--796},
+  year      = {2021},
+  doi       = {10.1007/s10009-020-00599-4}
+}
+
+@article{MaSB021,
+  author    = {Meiyi Ma and
+               John A. Stankovic and
+               Ezio Bartocci and
+               Lu Feng},
+  title     = {Predictive Monitoring with Logic-Calibrated Uncertainty for Cyber-Physical
+               Systems},
+  journal   = {{ACM} Trans. Embed. Comput. Syst.},
+  volume    = {20},
+  number    = {5s},
+  pages     = {101:1--101:25},
+  year      = {2021},
+  doi       = {10.1145/3477032}
+}
 
 
 @ARTICLE{TBG21,
@@ -75,7 +181,11 @@
   booktitle = {Proc. of CADE 2021: the 28th International Conference on Automated Deduction},
   year = {2021},
   publisher = {Springer},
-  series = {Lecture Notes in Computer Science},
+  series = {LNCS},
+  volume    = {12699},
+  year      = {2021},
+  pages     = {565--576},
+  doi       = {10.1007/978-3-030-79876-5},
   papertype = {conference}
 }
 
@@ -111,15 +221,6 @@
   doi = {10.1007/978-3-030-72019-3_18}
 }
 
-@ARTICLE{MBLSF21,
-  title = {A Novel Spatial-Temporal Specification-Based Monitoring System for Smart Cities},
-  author = {Ma, Meiyi and Bartocci, Ezio and Lifland, Eli and Stankovic, John A. and Feng, Lu},
-  journal = {IEEE Internet of Things Journal},
-  year = {2021},
-  publisher = {IEEE Computer Society},
-  papertype = {journal},
-}
-
 @INPROCEEDINGS{BBMMN21,
   title = {Adaptive Testing for Specification Coverage in CPS Models},
   author = {Bartocci, Ezio and Bloem, Roderick and Maderbacher, Benedikt and Manjunath, Niveditha and Nickovic, Dejan},
@@ -146,30 +247,177 @@
   papertype = {conference}
 }
 
-@ARTICLE{BMMMN21,
-  title = {CPSDebug: Automatic Failure Explanation in CPS Models},
-  author = {Bartocci, Ezio and Manjunath, Niveditha and Mariani, Leonardo and Mateis, Cristinel and Nickovic, Dejan},
-  journal = {International Journal on Software Tools for Technology Transfer},
-  note = {accepted},
-  abstract = {Debugging Cyber-Physical System (CPS) models is a cumbersome and costly
-      activity.
-      CPS models combine continuous and discrete dynamics --
-      a fault in a physical component manifests itself in a very different way
-      than a fault in a state machine. Furthermore, faults can propagate both in time
-      and space before they can be detected at the observable interface of the model.
-      As a consequence, explaining the reason of an observed failure is challenging
-      and often requires domain-specific knowledge.
-      In this paper we propose CPS Debug, a novel approach that combines
-      testing, specification mining, and failure analysis, to automatically explain
-      failures in Simulink/Stateflow models. In particular, we address the hybrid
-      nature of CPS models by using different methods to infer properties from
-      continuous and discrete state variables of the model.
-      We evaluate CPS Debug on two case studies, involving two main scenarios and
-      several classes of faults, demonstrating the potential value of our approach.},
-  year = {2021},
-  publisher = {Springer},
-  papertype = {journal}
+@inproceedings{AlsalehiMBB21,
+  author    = {Suhail Alsalehi and
+               Noushin Mehdipour and
+               Ezio Bartocci and
+               Calin Belta},
+  title     = {Neural Network-based Control for Multi-Agent Systems from Spatio-Temporal
+               Specifications},
+  booktitle = {Proc. of CDC 2021: the 60th {IEEE} Conference on Decision and Control},
+  pages     = {5110--5115},
+  year      = {2021},
+  publisher = {{IEEE}},
+  doi       = {10.1109/CDC45484.2021.9682921}
 }
+
+@inproceedings{DobeABB21,
+  author    = {Oyendrila Dobe and
+               Erika {\'{A}}brah{\'{a}}m and
+               Ezio Bartocci and
+               Borzoo Bonakdarpour},
+  title     = {HyperProb: {A} Model Checker for Probabilistic Hyperproperties},
+  booktitle = {Proc. of {FM} 2021: the 24th International Symposium on Formal Methods},
+  pages     = {657--666},
+  year      = {2021},
+  series    = {LNCS},
+  volume    = {13047},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-030-90870-6}
+}
+
+@inproceedings{MoosbruggerBKK21,
+  author    = {Marcel Moosbrugger and
+               Ezio Bartocci and
+               Joost{-}Pieter Katoen and
+               Laura Kov{\'{a}}cs},
+  title     = {The Probabilistic Termination Tool Amber},
+ booktitle = {Proc. of {FM} 2021: the 24th International Symposium on Formal Methods},
+  pages     = {667--675},
+  year      = {2021},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {13047},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-030-90870-6}
+}
+
+@inproceedings{ViscontiBLN21,
+  author    = {Ennio Visconti and
+               Ezio Bartocci and
+               Michele Loreti and
+               Laura Nenzi},
+  title     = {Online monitoring of spatio-temporal properties for imprecise signals},
+  booktitle = {Proc. of {MEMOCODE} '21: the 19th {ACM-IEEE} International Conference on Formal
+               Methods and Models for System Design},
+  pages     = {78--88},
+  year      = {2021},
+  publisher = {{ACM}},
+  doi       = {10.1145/3487212}
+}
+
+@inproceedings{BartocciDMNNQ21,
+  author    = {Ezio Bartocci and
+               Jyotirmoy Deshmukh and
+               Cristinel Mateis and
+               Eleonora Nesterini and
+               Dejan Nickovic and
+               Xin Qin},
+  title     = {Mining Shape Expressions with ShapeIt},
+  booktitle = {Proc. of {SEFM} 2021: the 19th International Conference on Software Engineering and Formal Methods},
+  pages     = {110--117},
+  year      = {2021},
+  series    = {LNCS},
+  volume    = {13085},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-030-92124-8}
+}
+
+@proceedings{2021havelund,
+  editor    = {Ezio Bartocci and
+               Yli{\`{e}}s Falcone and
+               Martin Leucker},
+  title     = {Formal Methods in Outer Space - Essays Dedicated to Klaus Havelund
+               on the Occasion of His 65th Birthday},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {13065},
+  publisher = {Springer},
+  year      = {2021},
+  doi       = {10.1007/978-3-030-87348-6}
+}
+
+@inproceedings{AlthoffAFFF0SW21,
+  author    = {Matthias Althoff and
+               Erika {\'{A}}brah{\'{a}}m and
+               Marcelo Forets and
+               Goran Frehse and
+               Daniel Freire and
+               Christian Schilling and
+               Stefan Schupp and
+               Mark Wetzlinger},
+  title     = {{ARCH-COMP21} Category Report: Continuous and Hybrid Systems with
+               Linear Continuous Dynamics},
+  booktitle = {Proc. of ARCH21: the  8th International Workshop on Applied Verification of Continuous and
+               Hybrid Systems},
+  pages     = {1--31},
+  year      = {2021},
+  series    = {EPiC Series in Computing},
+  volume    = {80},
+  publisher = {EasyChair}
+}
+
+@inproceedings{AbateBBCCDHHKLM21,
+  author    = {Alessandro Abate and
+               Henk Blom and
+               Marc Bouissou and
+               Nathalie Cauchi and
+               Hassane Chraibi and
+               Joanna Delicaris and
+               Sofie Haesaert and
+               Arnd Hartmanns and
+               Mahmoud Khaled and
+               Abolfazl Lavaei and
+               Hao Ma and
+               Kaushik Mallik and
+               Mathis Niehage and
+               Anne Remke and
+               Stefan Schupp and
+               Fedor Shmarov and
+               Sadegh Soudjani and
+               Adam Thorpe and
+               Vlad Turcuman and
+               Paolo Zuliani},
+  title     = {{ARCH-COMP21} Category Report: Stochastic Models},
+  booktitle = {8th International Workshop on Applied Verification of Continuous and
+               Hybrid Systems (ARCH21), Brussels, Belgium, July 9, 2021},
+  pages     = {55--89},
+  year      = {2021},
+  series    = {EPiC Series in Computing},
+  volume    = {80},
+  publisher = {EasyChair},
+  doi       = {10.29007/dprv}
+}
+
+@inproceedings{FreibergerSHA21,
+  author    = {Felix Freiberger and
+               Stefan Schupp and
+               Holger Hermanns and
+               Erika {\'{A}}brah{\'{a}}m},
+  title     = {Controller verification meets controller code: a case study},
+  booktitle = {Proc. of {MEMOCODE} '21: the 19th {ACM-IEEE} International Conference on Formal
+               Methods and Models for System Design},
+  pages     = {98--103},
+  year      = {2021},
+  publisher = {{ACM}},
+  doi       = {10.1145/3487212}
+}
+
+@inproceedings{HofmannS21,
+  author    = {Till Hofmann and
+               Stefan Schupp},
+  title     = {TACoS: {A} Tool for {MTL} Controller Synthesis},
+  booktitle = {Proc. of {SEFM} 2021: the 19th International Conference on Software Engineering and Formal Methods},
+  pages     = {372--379},
+  year      = {2021},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {13085},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-030-92124-8}
+}
+
+
+
+
+
 
 @INPROCEEDINGS{BMMMNP20,
   title = {CPSDebug: A Tool for Failure Explanation in Cyber-Physical Systems},
