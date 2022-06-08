@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/xslt/atom.xslt" ?>
+<?xml-stylesheet type="text/css" href="/assets/css/atom.css" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<id>/</id>
+	<title>Trust CPS Group</title>
+	<updated>2022-06-08T16:01:35+00:00</updated>
+
+	<subtitle>Online-representation of the Trust CPS Group at TU Wien.</subtitle>
+
+	
+		
+		<author>
+			
+				<name>Ezio Bartocci, Stefan Schupp</name>
+			
+			
+			
+		</author>
+	
+
+	<link href="/atom.xml" rel="self" type="application/rss+xml" />
+	<link href="/" rel="alternate" type="text/html" />
+
+	<generator uri="http://jekyllrb.com" version="3.9.0">Jekyll</generator>
+
+	
+		<entry>
+			<id>/later/</id>
+			<title>Our new webpage is ready</title>
+			<link href="/later/" rel="alternate" type="text/html" title="Our new webpage is ready" />
+			<updated>2021-08-16T00:00:00+00:00</updated>
+
+			
+				
+				<author>
+					
+						<name>TrustCPS</name>
+					
+					
+					
+				</author>
+			
+			<summary>We are happy to announce the new launch of our webpage.</summary>
+			<content type="html" xml:base="/later/">&lt;p&gt;Hi,&lt;/p&gt;
+
+&lt;p&gt;we are happy to announce the launch of our new website. Here we will present news on the activity of the group, present our past and ongoing research projects, and provide a who-is-who of the members of the group.
+You can find out about open positions (theses as well as research positions) here and get an impression on our various teaching activity here.&lt;/p&gt;
+</content>
+
+			
+			
+				<category term="news" />
+			
+
+			<published>2021-08-16T00:00:00+00:00</published>
+		</entry>
+	
+</feed>

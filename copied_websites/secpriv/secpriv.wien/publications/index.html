@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html>
+<!-- Mirrored from secpriv.wien/publications/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 15:39:52 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Security & Privacy TU Wien</title>
+    <link rel="stylesheet" media="all" href="../css/app.css" />
+</head><body><style>
+    .w18-bar {
+        background-color: #192121;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .w18-bar img {
+        height: 25px;
+        padding-left: 15px;
+    }
+
+    .w18-logo img {
+        height: 45px;
+    }
+
+    .w18-nav-tabs {
+        top: 100px;
+    }
+</style>
+
+
+<header class="w18-header">
+    <div class="container">
+        <div class="w18-header-wrap">
+            <h1 class="w18-logo">
+                <a href="../index.html"><img src="../home/Logo2.png" alt="Research Unit"/></a>
+            </h1>
+        </div>
+    </div>
+
+
+    <nav class="w18-nav">
+        <div class="w18-nav-wrap">
+            <ul class="nav w18-nav-tabs" role="tablist">
+                <li class="nav-item"><a class="nav-link" id="menu-tab" href="#menu" role="tab" aria-controls="menu" aria-selected="false">Menu</a></li>
+            </ul>
+            <button class="close close-white" type="button" aria-label="Close" aria-hidden="true"></button>
+
+            <div class="w18-nav-tab-content">
+                <div class="w18-nav-tab-pane" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+                    <ul class="row">
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Activities</h2>
+                            <ul class="nav flex-column">
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../research/index.html">Research</a>
+                                    </li>
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="index.html">Publications</a>
+                                    </li>
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../projects/index.html">Projects</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Teaching</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../teaching/index.html">Courses</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Team</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../team/index.html">People</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../alumni/index.html">Alumni</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../reach/index.html">How to reach us</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../contact/index.html">Contact</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Work with us</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../work/index.html">Theses &amp; Job Opportunities</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../internship/index.html">Internship Program</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../double/index.html">Double Degree TUW-TUD IT on Security</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">News</h2>
+                            <ul class="nav flex-column">
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../index.html#twitter">Our tweets</a>
+                                </li>
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    Blog
+                                    <ul>
+                                        <li><a class="nav-link indent" href="../blog/en/index.html">English</a></li>
+                                        <li><a class="nav-link indent" href="../blog/de/index.html">German</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img style="width: 60px" src="../images/totop.png"></button>
+        <div id="content">
+            <section class="w18-header-intro w18-page-intro">
+    <div class="container">
+        <div class="row justify-content-center w18-header-intro-top">
+            <div class="col col-lg-10 col-xl-8">
+                    <button id="people-dropdown" class="btn dropdown-toggle btn-sm btn-info" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Activities
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="people-dropdown">
+                        <a href="../research/index.html" class="dropdown-item">
+                            Research
+                        </a>
+                        <a href="index.html" class="dropdown-item active">
+                            Publications
+                        </a>
+                        <a href="../projects/index.html" class="dropdown-item">
+                            Projects
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <h2 class="display-1">Publications</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w18-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <div id="activities" class="accordion">
+
+                    
+                    
+
+                    
+                    
+                    
+                    </ul>
+                    
+                    
+                    <ul>
+                        <h2> 2021 </h2>
+                        
+                        <li>
+                            <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-81685-8_32.pdf">Not All Bugs Are Created Equal, But Robust Reachability Can Tell The Difference</a>
+                            <span class="text-muted"> /
+                                        G. Girol, B. Farinier, S. Bardin /
+                                        in: &#34;Computer Aided Verification - 33rd International Conference&#34;, vol 12759; Springer LNCS, 2021, ISBN: 978-3-030-81684-1, 669 - 693
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_292507.pdf">Bitcoin-Compatible Virtual Channels</a>
+                            <span class="text-muted"> /
+                                        L. Aumayr, O. Ersoy, A. Erwig, S. Faust, K. Hostáková, M. Maffei, P. Moreno-Sanchez, S. Riahi /
+                                        Talk: IEEE Symposium on Security and Privacy, Oakland, USA; 2021-05-23 - 2021-05-27; in: &#34;42nd IEEE Symposium on Security and Privacy&#34;, IEEE Computer Society, (2021), 901 - 918
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Generalized Channels from Limited Blockchain Scripts and Adaptor Signatures</a>
+                            <span class="text-muted"> /
+                                        L. Aumayr, O. Ersoy, A. Erwig, S. Faust, K. Hostáková, M. Maffei, P. Moreno-Sanchez, S. Riahi /
+                                        Talk: Asiacrypt 2021, the 27th Annual International Conference on the Theory and Application of Cryptology and Information Security, Singapore; 2021-12-06 - 2021-12-10; in: &#34;Advances in Cryptology - ASIACRYPT 2021&#34;, Springer, (2021), ISBN: 978-3-030-92074-6; 635 - 664
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_295254.pdf">Blitz: Secure Multi-Hop Payments Without Two-Phase Commits</a>
+                            <span class="text-muted"> /
+                                        L. Aumayr, P. Moreno-Sanchez, A. Kate, M. Maffei /
+                                        Talk: Usenix Security Symposium, Vancouver, B.C., Canada; 2021-08-11 - 2021-08-13; in: &#34;30th USENIX Security Symposium&#34;, USENIX: The Advanced Computing Systems Association, (2021), ISBN: 978-1-939133-24-3; 4043 - 4060
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297785.pdf">Static Analysis of Low-Level Code</a>
+                            <span class="text-muted"> /
+                                        I. Grishchenko /
+                                        Supervisor, Reviewer: M. Maffei, G. Weissenbacher, A. Sabelfeld, K. Bhargavan; Institut of Logic and Computation, Security and Privacy, 2021; oral examination: 2021-01-25
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297784.pdf">Static and Dynamic Enforcement of Security via Relational Reasoning</a>
+                            <span class="text-muted"> /
+                                        N. Grimm /
+                                        Supervisor, Reviewer: M. Maffei, F. Piessens, G. Barthe; Institut of Logic and Computation, Security and Privacy, 2021; oral examination: 2021-03-15
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297783.pdf">Foundations for the Security Analysis of Distributed Blockchain Applications</a>
+                            <span class="text-muted"> /
+                                        C. Schneidewind /
+                                        Supervisor, Reviewer: M. Maffei, A. Gervais, B. Scholz; Institut of Logic and Computation, Security and Privacy, 2021; oral examination: 2021-05-28
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297284.pdf">Nonce-Misuse Security of the SAEF Authenticated Encryption Mode</a>
+                            <span class="text-muted"> /
+                                        E. Andreeva, A. Bhati, D. Vizár /
+                                        in: &#34;27th International Conference, Halifax, NS, Canada (Virtual Event), October 21-23, 2020&#34;, Lecture Notes in Computer Science, vol 12804; issued by: Springer; Springer LNCS, Cham, 2021, ISBN: 978-3-030-81651-3, 512 - 534
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297776.pdf">Adaptor Signature Based Atomic Swaps Between Bitcoin and a Mimblewimble Based Cryptocurrency</a>
+                            <span class="text-muted"> /
+                                        J. Abfalter /
+                                        Supervisor: M. Maffei, P. Moreno-Sanchez; Institut of Logic and Computation, Security and Privacy, 2021; final examination: 2021-07-01
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297775.pdf">Privacy Preserving Authenticated Key Exchange - Modelling, Constructions, Proofs and Veriﬁcation using Tamarin</a>
+                            <span class="text-muted"> /
+                                        A Weninger /
+                                        Supervisor: M. Maffei, D. Slamanig; Institut of Logic and Computation, Security and Privacy, 2021; final examination: 2021-08-27
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://eprint.iacr.org/2020/1345">Post-Quantum Adaptor Signature for Privacy-Preserving Off-Chain Payments</a>
+                            <span class="text-muted"> /
+                                        E. Tairi, P. Moreno-Sanchez, M. Maffei /
+                                        Talk: International Conference on Financial Cryptography and Data Security (FC), Grenada; 2021-03-01 - 2021-03-05; in: &#34;Proceedings of the 25th International Conference on Financial Cryptography and Data Security&#34;, (2021)
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297438.pdf">Tarnhelm: Isolated, Transparent &amp; Confidential Execution of Arbitrary Code in ARM´s TrustZone</a>
+                            <span class="text-muted"> /
+                                        D. Quarta, M. Ianni, A. Machiry, Y. Fratantonio, E. Gustafson, D. Balzarotti, M. Lindorfer, G. Vigna, C. Krügel /
+                                        in: &#34;Research on offensive and defensive techniques in the Context of Man At The End (MATE) Attacks (Checkmate ´21)&#34;, ACM (ed.); issued by: ACM; ACM, New York, 2021, ISBN: 978-1-4503-8552-7
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297429.pdf">Cross-Layer Deanonymization Methods in the Lightning Protocol</a>
+                            <span class="text-muted"> /
+                                        M. Romiti, F. Victor, P. Moreno-Sanchez, P. Nordholt, B. Haslhofer, M. Maffei /
+                                        in: &#34;Financial Cryptography and Data Security&#34;, LNCS, volume 12674; issued by: Springer Verlag; Springer LNCS, Berlin Heidelberg, 2021, ISBN: 978-3-662-64321-1, 187 - 204
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_296694.pdf">EssentialFP: Exposing the Essence of Browser Fingerprinting</a>
+                            <span class="text-muted"> /
+                                        A. Sjösten, D. Hedin, A. Sabelfeld /
+                                        Talk: EuroS&amp;P 2021 SecWeb Workshop, Vienna; 2021-09-06; in: &#34;IEEE European Symposium on Security and Privacy Workshops&#34;, (2021), 32 - 48
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://eprint.iacr.org/2019/589">A2L: Anonymous Atomic Locks for Scalability in Payment Channel Hubs</a>
+                            <span class="text-muted"> /
+                                        E. Tairi, P. Moreno-Sanchez, M. Maffei /
+                                        Talk: IEEE Symposium on Security and Privacy, Oakland, USA; 2021-05-23 - 2021-05-27; in: &#34;42nd IEEE Symposium on Security and Privacy&#34;, (2021)
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297049.pdf">Interpolation Cryptanalysis of Unbalanced Feistel Networks with Low Degree Round Functions</a>
+                            <span class="text-muted"> /
+                                        E. Andreeva, A. Roy, J. Sauer /
+                                        in: &#34;27th International Conference, Halifax, NS, Canada (Virtual Event), October 21-23, 2020&#34;, LNCS, volume 12804; issued by: Springer; Springer LNCS, Cham, 2021, ISBN: 978-3-030-81651-3, 273 - 300
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297048.pdf">Optimized Software Implementations for the Lightweight Encryption Scheme ForkAE</a>
+                            <span class="text-muted"> /
+                                        E. Andreeva, A. Deprez, J. Bermudo Mera, A. Karmakar, A. Purnal /
+                                        in: &#34;CARDIS: International Conference on Smart Card Research and Advanced Applications&#34;, LNCS, volume 12609; issued by: Springer; Springer, Cham, 2021, ISBN: 978-3-030-68486-0, 68 - 83
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297047.pdf">Compactness of Hashing Modes and Efficiency Beyond Merkle Tree</a>
+                            <span class="text-muted"> /
+                                        E. Andreeva, R. Bhattacharyya, A. Roy /
+                                        in: &#34;Advances in Cryptology - EUROCRYPT 2021&#34;, LNCS, volume 12697; issued by: Springer; Springer, Cham, 2021, ISBN: 978-3-030-77885-9, 92 - 123
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_296929.pdf">The One-More Discrete Logarithm Assumption in the Generic Group Model</a>
+                            <span class="text-muted"> /
+                                        B. Bauer, G. Fuchsbauer, A. Plouviez /
+                                        in: &#34;Advances in Cryptology - ASIACRYPT 2021&#34;, Lecture Notes in Computer Science, vol 13093; Springer, Springer Link, 2021, ISBN: 978-3-030-92067-8, 587 - 617
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_296928.pdf">Transferable E-cash: A Cleaner Model and the First Practical Instantiation</a>
+                            <span class="text-muted"> /
+                                        B. Bauer, G. Fuchsbauer, C. Qian /
+                                        in: &#34;Public-Key Cryptography - PKC 2021&#34;, 2; Springer, 2021, 559 - 590
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_296700.pdf">The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches</a>
+                            <span class="text-muted"> /
+                                        M. Squarcina, S. Calzavara, M. Maffei /
+                                        Talk: 15th IEEE Workshop on Offensive Technologies, San Francisco, CA, USA; 2021-05-27; in: &#34;IEEE Security and Privacy Workshops&#34;, (2021), 432 - 443
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">FWS: Analyzing, Maintaining and Transcompiling Firewalls</a>
+                            <span class="text-muted"> /
+                                        C. Bodei, L. Ceragioli, P. Degano, R. Focardi, L. Galletta, F. Luccio, M. Tempesta, L. Veronese /
+                                        Journal of Computer Security, 29 (2021), 1; 77 - 134
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_295287.pdf">Updatable Signatures and Message Authentication Codes</a>
+                            <span class="text-muted"> /
+                                        V. Cini, S. Ramacher, D. Slamanig, C. Striecks, E. Tairi /
+                                        Talk: International Conference on Practice and Theory of Public-Key Cryptography (PKC), Edinburgh, Scotland; 2021-05-09 - 2021-05-13; in: &#34;Proceedings of the 24rd IACR International Conference on the Practice and Theory of Public-Key Cryptography&#34;, Springer, Cham, Lecture Notes in Computer Science, vol 12710 (2021), ISBN: 978-3-030-75244-6; 691 - 723
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_296683.pdf">Can I Take Your Subdomain? Exploring Same-Site Attacks in the Modern Web</a>
+                            <span class="text-muted"> /
+                                        M. Squarcina, M. Tempesta, L. Veronese, S. Calzavara, M. Maffei /
+                                        Talk: 30th USENIX Security Symposium, Online; 2021-08-11 - 2021-08-13; in: &#34;30th USENIX Security Symposium&#34;, 30th USENIX Security Symposium, USENIX Security 2021, August 11-13, 2021, (2021), 2917 - 2934
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297774.pdf">Analysis of Decentralized Mixing Services in the Greater Bitcoin Ecosystem</a>
+                            <span class="text-muted"> /
+                                        J. Stockinger /
+                                        Supervisor: M. Maffei, B. Haslhofer; Institut of Logic and Computation, Security and Privacy, 2021; final examination: 2021-10-07
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                    
+                    <ul>
+                        <h2> 2020 </h2>
+                        
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_302294.pdf">Secrets in Source Code: Reducing False Positives using Machine Learning</a>
+                            <span class="text-muted"> /
+                                        A. Saha, T. Denning, V. Srikumar, S.K. Kasera /
+                                        in: &#34;2020 International Conference on COMmunication Systems &amp; NETworkS (COMSNETS)&#34;, IEEE Xplore Digital Library, 2020, ISBN: 978-1-7281-3187-0, 168 - 175
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Filter List Generation for Underserved Regions</a>
+                            <span class="text-muted"> /
+                                        A. Sjösten, P. Snyder, A. Pastor, P. Papadopoulos, B. Livshits /
+                                        in: &#34;The Web Conference 2020&#34;, ACM/IW3C2, 2020, ISBN: 978-1-4503-7023-3, 1682 - 1692
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_289744.pdf">eThor: Practical and Provably Sound Static Analysis of Ethereum Smart Contracts</a>
+                            <span class="text-muted"> /
+                                        C. Schneidewind, I. Grishchenko, M. Scherer, M. Maffei /
+                                        Talk: ACM Conference on Computer and Communications Security (CCS), Orlando; 2020-11-09 - 2020-11-13; in: &#34;CCS &#39;20: Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security&#34;, Association for Computing Machinery ACM, (2020), ISBN: 978-1-4503-7089-9; 621 - 640
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Static Amalysis of eWASM Contracts</a>
+                            <span class="text-muted"> /
+                                        A. Schwarz /
+                                        Supervisor: C. Schneidewind, M. Maffei; Institut of Logic and Computation, Security and Privacy, 2020; final examination: 2020-01-15
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">The Remote on the Local: Exacerbating Web Attacks Via Service Workers Caches in Progressive Web Applications</a>
+                            <span class="text-muted"> /
+                                        D. Somé, M. Squarcina, S. Calzavara, M. Maffei /
+                                        Talk: EuroS&amp;P 2020 SecWeb Workshop, Genova, IT; 2020-09-11
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_292580.pdf">TXTing 101: Finding Security Issues in the Long Tail of DNS TXT Records</a>
+                            <span class="text-muted"> /
+                                        O. van der Toorn, R. van Rijswijk-Deij, T. Fiebig, M. Lindorfer, A. Sperotto /
+                                        in: &#34;International Workshop on Traffic Measurements for Cybersecurity (WTMC)&#34;, IEEE, 2020, ISBN: 978-1-7281-8598-9
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_299810.pdf">A Voting-Based Blockchain Interoperability Oracle</a>
+                            <span class="text-muted"> /
+                                        G. Scaffino, S. Schulte, M. Sober, C. Spanring /
+                                        in: &#34;4th IEEE Blockchain 2021&#34;, IEEE, 2020
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Simpler Constructions of Asymmetric Primitives from Obfuscation</a>
+                            <span class="text-muted"> /
+                                        P. Farshim, G. Fuchsbauer, A. Passelegue /
+                                        in: &#34;Progress in Cryptology - INDOCRYPT 2020&#34;, Springer, 2020, 715 - 738
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">A Classification of Computational Assumptions in the Algebraic Group Model</a>
+                            <span class="text-muted"> /
+                                        B. Bauer, G. Fuchsbauer, J. Loss /
+                                        in: &#34;Advances in Cryptology - CRYPTO 2020&#34;, Springer, 2020, 121 - 151
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Double-Authentication-Preventing Signatures in the Standard Model</a>
+                            <span class="text-muted"> /
+                                        D. Catalano, G. Fuchsbauer, A. Soleimanian /
+                                        in: &#34;Security and Cryptography for Networks - SCN 2020&#34;, Springer, 2020, 338 - 358
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Efficient Signatures on Randomizable Ciphertexts</a>
+                            <span class="text-muted"> /
+                                        B. Bauer, G. Fuchsbauer /
+                                        in: &#34;Security and Cryptography for Networks - SCN 2020&#34;, Springer, 2020, 359 - 381
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Blind Schnorr Signatures and Signed ElGamal Encryption in the Algebraic Group Model</a>
+                            <span class="text-muted"> /
+                                        G. Fuchsbauer, A. Plouviez, Y. Seurin /
+                                        in: &#34;Advances in Cryptology - EUROCRYPT 2020&#34;, Springer, 2020, 63 - 95
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_289746.pdf">The Good, the Bad and the Ugly: Pitfalls and Best Practices in Automated Sound Static Analysis of Ethereum Smart Contracts</a>
+                            <span class="text-muted"> /
+                                        C. Schneidewind, M. Scherer, M. Maffei /
+                                        Talk: International Symposium on Leveraging Applications of Formal Methods (ISoLA), Rhodes; 2020-10-20 - 2020-10-30; in: &#34;International Symposium On Leveraging Applications of Formal Methods, Verification and Validation&#34;, Springer, 7609 (2020), ISBN: 978-3-642-34025-3; 1 - 20
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_292571.pdf">When Malware is Packin&#39; Heat; Limits of Machine Learning Classifiers Based on Static Analysis Features</a>
+                            <span class="text-muted"> /
+                                        H. Aghakhani, F. Gritti, F. Mecca, M. Lindorfer, S. Ortolani, D. Balzarotti, G. Vigna, C. Krügel /
+                                        in: &#34;Network and Distributed System Security Symposium (NDSS)&#34;, Internet Society, 2020, ISBN: 1-891562-61-4
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_289754.pdf">A Quantitative Analysis of Security, Anonymity and Scalability for the Lightning Network</a>
+                            <span class="text-muted"> /
+                                        S. Tikhomirov, P. Moreno-Sanchez, M. Maffei /
+                                        Talk: IEEE Security &amp; Privacy On The Blockchain, Genova; 2020-11-07 - 2020-11-11; in: &#34;2020 IEEE European Symposium on Security and Privacy Workshops (EuroS&amp;PW)&#34;, IEEE, (2020), ISBN: 978-1-7281-8598-9; 387 - 396
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_289743.pdf">Language-Based Web Session Integrity</a>
+                            <span class="text-muted"> /
+                                        S. Calzavara, R. Focardi, N. Grimm, M. Maffei, M. Tempesta /
+                                        Talk: IEEE Computer Security Foundations Symposium, New York; 2020-06-22 - 2020-06-25; in: &#34;33rd IEEE Computer Security Foundations Symposium&#34;, IEEE Computer Society, Washington DC (2020), ISBN: 978-1-5386-3217-8; 107 - 122
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Generalized Bitcoin-Compatible Channels</a>
+                            <span class="text-muted"> /
+                                        L. Aumayr, O. Ersoy, A. Erwig, S. Faust, K. Hostáková, M. Maffei, P. Moreno-Sanchez, S. Riahi /
+                                        Report for Cryptology ePrint Archive; Report No. 2020/476, 2020; 35 pages
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_292351.pdf">Formalizing Graph Trail Properties in Isabelle/HOL</a>
+                            <span class="text-muted"> /
+                                        L. Kovacs, Hanna Lachnitt, S. Szeider /
+                                        Talk: International Conference on Intelligent Computer Mathematics (CICM), Bertinoro, Forli, Italy; 2020-07-26 - 2020-07-31; in: &#34;CICM 2020: Intelligent Computer Mathematics&#34;, LNCS, 12236 (2020), ISBN: 978-3-030-53518-6; 190 - 205
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_292577.pdf">FlowPrint: Semi-Supervised Mobile-App Fingerprinting on Encrypted Network Traffic</a>
+                            <span class="text-muted"> /
+                                        T. van Ede, R. Bortolameotti, A. Continella, J. Ren, D. Dubois, M. Lindorfer, D. Choffnes, M. van Steen, A. Peter /
+                                        in: &#34;Network and Distributed System Security Symposium (NDSS)&#34;, Internet Society, 2020, ISBN: 1-891562-61-4
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297778.pdf">Payment Channel Network Analysis with Focus on Lightning Network</a>
+                            <span class="text-muted"> /
+                                        P. Holzer /
+                                        Supervisor: M. Maffei, B. Haslhofer; Institut of Logic and Computation, Security and Privacy, 2020; final examination: 2020-05-29
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_292112.pdf">Bulwark: Holistic and Verified Security Monitoring of Web Protocols</a>
+                            <span class="text-muted"> /
+                                        L. Veronese, S. Calzavara, L. Compagna /
+                                        Talk: European Symposium on Research in Computer Security (ESORICS), Guildford, United Kingdom; 2020-09-14 - 2020-09-18; in: &#34;ESORICS 2020: Computer Security&#34;, Springer, Lecture Notes in Computer Science, vol 12308 (2020), ISBN: 978-3-030-58950-9; 23 - 41
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                    
+                    <ul>
+                        <h2> 2019 </h2>
+                        
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_296698.pdf">Latex Gloves: Protecting Browser Extensions from Probing and Revelation Attacks</a>
+                            <span class="text-muted"> /
+                                        A. Sjösten, S. Van Acker, P. Picazo-Sanchez, A. Sabelfeld /
+                                        in: &#34;26th Annual Network and Distributed System Security Symposium&#34;, The Internet Society, 2019, ISBN: 1-891562-55-x, 1 - 15
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_278436.pdf">Anonymous Multi-Hop Locks for Blockchain Scalability and Interoperability</a>
+                            <span class="text-muted"> /
+                                        G. Malavolta, P. Moreno-Sanchez, C. Schneidewind, A. Kate, M. Maffei /
+                                        Talk: Network and Distributed System Security Symposium (NDSS), San Diego, CA, US; 2019-02-24 - 2019-02-27; in: &#34;Proceedings of 2019 Network and Distributed System Security Symposium&#34;, Reston (2019), ISBN: 1-891562-55-x; 1 - 15
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Group ORAM for Privacy and AccessControl in Outsourced Personal Records</a>
+                            <span class="text-muted"> /
+                                        M. Maffei, G. Malavolta, M. Reinert, D. Schröder /
+                                        Journal of Computer Security, vol. 27 (2019), no. 1; 1 - 47
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://ieeexplore.ieee.org/document/8894277">Verifying Relational Properties using Trace Logic</a>
+                            <span class="text-muted"> /
+                                        G. Barthe, R. Eilers, P. Georgiou, B. Gleiss, L. Kovacs, M. Maffei /
+                                        Talk: International Conference on Formal Methods in Computer Aided Design (FMCAD) 2019, San Jose, US; 2019-10-22 - 2019-10-25; in: &#34;Proceedings of Formal Methods in Computer Aided Design (FMCAD)&#34;, B. Clark, J. Yang (ed.); IEEE, https://ieeexplore.ieee.org/xpl/conhome/8891869/proceeding (2019), ISBN: 978-0-9835678-9-9; 170 - 178
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://fmcad.forsyte.at/FMCAD19/student/19.tracereasoning-poster.pdf">Trace Reasoning for Formal Verification using the First-Order Superposition Calculus</a>
+                            <span class="text-muted"> /
+                                        P. Georgiou, B. Gleiss, L. Kovacs, M. Maffei /
+                                        Poster: FMCAD 2019 Student Forum, San Jose, US; 2019-10-22 - 2019-10-25
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_287951.pdf">Reducing Automotive Counterfeiting usingBlockchain: Benefits and Challenges</a>
+                            <span class="text-muted"> /
+                                        D. Lu, P. Moreno-Sanchez, A. Zeryihun, S. Bajpayi, S. Yin, K. Feldman, J. Kosofsky, P. Mitra, A. Kate /
+                                        in: &#34;2019 IEEE International Conference on Decentralized Applications and Infrastructures (DAPPCON)&#34;, issued by: IEEE; IEEE Computer Society, USA, 2019, ISBN: 978-1-7281-1264-0, 39 - 48
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Automated Prognosis of the Development of Cryptocurrency Prices</a>
+                            <span class="text-muted"> /
+                                        L. Aumayr /
+                                        Supervisor: H. Eidenberger; Visual Computing and Human-Centered Technology, 2019; final examination: 2019-06
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_287961.pdf">Gathering of robots in a ring with mobile faults</a>
+                            <span class="text-muted"> /
+                                        S. Das, R. Focardi, F. Luccio, E. Markou, M. Squarcina /
+                                        Theoretical Computer Science, Volume 764 (2019), Volume 764; 42 pages
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_287963.pdf">Postcards from the Post-HTTP World: Amplification of HTTPS Vulnerabilities in the Web Ecosystem</a>
+                            <span class="text-muted"> /
+                                        S. Calzavara, R. Focardi, M. Nemec, A. Rabitti, M. Squarcina /
+                                        in: &#34;2019 IEEE Symposium on Security and Privacy (SP)&#34;, issued by: IEEE; IEEE, 2019, ISBN: 978-1-5386-6661-6, 281 - 298
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_287981.pdf">Atomic Multi-Channel Updates with Constant Collateralin Bitcoin-Compatible Payment-Channel Networks</a>
+                            <span class="text-muted"> /
+                                        C. Egger, P. Moreno-Sanchez, M. Maffei /
+                                        Talk: Scaling Bitcoin, Israel, Tel Aviv (invited); 2019-09-11 - 2019-09-12; in: &#34;Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security&#34;, New York (2019), ISBN: 978-1-4503-6747-9; 801 - 815
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Atomic Multi-Channel Updates with Constant Collateral in Bitcoin-Compatible Payment-Channel Networks</a>
+                            <span class="text-muted"> /
+                                        C. Egger, M. Maffei, P. Moreno-Sanchez /
+                                        Talk: ACM Conference on Computer and Communications Security (CCS), London; 2019-11-11 - 2019-11-15; in: &#34;ACM Conference on Computer and Communications Security&#34;, ACM (ed.); ACM, (2019), ISBN: 978-1-4503-6747-9; 801 - 815
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_297285.pdf">Forkcipher: A New Primitive for Authenticated Encryption of Very Short Messages</a>
+                            <span class="text-muted"> /
+                                        E. Andreeva, J. Lallemand, A. Purnal, R. Reyhanitabar, A. Roy, D. Vizár /
+                                        in: &#34;Advances in Cryptology - ASIACRYPT 2019&#34;, issued by: Springer; Springer LNCS, Cham, 2019, ISBN: 978-3-030-34620-1, 153 - 182
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_302143.pdf">Reversible Proofs of Sequential Work</a>
+                            <span class="text-muted"> /
+                                        K. Pietrzak, M. Walter, K. Klein, C. Kamath, H. Abusalah /
+                                        in: &#34;Advances in Cryptology - EUROCRYPT 2019&#34;, volume 11476; issued by: Springer; Springer LNCS, 2019, ISBN: 978-3-030-17652-5, 277 - 291
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_287960.pdf">From Firewalls to Functions and Back</a>
+                            <span class="text-muted"> /
+                                        L. Ceragioli, L. Galletta, M. Tempesta /
+                                        in: &#34;Proceedings of the Third Italian Conference on Cyber Security&#34;, 2315; issued by: CEUR-WS.org; CEUR-Proceedings, Aachen, 2019, ISSN: 1613-0073, Paper ID 4, 13 pages
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_288061.pdf">Anonymous Multi-Hop Locks for Blockchain Scalability and Interoperability</a>
+                            <span class="text-muted"> /
+                                        G. Malavolta, P. Moreno-Sanchez, C. Schneidewind, A. Kate, M. Maffei /
+                                        Talk: ACM Advances in Financial Technologies AFT 2019, Zurich, Switzerland (invited); 2019-10-21 - 2019-10-23
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                    
+                    <ul>
+                        <h2> 2018 </h2>
+                        
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/publik_268469.pdf">Subset Predicate Encryption and its Applications</a>
+                            <span class="text-muted"> /
+                                        J. Katz, M. Maffei, G. Malavolta, D. Schröder /
+                                        in: &#34;Cryptology and Network Security&#34;, LNCS 11261; Springer International Publishing, Cham, Switzerland, 2018, ISBN: 978-3-030-02640-0, 115 - 134
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_279206.pdf">ClearChart: Ensuring integrity of consumer ratings in online marketplaces</a>
+                            <span class="text-muted"> /
+                                        P. Moreno-Sanchez, U. Mahmood, A. Kate /
+                                        Computers &amp; Security, Computers &amp; Security 78 (2018), Volume 78; 90 - 102
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_279128.pdf">Settling Payments Fast and Private: Efficient Decentralized Routing for Path-Based Transactions</a>
+                            <span class="text-muted"> /
+                                        S. Roos, P. Moreno-Sanchez, A. Kate, I. Goldberg /
+                                        Talk: Network and Distributed System Security Symposium (NDSS), San Diego; 2018-02-18 - 2018-02-21; in: &#34;25th Annual Network and Distributed System Security Symposium, NDSS 2018, San Diego, California, USA, February 18-21, 2018&#34;, Reston (2018), ISBN: 1-1891562-49-5; 1 - 15
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_279121.pdf">Language-Independent Synthesis of Firewall Policies</a>
+                            <span class="text-muted"> /
+                                        C. Bodei, P. Degano, L. Galletta, R. Focardi, M. Tempesta, L. Veronese /
+                                        in: &#34;2018 IEEE European Symposium on Security and Privacy (EuroS&amp;P 2018)&#34;, issued by: Institute of Electrical and Electronics Engineers ( IEEE ); IEEE, 2018, ISBN: 978-1-5386-4228-3, 92 - 106
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_270456.pdf">UniTraX: Protecting Data Privacy with Discoverable Biases</a>
+                            <span class="text-muted"> /
+                                        M. Maffei, R. Munz, F. Eigner, P. Francis, D. Garg /
+                                        in: &#34;Principles of Security and Trust&#34;, LNCS 10804; Springer, Lecture Notes in Computer Science, Schwitzerland, 2018, ISBN: 978-3-319-89721-9, 278 - 299
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_279119.pdf">Transcompiling Firewalls</a>
+                            <span class="text-muted"> /
+                                        C. Bodei, P. Degano, R. Focardi, L. Galletta, M. Tempesta /
+                                        in: &#34;Principles of Security and Trust: 7th International Conference, POST 2018 Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2018 Thessaloniki, Greece, April 14-20, 2018, Proceedings&#34;, LNCS 10804; issued by: ETAPS; Springer International Publishing AG, Cham, 2018, ISBN: 978-3-319-89721-9, 303 - 324
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_279118.pdf">Mind Your Keys? A Security Evaluation of Java Keystores</a>
+                            <span class="text-muted"> /
+                                        R. Focardi, M. Squarcina, G. Steel, M. Palmarini, M. Tempesta /
+                                        Talk: Network and Distributed System Security Symposium (NDSS), San Diego; 2018-02-18 - 2018-02-21; in: &#34;Proceedings of 2019 Network and Distributed System Security Symposium&#34;, (2018), ISBN: 1-891562-49-5; 1 - 15
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_270460.pdf">Functional Credentials</a>
+                            <span class="text-muted"> /
+                                        D. Deuber, M. Maffei, G. Malavolta, M. Rabkin, D. Schröder, M. Simkin /
+                                        in: &#34;Proceedings on Privacy Enhancing Technologies&#34;, Volume 2018: Issue 2; issued by: De Gruyter Open; Walter de Gruyter GmbH, Berlin, 2018, 64 - 84
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_273015.pdf">Simple Password Hardened Encryption Services</a>
+                            <span class="text-muted"> /
+                                        M. Maffei, M. Reinert, R. Lai, C. Egger, S. Chow, D. Schröder /
+                                        in: &#34;Proceedings of the 27th USENIX Security Symposium&#34;, 27th; issued by: USENIX Association Berkley, CA, USA; USENIX, 2018, ISBN: 978-1-931971-46-1, 1405 - 1421
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_279103.pdf">Firewall Management With FireWall Synthesizer</a>
+                            <span class="text-muted"> /
+                                        M. Tempesta, C. Bodei, P. Degano, R. Forcardi, L. Galletta, L. Veronese /
+                                        in: &#34;keiner&#34;, issued by: Italian Conference on CyberSecurity (ITASEC); ITASEC, 2018, 1 pages
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_279120.pdf">Surviving the Web: A Journey into Web Session Security (Extended Abstract)</a>
+                            <span class="text-muted"> /
+                                        S. Calzavara, M. Squarcina, R. Focardi, M. Tempesta /
+                                        in: &#34;Proceedings of the 2018 World Wide Web Conference&#34;, issued by: International World Wide Web Conferences Steering Committee Republic and Canton of Geneva, Switzerland ©2018; ACM, Schwitzerland, 2018, ISBN: 978-1-4503-5640-4, 451 - 455
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Theoretical and Practical Smart Contracts Realization of an Investment Fund</a>
+                            <span class="text-muted"> /
+                                        J. Schneider /
+                                        Supervisor: M. Maffei, C. Schneidewind, I. Grishchenko; Institut of Logic and Computation, Security and Privacy, 2018; final examination: 2018-08-31
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_273016.pdf">WPSE: Fortifying Web Protocols via Browser-Side Security Monitoring</a>
+                            <span class="text-muted"> /
+                                        S. Calzavara, M. Maffei, C. Schneidewind, M. Tempesta, M. Squarcina /
+                                        in: &#34;Proceedings of the 27th USENIX Security Symposium&#34;, 27th; issued by: USENIX Association Berkley, CA, USA; USENIX, 2018, ISBN: 978-1-931971-46-1, 1493 - 1510
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_273019.pdf">Foundations and Tools for the Static Analysis of Ethereum Smart Contracts</a>
+                            <span class="text-muted"> /
+                                        I. Gishchenko, M. Maffei, C. Schneidewind /
+                                        in: &#34;Proceedings of the 30th International Conference on Computer-Aided Verification&#34;, LNCS 10981; G. Weissenbacher, H. Chockler (ed.); issued by: Springer, Cham; Springer Open, 2018, ISBN: 978-3-319-96145-3, 51 - 78
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Information Flow Tracking for Side-Effectful Libraries</a>
+                            <span class="text-muted"> /
+                                        A. Sjösten, D. Hedin, A. Sabelfeld /
+                                        in: &#34;International Conference on Formal Techniques for Distributed Objects, Components, and Systems&#34;, Springer, 2018, ISBN: 978-3-319-92611-7, 141 - 160
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_278930.pdf">Bug Fixes, Improvements, ... and Privacy Leaks - A Longitudinal Study of PII Leaks Across Android App Versions</a>
+                            <span class="text-muted"> /
+                                        J. Ren, M. Lindorfer, D. Dubois, A. Rao, D. Choffnes, N. Vallina-Rodriguez /
+                                        in: &#34;Network and Distributed System Security Symposium (NDSS)&#34;, Internet Society, 2018
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_278929.pdf">GuardION: Practical Mitigation of DMA-based Rowhammer Attacks on ARM</a>
+                            <span class="text-muted"> /
+                                        V. van der Veen, M. Lindorfer, Y. Fratantonio, H. Padmanabha Pillai, G. Vigna, C. Krügel, H. Bos, K. Razavi /
+                                        in: &#34;Conference on Detection of Intrusions and Malware &amp; Vulnerability Assessment (DIMVA)&#34;, Springer, 2018, ISBN: 978-3-319-93410-5, 92 - 113
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_278928.pdf">Panoptispy: Characterizing Audio and Video Exfiltration from Android Applications</a>
+                            <span class="text-muted"> /
+                                        E. Pan, J. Ren, M. Lindorfer, C. Wilson, D. Choffnes /
+                                        in: &#34;Privacy Enhancing Technologies Symposium (PETS)&#34;, DeGruyter, 4, 2018, 33 - 50
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_279210.pdf">Mind Your Credit: Assessing the Health of the Ripple Credit Network</a>
+                            <span class="text-muted"> /
+                                        P. Moreno-Sanchez, N. Modi, R. Songhela, A. Kate, S. Fahmy /
+                                        in: &#34;Proceedings of the 2018 World Wide Web Conference&#34;, Volume 2018; issued by: International World Wide Web Conferences Steering Committee Republic and Canton of Geneva, Switzerland ©2018; ACM Digital Library, Schwitzerland, 2018, ISBN: 978-1-4503-5639-8, 329 - 338
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_273604.pdf">MineSweeper: An In-depth Look into Drive-by Cryptocurrency Mining and Its Defense</a>
+                            <span class="text-muted"> /
+                                        R. Konoth, E. Vineti, V. Moonsamy, M. Lindorfer, C. Krügel, H. Bos, G. Vigna /
+                                        in: &#34;Proceedings of the 2018 ACM Conference on Computer and Communications Security (CCS)&#34;, ACM (ed.); ACM, 2018, ISBN: 978-1-4503-5693-0, 1714 - 1730
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_270459.pdf">A Monadic Framework for Relational Verification: Applied to Information Security, Program Equivalence, and Optimization.</a>
+                            <span class="text-muted"> /
+                                        N. Grimm, K. Maillard, C. Fournet, C. Hritcu, M. Maffei, J. Protzenko, T. Ramananandro, N. Swamy, S. Zanella-Béguelin /
+                                        in: &#34;Proceedings of the 7th ACM SIGPLAN International Conference on Certified Programs and Proofs&#34;, ACM Digital Library, New York, 2018, ISBN: 978-1-4503-5586-5, 130 - 145
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_270457.pdf">Equivalence Properties by Typing in Cryptographic Branching Protocols</a>
+                            <span class="text-muted"> /
+                                        V. Cortier, N. Grimm, J. Lallemand, M. Maffei /
+                                        in: &#34;Principles of Security and Trust&#34;, LNCS 10804; issued by: Springer, Cham; Springer LNCS, Schwitzerland, 2018, ISBN: 978-3-319-89721-9, 160 - 187
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_270458.pdf">A Semantic Framework for the Security Analysis of Ethereum smart contracts.</a>
+                            <span class="text-muted"> /
+                                        I. Grishchenko, C. Schneidewind, M. Maffei /
+                                        in: &#34;Principles of Security and Trust&#34;, LNCS 10804; issued by: Springer Link; Springer Open, Schwitzerland, 2018, ISBN: 978-3-319-89721-9, 243 - 269
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                    
+                    <ul>
+                        <h2> 2017 </h2>
+                        
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/publik_268468.pdf">On the Security of Frequency-Hiding Order-Preserving Encryption</a>
+                            <span class="text-muted"> /
+                                        M. Reinert, D. Schröder, M. Maffei /
+                                        in: &#34;Cryptology and Network Security&#34;, Lecture Notes in Computer Science, vol 11261; Springer International Publishing, Cham, Switzerland, 2017, ISBN: 978-3-030-02640-0, 51 - 70
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/publik_268464.pdf">A Type System for Privacy Properties</a>
+                            <span class="text-muted"> /
+                                        M. Maffei, J. Lallemand, V. Cortier, N. Grimm /
+                                        Talk: ACM CCS 2017 Conference on Computer and Communications Security, Dallas, USA; 2017-10-30 - 2017-11-03; in: &#34;CCS &#39;17 Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security&#34;, ACM Digital Library, New York (2017), ISBN: 978-1-4503-4946-8; 409 - 423
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/publik_268463.pdf">Concurrency and Privacy with Payment-Channel Networks</a>
+                            <span class="text-muted"> /
+                                        M. Maffei, A. Kate, G. Malavolta, P. Moreno-Sanchez, S. Ravi /
+                                        in: &#34;CCS &#39;17 Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security&#34;, ACM Digital Library, New York, 2017, ISBN: 978-1-4503-4946-8, 455 - 471
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_296695.pdf">A Principled Approach to Tracking Information Flow in the Presence of Libraries</a>
+                            <span class="text-muted"> /
+                                        D. Hedin, A. Sjösten, F. Piessens, A. Sabelfeld /
+                                        in: &#34;6th International Conference on Principles of Security and Trust&#34;, Springer, 2017, ISBN: 978-3-662-54454-9, 49 - 70
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/publik_268451.pdf">Maliciously Secure Multi-Client ORAM</a>
+                            <span class="text-muted"> /
+                                        G. Malavolta, M. Reinert, D. Schröder, M. Maffei /
+                                        in: &#34;Applied Cryptography and Network Security&#34;, LNCS 10355; D. Gollmann, A. Miyaji, H. Kikuchi (ed.); © Springer International Publishing AG 2017, Cham, 2017, ISBN: 978-3-319-61203-4, 645 - 664
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/publik_268450.pdf">SilentWhispers: Enforcing Security and Privacy in Decentralized Credit Networks</a>
+                            <span class="text-muted"> /
+                                        M. Maffei, P. Moreno-Sanchez, A. Kate, G. Malavolta /
+                                        in: &#34;2017 Network and Distributed System Security Symposium&#34;, Internet Society, Reston, Virginia, USA, 2017, ISBN: 1-891562-46-0, 1 - 15
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/publik_268432.pdf">Principles of Security and Trust</a>
+                            <span class="text-muted"> /
+                                        M. Maffei, M. Ryan, P. Ah-Fat, M. Alabbad, M. Alvim, Z. Aslanyan, N. Atzei, K. Babel, M. Bartoletti, L. Bauer, A. Blot, S. Bursuc, P. Cañones, G. Casini, V. Cheval, T. Cimoli, M. Cramer, J. Dreier, C. Duménil, D. Hedin, M. Hicks, M. Huth, L. Jia, C. Johansen, O. Jones, R. Khedri, B. Köpf, S. Kremer, P. Laud, P. Mardziel, F. Nielson, M. Pettai, F. Piessens, W. Rafnsson, J. Reineke, A. Sabelfeld, R. Sasse, T. Terauchi, S. Xu, M. Yamamoto, A. Sjösten /
+                                        Springer-Verlag, Berlin, Heidelberg, 2017, ISBN: 978-3-662-54454-9; 321 pages
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_279110.pdf">Surviving the Web: A Journey into Web Session Security</a>
+                            <span class="text-muted"> /
+                                        S. Calzavara, M. Squarcina, M. Tempesta, R. Focardi /
+                                        Acm Computing Surveys, Volume 50 Issue 1 (2017), 13; 1 - 34
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/publik_268462.pdf">A Sound Flow-Sensitive Heap Abstraction for the Static Analysis of Android Applications</a>
+                            <span class="text-muted"> /
+                                        M. Maffei, S. Calzavara, I. Grishchenko, A. Koutsos /
+                                        Talk: IEEE Computer Security Foundations Symposium, Santa Barbara, USA; 2017-08-21 - 2017-08-25; in: &#34;IEEE 30th Computer Security Foundations Symposium CSF 2017&#34;, IEEE Xplore Digital Library, (2017), ISBN: 978-1-5386-3217-8; Paper ID 3, 15 pages
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_292117.pdf">Run-Time Attack Detection in Cryptographic APIs</a>
+                            <span class="text-muted"> /
+                                        M. Squarcina, R. Focardi /
+                                        Talk: IEEE Computer Security Foundations Symposium, Santa Barbara, USA; 2017-08-21 - 2017-08-25; in: &#34;Run-Time Attack Detection in Cryptographic APIs&#34;, IEEE Xplore Digital Library, (2017), ISBN: 978-1-5386-3217-8; 176 - 188
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_278933.pdf">Obfuscation-Resilient Privacy Leak Detection for Mobile Apps Through Differential Analysis</a>
+                            <span class="text-muted"> /
+                                        A. Continella, Y. Fratantonio, M. Lindorfer, A. Puccetti, A. Zand, C. Krügel, G. Vigna /
+                                        in: &#34;Network and Distributed System Security Symposium (NDSS)&#34;, Internet Society, 2017
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_296696.pdf">Discovering Browser Extensions via Web Accessible Resources</a>
+                            <span class="text-muted"> /
+                                        A. Sjösten, S. Van Acker, A. Sabelfeld /
+                                        in: &#34;7th ACM Conference on Data and Application Security and Privacy&#34;, ACM, 2017, ISBN: 978-1-4503-4523-1, 329 - 336
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                    
+                    <ul>
+                        <h2> 2016 </h2>
+                        
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_278934.pdf">Drammer: Deterministic Rowhammer Attacks on Mobile Platforms</a>
+                            <span class="text-muted"> /
+                                        V. van der Veen, Y. Fratantonio, M. Lindorfer, D. Gruss, C. Maurice, G. Vigna, H. Bos, K. Razavi, C. Giuffrida /
+                                        in: &#34;ACM Conference on Computer and Communications Security (CCS)&#34;, ACM, 2016, ISBN: 978-1-4503-4139-4, 1675 - 1689
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_278936.pdf">ReCon: Revealing and Controlling PII Leaks in Mobile Network Traffic</a>
+                            <span class="text-muted"> /
+                                        J. Ren, A. Rao, M. Lindorfer, A. Legout, D. Choffnes /
+                                        in: &#34;International Conference on Mobile Systems, Applications and Services (MobiSys)&#34;, ACM, 2016, 361 - 374
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_278935.pdf">CuriousDroid: Automated User Interface Interaction for Android Application Analysis Sandboxes</a>
+                            <span class="text-muted"> /
+                                        P. Carter, C. Mulliner, M. Lindorfer, W. Robertson, E. Kirda /
+                                        in: &#34;International Conference on Financial Cryptography and Data Security (FC)&#34;, Springer, 2016, ISBN: 978-3-662-54969-8, 231 - 249
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_273622.pdf">Malware Through the Looking Glass: Malware Analysis in an Evolving Threat Landscape</a>
+                            <span class="text-muted"> /
+                                        M. Lindorfer /
+                                        Supervisor, Reviewer: E. Weippl, T. Holz, E. Kirda; Institut für Rechnergestützte Automation, 2016; oral examination: 2016-02-02
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                    
+                    <ul>
+                        <h2> 2015 </h2>
+                        
+                        <li>
+                            <a href="#">Current State of Browser Extension Security and Extension-based Malware</a>
+                            <span class="text-muted"> /
+                                        M. Neumayr /
+                                        Supervisor: W. Kastner, M. Lindorfer; Rechnergestützte Automation, 2015; final examination: 2015-04-14
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_273624.pdf">Marvin: Efficient and Comprehensive Mobile App Classification Through Static and Dynamic Analysis</a>
+                            <span class="text-muted"> /
+                                        M. Lindorfer, M. Neugschwandtner, Ch. Platzer /
+                                        in: &#34;Proceedings of the IEEE 39th Annual Computer Software and Applications Conference (COMPSAC)&#34;, IEEE, 2015, ISBN: 978-1-4673-6564-2, 422 - 433
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_302158.pdf">Open problems in hash function security</a>
+                            <span class="text-muted"> /
+                                        E. Andreeva, B. Mennink, B. Preneel /
+                                        Designs Codes and Cryptography, 77 (2015), 611 - 631
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                    
+                    <ul>
+                        <h2> 2014 </h2>
+                        
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_273623.pdf">Andrubis - 1,000,000 Apps Later: A View on Current Android Malware Behaviors</a>
+                            <span class="text-muted"> /
+                                        M. Lindorfer, M. Neugschwandtner, L. Weichselbaum, Y. Fratantonio, V. van der Veen, Ch. Platzer /
+                                        in: &#34;Proceedings of the 3rd International Workshop on Building Analysis Datasets and Gathering Experience Returns for Security (BADGERS)&#34;, IEEE, 2014, ISBN: 978-1-4799-8308-7, 3 - 17
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_273620.pdf">AndRadar: Fast Discovery of Android Applications in Alternative Markets</a>
+                            <span class="text-muted"> /
+                                        M. Lindorfer, V. Volanis, A. Sisto, M. Neugschwandtner, E. Athanasopoulos, F. Maggi, Ch. Platzer, S. Zanero, S. Ioannidis /
+                                        in: &#34;Proceedings of the 11th Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA)&#34;, Springer, LNCS 8550, 2014, ISBN: 978-3-319-08508-1, 51 - 71
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_273619.pdf">Skin Sheriff: A Machine Learning Solution for Detecting Explicit Images</a>
+                            <span class="text-muted"> /
+                                        Ch. Platzer, M. Stütz, M. Lindorfer /
+                                        in: &#34;Proceedings of the 2nd International Workshop on Security and Forensics in Communication Systems (ASIACCS-SFCS)&#34;, IEEE, 2014, ISBN: 978-1-4503-2802-9, 45 - 56
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_279114.pdf">Provably Sound Browser-Based Enforcement of Web Session Integrity</a>
+                            <span class="text-muted"> /
+                                        S. Calzavara, R. Focardi, W. Khan, M. Tempesta /
+                                        in: &#34;2014 IEEE 27th Computer Security Foundations Symposium&#34;, IEEE Computer Society, 2014, ISBN: 978-1-4799-4290-9, 366 - 380
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="#">Enter Sandbox: Android Sandbox Comparison</a>
+                            <span class="text-muted"> /
+                                        S. Neuner, v. Victor, M. Lindorfer, M. Huber, M. Georg, M. Mulazzani, E. Weippl /
+                                        in: &#34;Proceedings of the IEEE Mobile Security Technologies Workshop (MoST)&#34;, IEEE, 2014
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                    
+                    <ul>
+                        <h2> 2013 </h2>
+                        
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/PubDat_223423.pdf">Take a Bite - Finding the Worm in the Apple</a>
+                            <span class="text-muted"> /
+                                        M. Lindorfer, B. Miller, M. Neugschwandtner, Ch. Platzer /
+                                        in: &#34;International Conference on Information, Communications and Signal Processing (ICICS)&#34;, IEEE, 2013
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/PubDat_223420.pdf">POSTER: Cross-Platform Malware: Write Once, Infect Everywhere</a>
+                            <span class="text-muted"> /
+                                        M. Lindorfer, M. Neumayr, J. Caballero, Ch. Platzer /
+                                        Poster: ACM Conference on Computer and Communications Security (CCS), Berlin; 2013-11-04 - 2013-11-08; in: &#34;ACM Conference on Computer and Communications Security (CCS)&#34;, (2013)
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/PubDat_223415.pdf">A View to a Kill: WebView Exploitation</a>
+                            <span class="text-muted"> /
+                                        M. Neugschwandtner, M. Lindorfer, Ch. Platzer /
+                                        in: &#34;USENIX Workshop on Large-Scale Exploits and Emergent Threats (LEET)&#34;, USENIX, 2013
+                                    </span>
+                        </li>
+                        
+                        
+                    
+                    
+                    <ul>
+                        <h2> 2012 </h2>
+                        
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/PubDat_212802.pdf">Lines of Malicious Code: Insights Into the Malicious Software Industry</a>
+                            <span class="text-muted"> /
+                                        M. Lindorfer, A. Di Federico, F. Maggi, P. Milani Comparetti, S. Zanero /
+                                        in: &#34;Proceedings of the 28th Annual Computer Security Applications Conference&#34;, ACM, New York, 2012, ISBN: 978-1-4503-1312-4, 349 - 358
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                    
+                    <ul>
+                        <h2> 2011 </h2>
+                        
+                        <li>
+                            <a href="https://publik.tuwien.ac.at/files/publik_273621.pdf">Detecting Environment-Sensitive Malware</a>
+                            <span class="text-muted"> /
+                                        M. Lindorfer /
+                                        Supervisor: E. Kirda, P. Milani Comparetti, C. Kolbitsch; Institut für Rechnergestützte Automation, 2011
+                                    </span>
+                        </li>
+                        
+                            
+                        
+                        
+                    
+                        <li>
+                            <a href="http://publik.tuwien.ac.at/files/PubDat_204766.pdf">Detecting Environment-Sensitive Malware</a>
+                            <span class="text-muted"> /
+                                        M. Lindorfer, C. Kolbitsch, P. Milani Comparetti /
+                                        in: &#34;Proceedings of the 14th International Symposium on Recent Advances in Intrusion Detection (2011)&#34;, Springer, 2011, ISBN: 978-3-642-23643-3
+                                    </span>
+                        </li>
+                        
+                        
+                    </ul>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        </div>
+
+            
+
+    
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = false;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"","placeholder":"","results":""};
+      const content_type = {
+        'post': "",
+        'project': "",
+        'publication' : "",
+        'talk' : ""
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+
+    
+
+
+
+
+<footer class="w18-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-xl-4">
+                <h2 class="w18-footer-title">TU Wien Informatics</h2>
+                <address class="w18-footer-address">
+                    Favoritenstraße 9-11<br/>
+                    1040 Vienna, Austria
+                </address>
+                <ul class="nav w18-footer-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../assets/w18/1.7.3/js/jquery.js"></script>
+<script src="../assets/w18/1.7.3/js/app.js"></script>
+
+<script src="../js/academic.js"></script></body>
+
+    <style>
+        #myBtn {
+            display: none;  
+            position: fixed;  
+            bottom: 20px;  
+            right: 30px;  
+            z-index: 99;  
+            border: none;  
+            outline: none;  
+            color: white;  
+            cursor: pointer;  
+            border-radius: 80px;  
+            font-size: 18px;  
+            background-color: transparent;
+        }
+
+        #myBtn:hover {
+            filter: brightness(50%);
+        }
+    </style>
+
+<script>
+    
+    mybutton = document.getElementById("myBtn");
+
+    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+
+<!-- Mirrored from secpriv.wien/publications/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 15:39:53 GMT -->
+</html>

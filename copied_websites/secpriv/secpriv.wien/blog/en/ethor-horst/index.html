@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<!-- Mirrored from secpriv.wien/blog/en/ethor-horst/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 15:40:04 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Security & Privacy TU Wien</title>
+    <link rel="stylesheet" media="all" href="../../../css/app.css" />
+</head><body><style>
+    .w18-bar {
+        background-color: #192121;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .w18-bar img {
+        height: 25px;
+        padding-left: 15px;
+    }
+
+    .w18-logo img {
+        height: 45px;
+    }
+
+    .w18-nav-tabs {
+        top: 100px;
+    }
+</style>
+
+
+<header class="w18-header">
+    <div class="container">
+        <div class="w18-header-wrap">
+            <h1 class="w18-logo">
+                <a href="../../../index.html"><img src="../../../home/Logo2.png" alt="Research Unit"/></a>
+            </h1>
+        </div>
+    </div>
+
+
+    <nav class="w18-nav">
+        <div class="w18-nav-wrap">
+            <ul class="nav w18-nav-tabs" role="tablist">
+                <li class="nav-item"><a class="nav-link" id="menu-tab" href="#menu" role="tab" aria-controls="menu" aria-selected="false">Menu</a></li>
+            </ul>
+            <button class="close close-white" type="button" aria-label="Close" aria-hidden="true"></button>
+
+            <div class="w18-nav-tab-content">
+                <div class="w18-nav-tab-pane" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+                    <ul class="row">
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Activities</h2>
+                            <ul class="nav flex-column">
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../../../research/index.html">Research</a>
+                                    </li>
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../../../publications/index.html">Publications</a>
+                                    </li>
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../../../projects/index.html">Projects</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Teaching</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../teaching/index.html">Courses</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Team</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../team/index.html">People</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../alumni/index.html">Alumni</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../reach/index.html">How to reach us</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../contact/index.html">Contact</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Work with us</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../work/index.html">Theses &amp; Job Opportunities</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../internship/index.html">Internship Program</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../double/index.html">Double Degree TUW-TUD IT on Security</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">News</h2>
+                            <ul class="nav flex-column">
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../index.html#twitter">Our tweets</a>
+                                </li>
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    Blog
+                                    <ul>
+                                        <li><a class="nav-link indent" href="../index.html">English</a></li>
+                                        <li><a class="nav-link indent" href="../../de/index.html">German</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img style="width: 60px" src="../../../images/totop.png"></button>
+        <div id="content">
+            
+
+
+    
+
+
+
+<section class="w18-header-intro w18-page-intro">
+    <div class="container">
+        <div class="row justify-content-center w18-header-intro-top">
+            <div class="col col-lg-10 col-xl-8">
+                    <button id="people-dropdown" class="btn dropdown-toggle btn-sm btn-info" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="people-dropdown">
+                        <a href="../index.html" class="dropdown-item active">
+                            Blog
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <h2 class="display-1">Sound Static Analysis of Smart Contracts</h2>
+                <p class="lead">
+                    Bugs in smart contracts can cause huge financial losses. We developed an analysis that can guarantee the absence of a dangerous class of such bugs.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<section class="w18-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <p class="mb-4">
+                    <ul class="w18-tags">
+                        <li class="w18-tags-item">
+                            2021-01-29
+                        </li>
+                        <li class="w18-tags-item">
+                            by Markus Scherer
+                        </li>
+                    </ul>
+                    <p>In 2020 our team published two papers on the static analysis of Ethereum smart
+contracts: <a href="https://arxiv.org/abs/2005.06227">one</a>, presented at <a href="https://www.sigsac.org/ccs/CCS2020/">ACM CCS
+2020</a>, introduced <a href="../../../ethor/index.html">eThor</a>, our sound static analysis tool for Ethereum smart contracts; <a href="https://arxiv.org/abs/2101.05735">the second</a>, presented in the Reliable Smart Contracts Track of <a href="http://isola-conference.org/">ISoLA 2020</a>, summarized our experiences developing eThor and laid out our recommendations for future developers of sound static analyses.</p>
+<p>Smart contracts are a novel technology that allows mutually distrusting parties
+to reach a consensus on the result of a computation, with the most prominent
+use case being modelling transactions of financial assets. The entirety of the
+behaviours of such a smart contract is given as program code, which is then
+executed in a distributed fashion with no single authority being able to
+intervene on behalf of any of the contracting parties. These properties make
+bugs in smart contracts potentially devastating and practically impossible to
+patch after being deployed.</p>
+<p>Static analysis allows to analyse the behaviour of smart contracts before
+deploying them. While existing static analysis tools were able to find certain cases
+of problematic behaviour, they were not able to <em>guarantee</em> the absence of
+problematic behaviours.  eThor is the first static analysis tool for Ethereum
+smart contracts that comes with a mathematical proof of soundness, meaning that
+it can give such a guarantee.</p>
+<p>A summary of the contributions of eThor is given in our CCS 2020 talk:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/NjbnTqp0O-w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p>Our ISoLA 2020 talk describes in detail what difficulties we encountered while
+designing a sound static analysis and where previous tools failed:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/GpRpbI7aJ2k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p>For a humorous summary of the project&rsquo;s history, check out our CCS 2020 Teaser!
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/4LaOdGMeyE4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </div>
+
+            
+
+    
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = false;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"","placeholder":"","results":""};
+      const content_type = {
+        'post': "",
+        'project': "",
+        'publication' : "",
+        'talk' : ""
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+
+    
+
+
+
+
+<footer class="w18-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-xl-4">
+                <h2 class="w18-footer-title">TU Wien Informatics</h2>
+                <address class="w18-footer-address">
+                    Favoritenstraße 9-11<br/>
+                    1040 Vienna, Austria
+                </address>
+                <ul class="nav w18-footer-nav">
+                    <li class="nav-item"><a class="nav-link" href="../../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../../../assets/w18/1.7.3/js/jquery.js"></script>
+<script src="../../../assets/w18/1.7.3/js/app.js"></script>
+
+<script src="../../../js/academic.js"></script></body>
+
+    <style>
+        #myBtn {
+            display: none;  
+            position: fixed;  
+            bottom: 20px;  
+            right: 30px;  
+            z-index: 99;  
+            border: none;  
+            outline: none;  
+            color: white;  
+            cursor: pointer;  
+            border-radius: 80px;  
+            font-size: 18px;  
+            background-color: transparent;
+        }
+
+        #myBtn:hover {
+            filter: brightness(50%);
+        }
+    </style>
+
+<script>
+    
+    mybutton = document.getElementById("myBtn");
+
+    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+
+<!-- Mirrored from secpriv.wien/blog/en/ethor-horst/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 15:40:04 GMT -->
+</html>

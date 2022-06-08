@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<!-- Mirrored from secpriv.wien/blog/en/lb-sess-int/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 15:40:04 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Security & Privacy TU Wien</title>
+    <link rel="stylesheet" media="all" href="../../../css/app.css" />
+</head><body><style>
+    .w18-bar {
+        background-color: #192121;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .w18-bar img {
+        height: 25px;
+        padding-left: 15px;
+    }
+
+    .w18-logo img {
+        height: 45px;
+    }
+
+    .w18-nav-tabs {
+        top: 100px;
+    }
+</style>
+
+
+<header class="w18-header">
+    <div class="container">
+        <div class="w18-header-wrap">
+            <h1 class="w18-logo">
+                <a href="../../../index.html"><img src="../../../home/Logo2.png" alt="Research Unit"/></a>
+            </h1>
+        </div>
+    </div>
+
+
+    <nav class="w18-nav">
+        <div class="w18-nav-wrap">
+            <ul class="nav w18-nav-tabs" role="tablist">
+                <li class="nav-item"><a class="nav-link" id="menu-tab" href="#menu" role="tab" aria-controls="menu" aria-selected="false">Menu</a></li>
+            </ul>
+            <button class="close close-white" type="button" aria-label="Close" aria-hidden="true"></button>
+
+            <div class="w18-nav-tab-content">
+                <div class="w18-nav-tab-pane" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+                    <ul class="row">
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Activities</h2>
+                            <ul class="nav flex-column">
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../../../research/index.html">Research</a>
+                                    </li>
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../../../publications/index.html">Publications</a>
+                                    </li>
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../../../projects/index.html">Projects</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Teaching</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../teaching/index.html">Courses</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Team</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../team/index.html">People</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../alumni/index.html">Alumni</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../reach/index.html">How to reach us</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../contact/index.html">Contact</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Work with us</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../work/index.html">Theses &amp; Job Opportunities</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../internship/index.html">Internship Program</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../double/index.html">Double Degree TUW-TUD IT on Security</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">News</h2>
+                            <ul class="nav flex-column">
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../index.html#twitter">Our tweets</a>
+                                </li>
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    Blog
+                                    <ul>
+                                        <li><a class="nav-link indent" href="../index.html">English</a></li>
+                                        <li><a class="nav-link indent" href="../../de/index.html">German</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img style="width: 60px" src="../../../images/totop.png"></button>
+        <div id="content">
+            
+
+
+    
+
+
+
+<section class="w18-header-intro w18-page-intro">
+    <div class="container">
+        <div class="row justify-content-center w18-header-intro-top">
+            <div class="col col-lg-10 col-xl-8">
+                    <button id="people-dropdown" class="btn dropdown-toggle btn-sm btn-info" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="people-dropdown">
+                        <a href="../index.html" class="dropdown-item active">
+                            Blog
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <h2 class="display-1">Language-Based Web Session Integrity</h2>
+                <p class="lead">
+                    We propose a static analysis technique to enforce session integrity on web applications.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<section class="w18-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <p class="mb-4">
+                    <ul class="w18-tags">
+                        <li class="w18-tags-item">
+                            2020-07-31
+                        </li>
+                        <li class="w18-tags-item">
+                            by Niklas Grimm
+                        </li>
+                    </ul>
+                    <p>We recently presented our latest work on web session security <a href="https://arxiv.org/abs/2001.10405">(PDF)</a>
+at the <a href="https://www.ieee-security.org/TC/CSF2020/">IEEE Computer Security Foundations Symposium</a>
+which, due to the ongoing Covid-19 pandemic, this year took place exclusively online.</p>
+<p>Web session management is a fundamental component of any modern web application.
+A web session is established upon login, when a user provides her credentials
+(username/password) to prove her identity. After this authentication step, the
+web application sets into the user&rsquo;s browser a cookie, which identifies the user,
+that is automatically attached to all the subsequent requests towards the website.
+In this way, a user can perform multiple operations on a website without providing
+her credentials at every step.</p>
+<p>Since the Web infrastructure does not provide built-in support for session
+management, web applications have to implement their own management logic which,
+in the past, often proved to be vulnerable to a variety of attacks.</p>
+<p>In the most severe cases, the attacker manages to obtain full control over a
+web session, e.g., if she manages to steal either the login credentials or the
+cookie that identifies the session.
+Another well-known attack is known as <em>cross-site request forgery</em> (CSRF), where the
+attacker can force the browser of a victim to produce requests (indistinguishable
+from legitimate ones) triggering dangerous side-effects to websites where the victim
+has an active session &ndash; for instance, the attacker may produce an online bank
+transfer without that the victim even notices it.
+Another class of attacks consists in logging a victim into an account that belongs
+to an attacker in order to steal some sensitive information that the user could
+provide while interacting with the website &ndash; for example, the search history
+in a search engine, or a newly registered credit card in an online shop.</p>
+<p>To prevent these different attacks against web sessions, we propose a novel
+framework for the analysis of web applications. Our approach is built upon a
+type system for a formal encoding of web application code, which at its core
+makes use of techniques from the area of information flow control.
+The main theoretical result of our paper says that an application that satisfies
+the typing rules is not affected by session integrity vulnerabilities.</p>
+<p>Through our research, we uncovered novel vulnerabilities in real world
+applications, including the conference management system HotCRP which, ironically,
+is the system used to submit this work to the conference!
+These vulnerabilities could be exploited to take full control over the account
+of a victim. We then proposed a fixed version of the application, and proved
+&ndash; using our framework &ndash; that the fixed version is no more vulnerable to
+the identified threats.</p>
+<p>Do you want to know more? Have a look at the <a href="https://arxiv.org/abs/2001.10405">paper</a>
+or at the conference presentation, available below:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/R2kGV7sS9L8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </div>
+
+            
+
+    
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = false;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"","placeholder":"","results":""};
+      const content_type = {
+        'post': "",
+        'project': "",
+        'publication' : "",
+        'talk' : ""
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+
+    
+
+
+
+
+<footer class="w18-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-xl-4">
+                <h2 class="w18-footer-title">TU Wien Informatics</h2>
+                <address class="w18-footer-address">
+                    Favoritenstraße 9-11<br/>
+                    1040 Vienna, Austria
+                </address>
+                <ul class="nav w18-footer-nav">
+                    <li class="nav-item"><a class="nav-link" href="../../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../../../assets/w18/1.7.3/js/jquery.js"></script>
+<script src="../../../assets/w18/1.7.3/js/app.js"></script>
+
+<script src="../../../js/academic.js"></script></body>
+
+    <style>
+        #myBtn {
+            display: none;  
+            position: fixed;  
+            bottom: 20px;  
+            right: 30px;  
+            z-index: 99;  
+            border: none;  
+            outline: none;  
+            color: white;  
+            cursor: pointer;  
+            border-radius: 80px;  
+            font-size: 18px;  
+            background-color: transparent;
+        }
+
+        #myBtn:hover {
+            filter: brightness(50%);
+        }
+    </style>
+
+<script>
+    
+    mybutton = document.getElementById("myBtn");
+
+    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+
+<!-- Mirrored from secpriv.wien/blog/en/lb-sess-int/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 15:40:04 GMT -->
+</html>
