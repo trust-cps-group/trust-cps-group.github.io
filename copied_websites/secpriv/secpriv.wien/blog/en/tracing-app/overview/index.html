@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<!-- Mirrored from secpriv.wien/blog/en/tracing-app/overview/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 15:40:05 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Security & Privacy TU Wien</title>
+    <link rel="stylesheet" media="all" href="../../../../css/app.css" />
+</head><body><style>
+    .w18-bar {
+        background-color: #192121;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .w18-bar img {
+        height: 25px;
+        padding-left: 15px;
+    }
+
+    .w18-logo img {
+        height: 45px;
+    }
+
+    .w18-nav-tabs {
+        top: 100px;
+    }
+</style>
+
+
+<header class="w18-header">
+    <div class="container">
+        <div class="w18-header-wrap">
+            <h1 class="w18-logo">
+                <a href="../../../../index.html"><img src="../../../../home/Logo2.png" alt="Research Unit"/></a>
+            </h1>
+        </div>
+    </div>
+
+
+    <nav class="w18-nav">
+        <div class="w18-nav-wrap">
+            <ul class="nav w18-nav-tabs" role="tablist">
+                <li class="nav-item"><a class="nav-link" id="menu-tab" href="#menu" role="tab" aria-controls="menu" aria-selected="false">Menu</a></li>
+            </ul>
+            <button class="close close-white" type="button" aria-label="Close" aria-hidden="true"></button>
+
+            <div class="w18-nav-tab-content">
+                <div class="w18-nav-tab-pane" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+                    <ul class="row">
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Activities</h2>
+                            <ul class="nav flex-column">
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../../../../research/index.html">Research</a>
+                                    </li>
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../../../../publications/index.html">Publications</a>
+                                    </li>
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../../../../projects/index.html">Projects</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Teaching</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../../teaching/index.html">Courses</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Team</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../../team/index.html">People</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../../alumni/index.html">Alumni</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../../reach/index.html">How to reach us</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../../contact/index.html">Contact</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Work with us</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../../work/index.html">Theses &amp; Job Opportunities</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../../internship/index.html">Internship Program</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../../double/index.html">Double Degree TUW-TUD IT on Security</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">News</h2>
+                            <ul class="nav flex-column">
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../../../../index.html#twitter">Our tweets</a>
+                                </li>
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    Blog
+                                    <ul>
+                                        <li><a class="nav-link indent" href="../../index.html">English</a></li>
+                                        <li><a class="nav-link indent" href="../../../de/index.html">German</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img style="width: 60px" src="../../../../images/totop.png"></button>
+        <div id="content">
+            
+
+
+    
+
+
+
+<section class="w18-header-intro w18-page-intro">
+    <div class="container">
+        <div class="row justify-content-center w18-header-intro-top">
+            <div class="col col-lg-10 col-xl-8">
+                    <button id="people-dropdown" class="btn dropdown-toggle btn-sm btn-info" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="people-dropdown">
+                        <a href="../../index.html" class="dropdown-item active">
+                            Blog
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <h2 class="display-1">Contact Tracing - How does it limit privacy?</h2>
+                <p class="lead">
+                    The use of so-called Contact Tracing Apps for slowing the spread of Covid-19 is intensely discussed at the moment. We shed light on the workings of these Apps.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<section class="w18-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <p class="mb-4">
+                    <ul class="w18-tags">
+                        <li class="w18-tags-item">
+                            2020-04-30
+                        </li>
+                        <li class="w18-tags-item">
+                            by Clara Schneidewind
+                        </li>
+                    </ul>
+                    <h2 id="pepp-pt-dp-3t-what-does-this-all-mean">PEPP-PT, DP-3T? What does this all mean?</h2>
+<p>Recently there has been an intense public debate on so called contact tracing Apps in order to mitigate the spread of Covid-19. A contact tracing App allows a person diagnosed with Covid-19 to warn all people who have been in close proximity to the infected person within a recent time window during which infection was possible/likely. There are different ways of achieving such a functionality, and most recently there have been intense discussions about the most suitable approach.</p>
+<p>A main concern in these discussions is the protection of users' privacy (given that a lot of personal data such as location or people&rsquo;s interaction patterns with their peers might get exposed). At the same time, it needs to be ensured that that a functional, and robust App is soon ready to be used – an App which does not consume too many resources (i.e. that does not require the transmission of huge amounts of data for the App users or time-consuming computations that might slow down mobile phones). Furthermore, it should be possible to use the App in different countries, so that contact tracing does not stop when crossing borders.</p>
+<p>In order to achieve all these goals, the PEPP-PT consortium was created. PEPP-PT stands for Pan-European Privacy-Preserving Proximity Tracing. It is a European consortium that consists of European research institutions as well as (tech) companies interested in jointly pushing forward efforts for developing privacy-preserving contact tracing Apps. The goal of the PEPP-PT consortium has not been to come up with a single App to be used by all European countries, but rather to agree on a common interface for these Apps (so that they can interact with one another) and to develop different architectures for implementing this interface. These architectures were then meant to be further customized to the needs of the individual countries.</p>
+<p>However, what is meant by architectures in this context? Two design principles for contact tracing Apps have emerged: a centralized one (where the users' data is saved on a server that then evaluates whether certain users are at risk and notifies them) and a decentralized one (where only a minimal amount of data is uploaded to the server, so that users can download this information to compute locally whether they are at risk).</p>
+<p>Initially, these two different approaches were pushed by different groups (=subprojects) within the PEPP-PT consortium. However, in the middle of April 2020, major disagreements caused the subproject pursuing the decentralized approach (called DP-3T, and led by the Swiss universities ETH Zurich and EPFL) to break away from the PEPP-PT consortium and to keep on working independently. The reason for this disaffiliation of DP-3T was that the researchers behind DP-3T felt that the PEPP-PT project was no longer striving for transparency. Instead, the PEPP-PT project pushed forward the centralized approach without providing a clear rationale for why this approach should be preferred over the decentralized one, which in turn promises better privacy guarantees.</p>
+<p>In order to promote a better understanding of the advantages and disadvantages of the different approaches, we want to give an overview on how they work, how they use and expose data and how this can be problematic to the users' privacy.</p>
+<h2 id="clash-of-cultures-decentralized-vs-centralized">Clash of Cultures: Decentralized vs. Centralized</h2>
+<p>The general idea underlying the contact tracing Apps that are currently being discussed is to make use of a technology called Bluetooth Low Energy (short BLE). BLE is not the same as the <em>classic</em> Bluetooth which is, for example, used for connecting a mobile phone with wireless headphones. BLE is a similar technology that allows for transmitting a limited amount of information over very short distances (only a few meters). Nowadays, it is already widely used in many applications (such as fitness trackers). BLE has the advantage that it uses (as us captured in its name) less energy than <em>classic</em> Bluetooth. This ensures that its usage does not have a big impact on the phone&rsquo;s battery life. BLE is supported by most modern smartphones, and (on most devices) it is enabled when enabling Bluetooth.</p>
+<p>Via BLE, smartphones can send out small messages (also called beacons) that can be received by other parties for indicating that another device is close by. This technology is leveraged for proximity tracing: Every smartphone can send out identifiers and at the same time receive identifiers from other phones close by. The phone can save the identifiers it receives and thereby keep a log of other people&rsquo;s phones to which it has come close to (e.g. over the last two weeks). These identifiers should not contain any personal information. They should be pseudonyms (e.g. random numbers) as otherwise personal data would be leaked immediately to other users. Furthermore, these identifiers should change frequently. Otherwise, a user could be easily tracked. For example, imagine a person that wants to know when or how often you pass by certain place (maybe because the person wants to know at what time you are usually not at home). The person would just need to determine your identifier once (by standing next to you) and afterwards it could just install a receiver somewhere that could log whenever you come by that place.</p>
+<p>The two ideas outlined above ((1) having random looking identifiers as pseudonyms, and (2) having them change frequently) are common to both approaches, the centralized, and the decentralized one. However, the approaches differ in the way how a Covid-19 infection would be reported and how a user at risk would be notified. We prepared little overview charts for the two approaches and will describe them. Note that the description is slightly simplified and does not include all details - but it conveys the overall idea of how the centralized and the decentralized approach work.</p>
+<h3 id="centralized">Centralized</h3>
+<figure>
+    <img src="app-centralized.png"/> 
+</figure>
+
+<p>The key feature underlying the centralized design is a server (run by the government, or some health institution) that knows a persistent identifier for each user. The identifier can also be used to contact the user (e.g. by triggering a notification in the users App). The server generates temporal identifiers for each user and sends them to the user&rsquo;s phone. These temporal identifiers are then used as the changing pseudonyms that are sent out to other users' phones. This ensures that the server can keep track for each temporal identifier and the permanent identifier (user) it belongs to. If a user tests positive for Covid-19, they can notify the server. The notification could be authorized by a doctor or health agency by providing the infected user with some sort of authorization code that can be verified by the server. When notifying the server, the user should send along all the temporal identifiers of other people that the user collected during the infection window. Based on this list of temporal identifiers, the server can look up to which permanent identifiers they belong and send out a notification to these users to inform them that they are at risk. Some more advanced computation assessing the risk of a specific person would also be possible – for example, only people that have had several contacts with the infected person could be notified.</p>
+<h2 id="decentralized">Decentralized</h2>
+<figure>
+    <img src="app-decentralized.png"/> 
+</figure>
+
+<p>With the decentralized approach, the server does not create the temporal identifiers for the users. Instead, the users' phones create these identifiers themselves, and consequently users do not register with a central server in the first place. However, a server (again run e.g. by the state or health organization) is used to enable the users to announce that they are infected: If a user tests positive for Covid-19, they can notify the other people by uploading all their own temporal identifiers that they have been sending out (e.g. over the last two weeks). The phones of the other users frequently download these identifiers (or rather a compressed representation of them that allows for fast lookup). They then check locally, in the list of temporal identifiers that they have come into contact with recently, whether they encountered any of the downloaded temporal identifiers of infected users. As a result, the server does not learn about who had a contact with an infected person - every user only learns this privately.</p>
+<h2 id="privacy">Privacy</h2>
+<p>Privacy, in general, is not a binary concept. An App is not either <em>privacy-preserving</em> or <em>not-privacy preserving</em>, it might be even hard to say whether one App is <em>more privacy-preserving</em> than another. In the end, it always depends on which information is exhibited to whom, and on how problematic the knowledge of a certain form of data by a certain entity is thought to be. Furthermore, one always needs to consider that it might be impossible to achieve a certain functionality without revealing certain pieces of information. For this reason, when evaluating the privacy of an App (or actually anything) one needs to do that with respect to the functionality that shall be achieved. Thus, it is important to have a very clear idea about the desired functionality of an App. In our case, the functionality (as claimed by PEPP-PT) should be that a person that has been in contact with an infected person is able to retrieve this information. The goal is not for the government or scientists to access this information (even though such a voluntary option for such data sharing could also be supported in the App). Consequently, the goal of a privacy preserving tracing App should be to exhibit a minimal amount of data while still being able to achieve this functionality.</p>
+<p>There is some information that cannot be avoided to be shared when wanting to achieve this functionality. In the case of a contact tracing App that uses BLE and allows for dynamic registration (so everyone can create an account without particular verification), a person could find a way to learn which of their contacts got infected. As a person can dynamically create new accounts for each encounter with a person, they can identify which contact is infected with the help of the account on which they are notified about the infection of a contact.</p>
+<p>Other forms of information leakage, however, heavily depend on the concrete architecture and implementation. The big goal of contact tracing Apps (in terms of privacy) is to leak as little information about the users' identity or habits as possible - the goal is to make users stay <em>anonymous</em>: To achieve this, existing design architectures (the centralized and the decentralized one) make heavy use of pseudonyms (random identifiers are used instead of personal data). However, pseudonymity alone does not ensure the anonymity of a person. Another important factor is that a person&rsquo;s different pseudonyms should not be linkable to one other. Otherwise, a person can be easily tracked. We will provide a short overview on how and by whom pseudonyms can still be linked in the different approaches, and how they consequently have an increased risk of being de-anonymized and tracked.</p>
+<ul>
+<li>The centralized design gives the server the capability to fully link the pseudonyms of all users, no matter whether they got infected with Covid-19 or not. This is because the server can link each temporal identifier to the corresponding persistent identifier. This enables tracking of users by everyone having access to the server.</li>
+<li>However, normal users of the system cannot link different encounters of the same user, regardless of whether they are infected or not. The only thing they learn are the changing pseudonyms of people they encounter. In case that they met an infected person, the server only sends them this piece of information.</li>
+<li>If in the centralized setting a user reports to be infected, they transfer information on all their contacts to the server. This allows the server to learn who might be at risk. However, it also implies that the server learns about the the user&rsquo;s entire interaction pattern within the time period under question - the server learns with which persistent pseudonyms the infected user has been in contact and also how often.</li>
+<li>In the decentralized design, in contrast, the server never obtains information about a user that is not infected (even if this person has been in contact with an infected person). This is because a non-infected person never sends information to the server - instead the person only downloads information. Furthermore an infected person never tells the server anything about the people they <em>met</em>.</li>
+<li>However, normal users of the system learn (to some extent) which pseudonyms (temporal identifiers) of an infected user might belong together when downloading them from the server. This is as all newly downloaded temporal identifiers belong to the (potentially small) group of infected users that uploaded their identifiers in the period after the last download. Consequently, these identifiers are (depending on the size of the group) more likely to belong to the same user. This information can help a user of the system to retrospectively correlate encounters with different temporal identifiers (of an infected user) to correspond to the same person.</li>
+<li>If, in the decentralized setting, a user reports their own identifiers to the server, the server does not learn who is at risk and hence also knows nothing about the infected users' interaction patterns.</li>
+</ul>
+<p>We hope that the above list provides a rough overview of how the privacy of the centralized and the decentralized systems compare. Of course, there are way more details to be considered when doing a thorough privacy analysis. For example, we did not consider here that some coarse-grained timing information might be send along when notifying a person about an infection, which might allow for more correlations. The DP-3T project provides <a href="https://github.com/DP-3T/documents">several documents</a> where they analyze different systems. Furthermore, a <a href="https://www.fiff.de/presse/dsfa-corona">detailed privacy assessment</a> (available in English and German) conducted by the German non-profit organization FIfp compares both approaches.</p>
+<p>To give a personal summary and assessment of the privacy of the two approaches: The privacy of the decentralized approach seems way better. It does not leak information about non-infected people to some central authority and such an authority also does not learn about the interactions between users - in this regard, it is strictly better concerning privacy than the centralized approach. A drawback of the decentralized (as compared to the centralized) approach is that other users might be able to link the pseudonyms of an infected user (since they learn about the user&rsquo;s temporal identifiers, an information they would not receive in the centralized system). However, this linkage is limited to a specific time period, and depends (as mentioned above) on how many new infections are reported by the server at once.</p>
+<p>One should note that privacy is not the only concern when it comes to contact tracing Apps. Security is also important: for example, it is crucial that an attacker cannot easily prevent the system from working by flooding it with false alarms. We will talk about such issues in another blog post.</p>
+<h2 id="wouldnt-learning-more-information-be-better">Wouldn&rsquo;t learning more information be better?</h2>
+<p>One question that arises when it comes to mitigating the ongoing Covid-19 pandemic is of course whether learning more data could be useful, e.g. for analyzing how the virus spreads. The easy answer would be <em>Yes</em>: the more data is exposed, the more can be learned from it – for the good and for the bad. For this reason, as discussed above, it is crucial to clearly define the aim/functionality of an App upfront and to decide which functionality is crucial, and which one is desirable. One can then potentially release Apps that allow for different privacy levels at the benefit of advanced functionality (and among which users can voluntarily select). The earlier presented approaches actually allow for a limited form of voluntary data donation: In case, that a user had contact with an infected person, they can voluntarily decide to send data about encounters with infected users in some past time window. This data would then not be sent to the state-controlled server but to selected epidemiologists. Also, there are other applications that are explicitly made for data donations (such as the <a href="https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Corona-Datenspende.html">data donation App</a> by the German RKI). We will cover the working and privacy considerations for such Apps in another blog post.</p>
+<h2 id="what-do-google-and-apple-have-to-do-with-this">What do Google and Apple have to do with this?</h2>
+<p>Google and Apple announced to partner up to assist the development of (privacy preserving) contact tracing Apps. Their plan to help is structured into two phases: First (until the middle of May), they plan to provide APIs for iOS and Android. An API (= Application Programming Interface), is a way to allow developers to access certain functionalities of the operating system that cannot be programmed natively in the applications. The APIs that Apple and Google plan to provide will contain functionalities for accessing the subset of keys/identifiers of an infected user that is to be shared with their recent contacts. They will also contain functionalities for calculating the resulting risk of infection for a user given such a set of identifiers from infected users. As can be seen from this description, Google and Apple follow a decentralized approach: They assume that the risk assessment will be done locally on a user&rsquo;s device. Indeed, they are following an early draft of the DP-3T project, even though the DP-3T project encourages them to also take the latest enhancements to their approach into account. In a second phase, Apple and Google want to provide their own Apps that will be integrated into the operating system. This would imply that users would not need to install an App in the first place, and that such an App could be faster. However, such an App would probably not be open source, an issue that we will discuss later.</p>
+<p>Another interesting question is to which extent the support of Apple and Google is needed for developing usable contact tracing Apps in the first place:
+One of the first European contact tracing Apps (the <a href="https://participate.roteskreuz.at/stopp-corona/">Stopp Corona App</a> by the Austrian Red Cross), ran into a major challenge. With this App, the communication between the phones did not happen by only sending out identifiers via BLE. In the case of an encounter, a more involved protocol (called handshake) between the two <em>meeting</em> phones was executed. However, the big mobile operating systems (iOS by Apple and Android by Google) did not allow for such a protocol being triggered automatically (without explicit consent by the users). Therefore, users needed to manually confirm each encounter, which obviously made using the App cumbersome. For this reason, it was initially discussed whether Apple and Google should provide software support for enabling an automated handshake. With the solution proposed by DP-3T however, no such additional modifications are needed.
+Still, there is the problem that ideally a contact tracing App should actually run in the background of the mobile phone (so it should not be required that the App is open and focused all the time). However, having BLE running in the background is not straightforward on iOS and Android. In particular in the case of iOS, Apple would need to grant a specific approval for Apps doing so. For this reason, the APIs planned by Google and Apple would make the implementation of contact tracing Apps a lot easier. Still, developing Apps for the DP-3T and PEPP-PT proposals would also not be completely impossible without these APIs.</p>
+<h2 id="why-are-people-asking-these-apps-to-be-open-source">Why are people asking these Apps to be open source?</h2>
+<p>Even if the design of an App is done as described and approved by the user, this of course does not ensure that exactly this design (with all security and privacy considerations) is implemented in this way. An App could easily send more information to the server (e.g. location data of the senders, information on the device that they are using, or personal/contact identifiers that go beyond the required period). This would move beyond the idea of minimizing data sharing and would be totally out of control of the user. It is also always possible that simple programming flaws unintentionally cause security and privacy problems. By having the App released open source the program code of the App is publicly available. This allows researchers and other technically interested people to check the code for compliance with the promised functionality.
+The App by the Austrian Red Cross has been made publicly available on April 24th and can now be accessed <a href="https://github.com/austrianredcross">here</a>. Also, all prototypes of the DP-3T project can be found <a href="https://github.com/DP-3T">here</a>.</p>
+<h2 id="which-apps-will-be-created-now-and-when">Which Apps will be created now? And when?</h2>
+<p>Initially, many European countries followed the centralized approach pushed forward by PEPP-PT. By now, however, several countries have switched and are pursuing a decentralized approach following the DP-3T design. In particular, Austria, Switzerland, and Germany made corresponding announcements. This can also be traced back to the fierce discussion in the scientific community, and an <a href="https://www.esat.kuleuven.be/cosic/sites/contact-tracing-joint-statement/">open letter</a> signed by over 300 scientists that criticized the increased privacy risks by the centralized as opposed to the decentralized approach.</p>
+<p>In Austria, the development towards DP-3T is advanced within the scope of the <em>Stopp Corona App</em> by the Austrian Red Cross. This App was any early version of a decentralized contact tracing App, developed before DP-3T. It makes use of an adhoc-decentralized infrastructure that did not yet benefit from the joint design efforts of the DP-3T project, and hence shows some privacy weaknesses. The <a href="https://www.sba-research.org/">SBA research institute</a>, together with the association <a href="https://epicenter.works/">epicenter.works</a> and the non-profit organization <a href="https://noyb.eu/">NOYB</a> recently completed a security analysis of the <em>Stopp Corona App</em> pointing out these weaknesses. As a consequence, the Austrian Red Cross incorporated several security enhancements and declared that they plan to switch to the DP-3T design long-term. To achieve this goal, they are in contact with scientists from the DP-3T project, as well as with Google and Apple. A concrete timeline as of when this change in design will happen has not yet been fixed.</p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </div>
+
+            
+
+    
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = false;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"","placeholder":"","results":""};
+      const content_type = {
+        'post': "",
+        'project': "",
+        'publication' : "",
+        'talk' : ""
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+
+    
+
+
+
+
+<footer class="w18-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-xl-4">
+                <h2 class="w18-footer-title">TU Wien Informatics</h2>
+                <address class="w18-footer-address">
+                    Favoritenstraße 9-11<br/>
+                    1040 Vienna, Austria
+                </address>
+                <ul class="nav w18-footer-nav">
+                    <li class="nav-item"><a class="nav-link" href="../../../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../../contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../../../../assets/w18/1.7.3/js/jquery.js"></script>
+<script src="../../../../assets/w18/1.7.3/js/app.js"></script>
+
+<script src="../../../../js/academic.js"></script></body>
+
+    <style>
+        #myBtn {
+            display: none;  
+            position: fixed;  
+            bottom: 20px;  
+            right: 30px;  
+            z-index: 99;  
+            border: none;  
+            outline: none;  
+            color: white;  
+            cursor: pointer;  
+            border-radius: 80px;  
+            font-size: 18px;  
+            background-color: transparent;
+        }
+
+        #myBtn:hover {
+            filter: brightness(50%);
+        }
+    </style>
+
+<script>
+    
+    mybutton = document.getElementById("myBtn");
+
+    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+
+<!-- Mirrored from secpriv.wien/blog/en/tracing-app/overview/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 15:40:05 GMT -->
+</html>
