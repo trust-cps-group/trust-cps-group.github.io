@@ -1,14 +1,14 @@
 ---
 layout: compress
 ---
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
 <head>
 	{% include _head_w18.html %}
 </head>
 <body id="top-of-page" class="{{ layout.format }}">
 	{% unless page.skip_boilerplate %}
-	{% include _navigation.html %}
+	{% include _header_w18.html %}
 	{% endunless %}
 
 	{% include _masthead.html %}
