@@ -1,5 +1,5 @@
 ---
-layout: research-tiles
+layout: research-tiles_w18
 show_meta: false
 title: "Research"
 subheadline: "Ongoing and past research projects"
