@@ -14,25 +14,31 @@ format: page-fullwidth_w18
 	</div><!-- /.small-12.columns -->
 </div><!-- /.row -->
 {% endif %}
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img style="width: 60px" src="{{ site.url }}{{ site.baseurl }}/assets/img/totop.png"></button>
+		<div id="content">
 
-
-<div class="row t30">
-	<div class="medium-12 columns">
-		<article>
-			<header>
-				{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
-				<h1>{{ page.title }}</h1>
-			</header>
-
-			{% if page.teaser %}
-			<p class="teaser">
-				{{ page.teaser }}
-			</p>
-			{% endif %}
-
+				<section class="w18-header-intro w18-page-intro">
+    			<div class="container">
+				<div class="row justify-content-center">
+            		<div class="col col-lg-10 col-xl-8">
+						<h2 class="display-1">{{ page.title }}</h2>
+		                {% if page.subheadline %}
+		                <p class="lead">
+		                    {{ page.subheadline }}
+		                </p>
+		                {% endif %}
+		            </div>
+		        </div>
+		    </div>
+		</section>
+		<section class="w18-content">
+			<div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
 			{{ content }}
-		</article>
-	</div><!-- /.medium-12.columns -->
-</div><!-- /.row -->
-
+		</div>
+	</div>
+</div>
+		</section>
+</div>
 

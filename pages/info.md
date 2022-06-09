@@ -1,5 +1,5 @@
 ---
-layout: page-fullwidth
+layout: page-fullwidth_w18
 title: "About"
 subheadline: "The Trust-CPS Group"
 teaser: "Contact information and background about the Trust-CPS Group @TU Wien."
