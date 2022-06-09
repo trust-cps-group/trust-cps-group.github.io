@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<!-- Mirrored from secpriv.wien/teaching/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 15:39:54 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Security & Privacy TU Wien</title>
+    <link rel="stylesheet" media="all" href="../css/app.css" />
+</head><body><style>
+    .w18-bar {
+        background-color: #192121;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .w18-bar img {
+        height: 25px;
+        padding-left: 15px;
+    }
+
+    .w18-logo img {
+        height: 45px;
+    }
+
+    .w18-nav-tabs {
+        top: 100px;
+    }
+</style>
+
+
+<header class="w18-header">
+    <div class="container">
+        <div class="w18-header-wrap">
+            <h1 class="w18-logo">
+                <a href="../index.html"><img src="../home/Logo2.png" alt="Research Unit"/></a>
+            </h1>
+        </div>
+    </div>
+
+
+    <nav class="w18-nav">
+        <div class="w18-nav-wrap">
+            <ul class="nav w18-nav-tabs" role="tablist">
+                <li class="nav-item"><a class="nav-link" id="menu-tab" href="#menu" role="tab" aria-controls="menu" aria-selected="false">Menu</a></li>
+            </ul>
+            <button class="close close-white" type="button" aria-label="Close" aria-hidden="true"></button>
+
+            <div class="w18-nav-tab-content">
+                <div class="w18-nav-tab-pane" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+                    <ul class="row">
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Activities</h2>
+                            <ul class="nav flex-column">
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../research/index.html">Research</a>
+                                    </li>
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../publications/index.html">Publications</a>
+                                    </li>
+                                
+                                    <li class="nav-item w18-nav-tab-pane-item">
+                                        <a class="nav-link" href="../projects/index.html">Projects</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Teaching</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="index.html">Courses</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Team</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../team/index.html">People</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../alumni/index.html">Alumni</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../reach/index.html">How to reach us</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../contact/index.html">Contact</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">Work with us</h2>
+                            <ul class="nav flex-column">
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../work/index.html">Theses &amp; Job Opportunities</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../internship/index.html">Internship Program</a>
+                                </li>
+                                
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../double/index.html">Double Degree TUW-TUD IT on Security</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="col-sm-6 col-md-12 col-xl-6 w18-nav-tab-pane-group">
+                            <h2 class="w18-nav-tab-pane-title">News</h2>
+                            <ul class="nav flex-column">
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    <a class="nav-link" href="../index.html#twitter">Our tweets</a>
+                                </li>
+                                <li class="nav-item w18-nav-tab-pane-item">
+                                    Blog
+                                    <ul>
+                                        <li><a class="nav-link indent" href="../blog/en/index.html">English</a></li>
+                                        <li><a class="nav-link indent" href="../blog/de/index.html">German</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img style="width: 60px" src="../images/totop.png"></button>
+        <div id="content">
+            <section class="w18-header-intro w18-page-intro">
+    <div class="container">
+        <div class="row justify-content-center w18-header-intro-top">
+            <div class="col col-lg-10 col-xl-8">
+                    <button id="people-dropdown" class="btn dropdown-toggle btn-sm btn-info" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Teaching
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="people-dropdown">
+                        <a href="index.html" class="dropdown-item  active">
+                            Courses
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <h2 class="display-1">Courses</h2>
+                <p class="lead">
+                    The Security and Privacy Group offers the following lectures:
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w18-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <div id="activities" class="accordion">
+                    <h1>Teaching</h1>
+
+                    
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                    
+
+                    
+                        <h2 class="card-title">2022S</h2>
+
+                        <ul>
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=180767&amp;semester=2022S">Orientation Bachelor with Honors of Informatics and Business Informatics</a>
+                                    <span class="text-muted "> / SE / 180.767</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=180773&amp;semester=2022S">Seminar for Master Students in Logic and Computation</a>
+                                    <span class="text-muted "> / SE / 180.773</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=180777&amp;semester=2022S">Seminar for Master Students in Software Engineering &amp; Internet Computing</a>
+                                    <span class="text-muted "> / SE / 180.777</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184767&amp;semester=2022S">Research Seminar LogiCS</a>
+                                    <span class="text-muted "> / SE / 184.767</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184783&amp;semester=2022S">Introduction to Security</a>
+                                    <span class="text-muted "> / VU / 184.783</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185A92&amp;semester=2022S">Introduction to Programming 2</a>
+                                    <span class="text-muted "> / VU / 185.A92</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191124&amp;semester=2022S">Fundamentals of Security and Privacy</a>
+                                    <span class="text-muted "> / VU / 191.124</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192059&amp;semester=2022S">Formal Methods for Security and Privacy</a>
+                                    <span class="text-muted "> / VU / 192.059</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192060&amp;semester=2022S">Seminar for PhD Students</a>
+                                    <span class="text-muted "> / SE / 192.060</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192061&amp;semester=2022S">Bachelor Thesis</a>
+                                    <span class="text-muted "> / PR / 192.061</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192075&amp;semester=2022S">Project in Computer Science 1</a>
+                                    <span class="text-muted "> / PR / 192.075</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192076&amp;semester=2022S">Project in Computer Science 2</a>
+                                    <span class="text-muted "> / PR / 192.076</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192080&amp;semester=2022S">Crypto Asset Analytics</a>
+                                    <span class="text-muted "> / VU / 192.080</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192082&amp;semester=2022S">Introduction to Security</a>
+                                    <span class="text-muted "> / UE / 192.082</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193052&amp;semester=2022S">Scientific Research and Writing</a>
+                                    <span class="text-muted "> / SE / 193.052</span>
+                                </li>
+                            
+                        
+                        </ul>
+                    
+                        <h2 class="card-title">2021W</h2>
+
+                        <ul>
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=180767&amp;semester=2021W">Orientation Bachelor with Honors of Informatics and Business Informatics</a>
+                                    <span class="text-muted "> / SE / 180.767</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=180773&amp;semester=2021W">Seminar for Master Students in Logic and Computation</a>
+                                    <span class="text-muted "> / SE / 180.773</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=180777&amp;semester=2021W">Seminar for Master Students in Software Engineering &amp; Internet Computing</a>
+                                    <span class="text-muted "> / SE / 180.777</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184767&amp;semester=2021W">Research Seminar LogiCS</a>
+                                    <span class="text-muted "> / SE / 184.767</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185A91&amp;semester=2021W">Introduction to Programming 1</a>
+                                    <span class="text-muted "> / VU / 185.A91</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192061&amp;semester=2021W">Bachelor Thesis</a>
+                                    <span class="text-muted "> / PR / 192.061</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192065&amp;semester=2021W">Cryptocurrencies</a>
+                                    <span class="text-muted "> / VU / 192.065</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192069&amp;semester=2021W">Seminar for PhD Students</a>
+                                    <span class="text-muted "> / SE / 192.069</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192075&amp;semester=2021W">Project in Computer Science 1</a>
+                                    <span class="text-muted "> / PR / 192.075</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192076&amp;semester=2021W">Project in Computer Science 2</a>
+                                    <span class="text-muted "> / PR / 192.076</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192111&amp;semester=2021W">Attacks and Defenses in Computer Security</a>
+                                    <span class="text-muted "> / UE / 192.111</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192112&amp;semester=2021W">Systems and Applications Security</a>
+                                    <span class="text-muted "> / VU / 192.112</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192124&amp;semester=2021W">Symmetric Cryptography</a>
+                                    <span class="text-muted "> / VU / 192.124</span>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a href="https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192125&amp;semester=2021W">Introduction to Cryptography</a>
+                                    <span class="text-muted "> / VU / 192.125</span>
+                                </li>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                        </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        </div>
+
+            
+
+    
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = false;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"","placeholder":"","results":""};
+      const content_type = {
+        'post': "",
+        'project': "",
+        'publication' : "",
+        'talk' : ""
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+
+    
+
+
+
+
+<footer class="w18-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-xl-4">
+                <h2 class="w18-footer-title">TU Wien Informatics</h2>
+                <address class="w18-footer-address">
+                    Favoritenstraße 9-11<br/>
+                    1040 Vienna, Austria
+                </address>
+                <ul class="nav w18-footer-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../assets/w18/1.7.3/js/jquery.js"></script>
+<script src="../assets/w18/1.7.3/js/app.js"></script>
+
+<script src="../js/academic.js"></script></body>
+
+    <style>
+        #myBtn {
+            display: none;  
+            position: fixed;  
+            bottom: 20px;  
+            right: 30px;  
+            z-index: 99;  
+            border: none;  
+            outline: none;  
+            color: white;  
+            cursor: pointer;  
+            border-radius: 80px;  
+            font-size: 18px;  
+            background-color: transparent;
+        }
+
+        #myBtn:hover {
+            filter: brightness(50%);
+        }
+    </style>
+
+<script>
+    
+    mybutton = document.getElementById("myBtn");
+
+    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+
+<!-- Mirrored from secpriv.wien/teaching/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 15:39:55 GMT -->
+</html>
