@@ -27,10 +27,10 @@ $body-bg: 			#fdfdfd;
 
    https://pigment.shapefactory.co/?d=2&a=D2E9F5&b=FFFFFFs
 ------------------------------------------------------------------- */
-$ci-1: #993300;      // dark blue -- the original one
-$ci-2: #ffb27f;      // light blue -- the orange one
-$ci-4: #F0A202;      // orange
-$ci-5: #AF1B3F;      // dark red
+$ci-1: #8e9fa0;      // this is the primary color, dark gray blue
+$ci-2: #eff1f1;      // secondary color, lighter version of ci-1
+$ci-4: #fff;      // warning color, same as alert color (at the moment)
+$ci-5: #fff;      // alert color, a bright red
 $ci-6: #ffd9bf;      // gray-blue  -- the brightest
 
 
@@ -51,7 +51,7 @@ $ci-6: #A8C4D5;      // gray-blue
 ------------------------------------------------------------------- */
 
 $primary-color: $ci-1;
-$secondary-color: $ci-6;
+$secondary-color: $ci-2;
 $alert-color: $ci-5;
 $success-color: $ci-6;
 $warning-color: $ci-4;
