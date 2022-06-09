@@ -5,81 +5,201 @@ format: frontpage
 
 <section id="hero" class="home-section wg-hero dark" style="background-image: linear-gradient(#eff1f1, #eff1f1);" >
 <div class="container">
-      
+    <section class="w18-header-intro w18-page-intro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col col-lg-10 col-xl-8">
+                    <div></div>
+                    <h2 class="display-1">{{ site.title }}</h2>
+                    <p class="lead">
+                        {{ site.slogan }}
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-8 w18-page-intro-figure-col">
+                    <figure class="figure w18-header-intro-figure"><img class="figure-img" src="{{ site.url }}{{ site.baseurl }}/{{ site.logo }}" alt="image" /></figure>
+                </div>
+                <div class="col-12 col-lg-4 w18-page-intro-col">
+                    <h3 class="w18-facts-title">On this page</h3>
+                    <div class="list-group w18-facts-list-group">
+                        <a class="list-group-item list-group-item-action w18-otp-link" href="#about">About</a>
+                        <a class="list-group-item list-group-item-action w18-otp-link" href="#news">News</a>
+                        <a class="list-group-item list-group-item-action w18-otp-link" href="#people">Team</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div> </section>
 
-<section class="w18-header-intro w18-page-intro">
 
+<section id="content" class="home-section wg-content   "  >
+    <div class="container">
+        <section class="w18-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col col-lg-10 col-xl-8">
+                        <a name="about"><h1>About</h1></a>
+                            {{ content }}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% unless site.posts == empty %}
+        <section class="w18-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col col-lg-10 col-xl-8">
+                        <a name="news"><h1>{{ site.data.language.news }}</h1></a>
+                        {% include list-posts entries='3' %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endunless %}
+    </div>
+</section>
+
+
+<section class="w18-content">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col col-lg-10 col-xl-8">
-                <div></div>
-                <h2 class="display-1">{{ site.title }}</h2>
-                <p class="lead">
-                    {{ site.slogan }}
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-lg-8 w18-page-intro-figure-col">
-                <figure class="figure w18-header-intro-figure"><img class="figure-img" src="{{ site.url }}{{ site.baseurl }}/{{ site.logo }}" alt="image" /></figure>
-            </div>
-            <div class="col-12 col-lg-4 w18-page-intro-col">
-                <h3 class="w18-facts-title">On this page</h3>
-                <div class="list-group w18-facts-list-group">
-                    <a class="list-group-item list-group-item-action w18-otp-link" href="#about">About</a>
-                    <a class="list-group-item list-group-item-action w18-otp-link" href="#news">News</a>
+                <div class="accordion">
+
+                     <!-- scientific staff -->
+                    <div class="w18-accordion-heading" id="people-professors" data-toggle="collapse" data-target="#people-professors-body" aria-expanded="true" aria-controls="#people-professors-body" role="button">
+                        <a name="people"><h1>Scientific Staff</h1></a>
+                        <div class="collapse show" id="people-professors-body" aria-labelledby="people-professors">
+                            <div class="row pb-4">
+                                {% assign sorted = site.pages | sort: 'family' %}
+                                {% for post in sorted %}
+                                {% if post.categories contains 'people' %}
+                                <div class="col-sm-12 col-lg-6">
+                                  <div class="media mb-4 w18-media-iconperson" title="{ post.family }} • {{post.role}}">
+                                  <img alt="{{post.first}} {{post.family}}" style="object-fit: cover; height: 90px;" src="https://informatics.tuwien.ac.at/people/elena-andreeva/picture">
+                                  </div>
+                                  <div class="media-body ml-3 text-truncate">
+                                    <h5 class="card-title text-truncate">
+                                    <a class="stretched-link" href="team/elena/index.html">
+                                    <span class="d-xs-inline d-sm-none d-md-inline">{{ post.first }} {{ post.family }}</span>
+                                    <span class="d-none d-sm-inline d-md-none">{{ post.first }} {{ post.family }}</span>
+                                    </a> </h5>
+                                    <p class="card-subtitle mb-0 text-truncate">
+                                        {{post.role}}
+                                    <span class="text-muted">
+                                    <br> {{post.title}}
+                                    </span>
+                                    </p>
+                                  </div>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-    </div>
-  </section>
 
 
-
-
-
-
-
-
-
-<section id="content" class="home-section wg-content   "  >
-    <div class="container">
-      <section class="w18-content">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-lg-10 col-xl-8">
-    <a name="about"><h1>About</h1></a>
-    {{ content }}
-
-</div>
-</div>
-</div>
-</section>
-
-
-{% unless site.posts == empty %}
 <section class="w18-content">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col col-lg-10 col-xl-8">
-                <a name="news"><h1>{{ site.data.language.news }}</h1></a>
-                <!--<ul>
-                {% for post in site.posts limit:3 %}
-                <li>
-                    <strong>({{ post.date }})</strong> <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                </li>
-            {% endfor %}
-                </ul>-->
-                {% include list-posts entries='3' %}
+                <div class="accordion">
+                    
+
+                    <div class="w18-accordion-heading" id="people-professors" data-toggle="collapse" data-target="#people-professors-body" aria-expanded="true" aria-controls="#people-professors-body" role="button">
+                        <a name="people"><h1>Faculty</h1></a>
+                        <div class="collapse show" id="people-professors-body" aria-labelledby="people-professors">
+
+                            <div class="row pb-4">
+                                
+                                    
+                                    
+
+
+
+                                        <div class="col-sm-12 col-lg-6">
+
+    
+        <div class="media mb-4 w18-media-iconperson" title="Elena Andreeva • Assistant Professor">
+    
+
+        
+        <img alt="Elena Andreeva" style="object-fit: cover; height: 90px" src="https://informatics.tuwien.ac.at/people/elena-andreeva/picture">
+        
+
+        <div class="media-body ml-3 text-truncate">
+            <h5 class="card-title text-truncate">
+                
+                
+                
+                
+                <a class="stretched-link" href="team/elena/index.html">
+                    <span class="d-xs-inline d-sm-none d-md-inline">Elena Andreeva</span>
+                    <span class="d-none d-sm-inline d-md-none">E. Andreeva</span>
+                </a>
+            </h5>
+
+            <p class="card-subtitle mb-0 text-truncate">
+                
+                    Assistant Professor
+                <span class="text-muted">
+                    
+                        <br>Asst.Prof. / PhD
+                    
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 col-lg-6">
+
+    
+        <div class="media mb-4 w18-media-iconperson" title="Elena Andreeva • Assistant Professor">
+    
+
+        
+        <img alt="Elena Andreeva" style="object-fit: cover; height: 90px" src="https://informatics.tuwien.ac.at/people/elena-andreeva/picture">
+        
+
+        <div class="media-body ml-3 text-truncate">
+            <h5 class="card-title text-truncate">
+                
+                
+                
+                
+                <a class="stretched-link" href="team/elena/index.html">
+                    <span class="d-xs-inline d-sm-none d-md-inline">Elena Andreeva</span>
+                    <span class="d-none d-sm-inline d-md-none">E. Andreeva</span>
+                </a>
+            </h5>
+
+            <p class="card-subtitle mb-0 text-truncate">
+                
+                    Assistant Professor
+                <span class="text-muted">
+                    
+                        <br>Asst.Prof. / PhD
+                    
+                </span>
+            </p>
+        </div>
     </div>
 </div>
 </div>
-</section>
-{% endunless %}
-
-
-
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
