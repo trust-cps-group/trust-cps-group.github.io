@@ -33,7 +33,7 @@ improve_content: #https://github.com/trust-cps-group/feeling-responsive/edit/gh-
 urlimg: "https://trust-cps-group.github.io/images/"
 
 # Logo size is 600x80 pixels
-logo: ""
+logo: "images/group_pictures/group1.png"
 
 # Plugins
 plugins:

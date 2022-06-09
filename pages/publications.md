@@ -1,5 +1,5 @@
 ---
-layout: page-fullwidth
+layout: page-fullwidth_w18
 title: "Publications"
 subheadline: "Our publications"
 teaser: "A complete collection of work published by members of our group."

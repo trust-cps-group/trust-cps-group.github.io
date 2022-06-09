@@ -1,0 +1,85 @@
+---
+layout: default_w18
+format: frontpage
+---
+
+<section id="hero" class="home-section wg-hero dark" style="background-image: linear-gradient(#eff1f1, #eff1f1);" >
+<div class="container">
+      
+
+<section class="w18-header-intro w18-page-intro">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <div></div>
+                <h2 class="display-1">{{ site.title }}</h2>
+                <p class="lead">
+                    {{ site.slogan }}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-8 w18-page-intro-figure-col">
+                <figure class="figure w18-header-intro-figure"><img class="figure-img" src="{{ site.url }}{{ site.baseurl }}/{{ site.logo }}" alt="image" /></figure>
+            </div>
+            <div class="col-12 col-lg-4 w18-page-intro-col">
+                <h3 class="w18-facts-title">On this page</h3>
+                <div class="list-group w18-facts-list-group">
+                    <a class="list-group-item list-group-item-action w18-otp-link" href="#about">About</a>
+                    <a class="list-group-item list-group-item-action w18-otp-link" href="#news">News</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+<section id="content" class="home-section wg-content   "  >
+    <div class="container">
+      <section class="w18-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+    <a name="about"><h1>About</h1></a>
+    {{ content }}
+
+</div>
+</div>
+</div>
+</section>
+
+
+{% unless site.posts == empty %}
+<section class="w18-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <a name="news"><h1>{{ site.data.language.news }}</h1></a>
+                <!--<ul>
+                {% for post in site.posts limit:3 %}
+                <li>
+                    <strong>({{ post.date }})</strong> <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+                </ul>-->
+                {% include list-posts entries='3' %}
+    </div>
+</div>
+</div>
+</section>
+{% endunless %}
+
+
+
+</div>
+</section>

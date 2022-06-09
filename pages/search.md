@@ -1,6 +1,6 @@
 ---
 permalink: /search/
-layout: page
+layout: page_w18
 title: "Search"
 sitemap: false
 ---

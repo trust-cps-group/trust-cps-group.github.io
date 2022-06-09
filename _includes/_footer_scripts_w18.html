@@ -55,3 +55,46 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 {% endif %}
 
+<style>
+    #myBtn {
+        display: none;  
+        position: fixed;  
+        bottom: 20px;  
+        right: 30px;  
+        z-index: 99;  
+        border: none;  
+        outline: none;  
+        color: white;  
+        cursor: pointer;  
+        border-radius: 80px;  
+        font-size: 18px;  
+        background-color: transparent;
+    }
+
+    #myBtn:hover {
+        filter: brightness(50%);
+    }
+</style>
+
+<script>
+    
+    mybutton = document.getElementById("myBtn");
+
+    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+

@@ -1,5 +1,5 @@
 ---
-layout: page-fullwidth
+layout: page-fullwidth_w18
 title: "Contact"
 meta_title: "Contact and use our contact form"
 subheadline: "Subheader"

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-fullwidth_w18
 show_meta: false
 title: "Collaborations"
 subheadline: "Collaborations with other institutes"
