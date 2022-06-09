@@ -1,5 +1,5 @@
 ---
-layout: page-fullwidth
+layout: page-fullwidth_w18
 title: "Openings"
 subheadline: "Open positions"
 teaser: ""
