@@ -33,7 +33,7 @@ improve_content: #https://github.com/trust-cps-group/feeling-responsive/edit/gh-
 urlimg: "https://trust-cps-group.github.io/images/"
 
 # Logo size is 600x80 pixels
-logo: "images/group_pictures/group1.png"
+logo: "images/group_pictures/trust_cps.png"
 
 # Plugins
 plugins:
@@ -107,6 +107,13 @@ defaults:
       header: no
       layout: page-fullwidth
       categories: "alumni"
+  - scope:
+      path: "pages/administrative"
+      type: "pages"
+    values:
+      header: no
+      layout: page-fullwidth
+      categories: "administrative"
   - scope:
       path: "pages/research_projects"
       type: "pages"

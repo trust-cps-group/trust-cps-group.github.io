@@ -1,0 +1,32 @@
+---
+layout: page-fullwidth_w18
+---
+
+
+    <!-- scientific staff -->
+        <div class="collapse show" id="people-professors-body" aria-labelledby="people-professors">
+            <div class="row pb-4">
+                {% assign sorted = site.pages | sort: 'family' %}
+                {% for post in sorted %}
+                {% if post.categories contains 'alumni' %}
+                <div class="col-sm-12 col-lg-6">
+                  <div class="media mb-4 w18-media-iconperson" title="{ post.family }} • {{post.role}}">
+                      <img alt="{{post.first}} {{post.family}}" style="object-fit: cover; height: 90px;" src="{{ site.url }}{{ site.baseurl }}/images/{{ post.image.thumb }}">
+                      <div class="media-body ml-3 text-truncate">
+                            <h5 class="card-title text-truncate">
+                            <span class="d-xs-inline d-sm-none d-md-inline">{{ post.first }} {{ post.family }}</span>
+                            <span class="d-none d-sm-inline d-md-none">{{ post.first }} {{ post.family }}</span>
+                            </h5>
+                            <p class="card-subtitle mb-0 text-truncate">
+                                {{post.role}}
+                            <span class="text-muted">
+                            <br> {{post.title}}
+                            </span>
+                            </p>
+                      </div>
+                  </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>

@@ -1,8 +1,24 @@
 ---
 ---
 
-{{ reference }}
+{% comment %}
+{% if entry.url %}
+<a href="{{ entry.url }}">{{ entry.title }}</a>
+{% else %}
+{{ entry.title }}
+{% endif %}
+{% endcomment %}
+<span class="text-muted">{{ reference }}</span>
 
+
+<div class="w18-accordion-heading" id="people-professors" data-toggle="collapse" data-target="#collapsible-{{key}}" aria-expanded="false" aria-controls="#collapsible-{{key}}" role="button">
+<h1>Bibtex</h1>
+  <div class="collapse hide" id="collapsible-{{key}}" aria-labelledby="people-professors">
+    <pre>{{entry.bibtex}}</pre>
+  </div>
+</div>
+
+{% comment %}
 <div class="wrap-collabsible"> <input id="collapsible-{{key}}" class="toggle" type="checkbox"> <label for="collapsible-{{key}}" class="lbl-toggle">Bibtex</label>
   <div class="collapsible-content">
     <div class="content-inner">
@@ -10,6 +26,8 @@
     </div>
   </div>
 </div>
+{% endcomment %}
+
 
 {% comment %}
 <div id="{{key}}-materials">
