@@ -70,9 +70,9 @@ format: frontpage
             <div class="col col-lg-10 col-xl-8">
                 <div class="accordion">
 
-                     <!-- scientific staff -->
+                    <!-- scientific staff -->
                     <div class="w18-accordion-heading" id="people-professors" data-toggle="collapse" data-target="#people-professors-body" aria-expanded="true" aria-controls="#people-professors-body" role="button">
-                        <a name="people"><h1>Scientific Staff</h1></a>
+                        <a name="people"><h1>Faculty</h1></a>
                         <div class="collapse show" id="people-professors-body" aria-labelledby="people-professors">
                             <div class="row pb-4">
                                 {% assign sorted = site.pages | sort: 'family' %}
@@ -80,20 +80,52 @@ format: frontpage
                                 {% if post.categories contains 'people' %}
                                 <div class="col-sm-12 col-lg-6">
                                   <div class="media mb-4 w18-media-iconperson" title="{ post.family }} • {{post.role}}">
-                                  <img alt="{{post.first}} {{post.family}}" style="object-fit: cover; height: 90px;" src="https://informatics.tuwien.ac.at/people/elena-andreeva/picture">
+                                      <img alt="{{post.first}} {{post.family}}" style="object-fit: cover; height: 90px;" src="{{ site.url }}{{ site.baseurl }}/images/{{ post.image.thumb }}">
+                                      <div class="media-body ml-3 text-truncate">
+                                            <h5 class="card-title text-truncate">
+                                            <a class="stretched-link" href="team/elena/index.html">
+                                            <span class="d-xs-inline d-sm-none d-md-inline">{{ post.first }} {{ post.family }}</span>
+                                            <span class="d-none d-sm-inline d-md-none">{{ post.first }} {{ post.family }}</span>
+                                            </a> </h5>
+                                            <p class="card-subtitle mb-0 text-truncate">
+                                                {{post.role}}
+                                            <span class="text-muted">
+                                            <br> {{post.title}}
+                                            </span>
+                                            </p>
+                                      </div>
                                   </div>
-                                  <div class="media-body ml-3 text-truncate">
-                                    <h5 class="card-title text-truncate">
-                                    <a class="stretched-link" href="team/elena/index.html">
-                                    <span class="d-xs-inline d-sm-none d-md-inline">{{ post.first }} {{ post.family }}</span>
-                                    <span class="d-none d-sm-inline d-md-none">{{ post.first }} {{ post.family }}</span>
-                                    </a> </h5>
-                                    <p class="card-subtitle mb-0 text-truncate">
-                                        {{post.role}}
-                                    <span class="text-muted">
-                                    <br> {{post.title}}
-                                    </span>
-                                    </p>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- administrative staff -->
+                    <div class="w18-accordion-heading" id="people-professors" data-toggle="collapse" data-target="#people-professors-body" aria-expanded="true" aria-controls="#people-professors-body" role="button">
+                        <h1>Administrative Staff</h1>
+                        <div class="collapse show" id="people-professors-body" aria-labelledby="people-professors">
+                            <div class="row pb-4">
+                                {% assign sorted = site.pages | sort: 'family' %}
+                                {% for post in sorted %}
+                                {% if post.categories contains 'administrative_staff' %}
+                                <div class="col-sm-12 col-lg-6">
+                                  <div class="media mb-4 w18-media-iconperson" title="{ post.family }} • {{post.role}}">
+                                      <img alt="{{post.first}} {{post.family}}" style="object-fit: cover; height: 90px;" src="{{ site.url }}{{ site.baseurl }}/images/{{ post.image.thumb }}">
+                                      <div class="media-body ml-3 text-truncate">
+                                            <h5 class="card-title text-truncate">
+                                            <a class="stretched-link" href="team/elena/index.html">
+                                            <span class="d-xs-inline d-sm-none d-md-inline">{{ post.first }} {{ post.family }}</span>
+                                            <span class="d-none d-sm-inline d-md-none">{{ post.first }} {{ post.family }}</span>
+                                            </a> </h5>
+                                            <p class="card-subtitle mb-0 text-truncate">
+                                                {{post.role}}
+                                            <span class="text-muted">
+                                            <br> {{post.title}}
+                                            </span>
+                                            </p>
+                                      </div>
                                   </div>
                                 </div>
                                 {% endif %}
@@ -105,101 +137,4 @@ format: frontpage
             </div>
         </div>
     </div>
-</section>
-
-
-<section class="w18-content">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-lg-10 col-xl-8">
-                <div class="accordion">
-                    
-
-                    <div class="w18-accordion-heading" id="people-professors" data-toggle="collapse" data-target="#people-professors-body" aria-expanded="true" aria-controls="#people-professors-body" role="button">
-                        <a name="people"><h1>Faculty</h1></a>
-                        <div class="collapse show" id="people-professors-body" aria-labelledby="people-professors">
-
-                            <div class="row pb-4">
-                                
-                                    
-                                    
-
-
-
-                                        <div class="col-sm-12 col-lg-6">
-
-    
-        <div class="media mb-4 w18-media-iconperson" title="Elena Andreeva • Assistant Professor">
-    
-
-        
-        <img alt="Elena Andreeva" style="object-fit: cover; height: 90px" src="https://informatics.tuwien.ac.at/people/elena-andreeva/picture">
-        
-
-        <div class="media-body ml-3 text-truncate">
-            <h5 class="card-title text-truncate">
-                
-                
-                
-                
-                <a class="stretched-link" href="team/elena/index.html">
-                    <span class="d-xs-inline d-sm-none d-md-inline">Elena Andreeva</span>
-                    <span class="d-none d-sm-inline d-md-none">E. Andreeva</span>
-                </a>
-            </h5>
-
-            <p class="card-subtitle mb-0 text-truncate">
-                
-                    Assistant Professor
-                <span class="text-muted">
-                    
-                        <br>Asst.Prof. / PhD
-                    
-                </span>
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="col-sm-12 col-lg-6">
-
-    
-        <div class="media mb-4 w18-media-iconperson" title="Elena Andreeva • Assistant Professor">
-    
-
-        
-        <img alt="Elena Andreeva" style="object-fit: cover; height: 90px" src="https://informatics.tuwien.ac.at/people/elena-andreeva/picture">
-        
-
-        <div class="media-body ml-3 text-truncate">
-            <h5 class="card-title text-truncate">
-                
-                
-                
-                
-                <a class="stretched-link" href="team/elena/index.html">
-                    <span class="d-xs-inline d-sm-none d-md-inline">Elena Andreeva</span>
-                    <span class="d-none d-sm-inline d-md-none">E. Andreeva</span>
-                </a>
-            </h5>
-
-            <p class="card-subtitle mb-0 text-truncate">
-                
-                    Assistant Professor
-                <span class="text-muted">
-                    
-                        <br>Asst.Prof. / PhD
-                    
-                </span>
-            </p>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
