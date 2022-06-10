@@ -1,6 +1,6 @@
 ---
 subheadline: "Project Assistant"
-title:  ""
+title:  "Francesco Pontiggia"
 first: "Francesco"
 family: "Pontiggia"
 mail: ""

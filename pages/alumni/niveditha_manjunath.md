@@ -1,6 +1,7 @@
 ---
 subheadline: ""
-title:  "Dr."
+academicTitle:  "Dr."
+title: "Niveditha Manjunath"
 first: "Niveditha"
 family: "Manjunath"
 role: "Now Senior System Test Engineer (DB Netz AG), Germany"

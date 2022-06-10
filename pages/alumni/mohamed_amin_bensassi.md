@@ -1,6 +1,7 @@
 ---
 subheadline: ""
-title:  "Dr."
+academicTitle:  "Dr."
+title: "Mohamed Amin Ben Sassi"
 first: "Mohamed Amin"
 family: "Ben Sassi"
 mail: ""

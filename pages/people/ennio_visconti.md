@@ -1,6 +1,6 @@
 ---
 subheadline: "Univ. assistant"
-title:  ""
+title:  "Ennio Visconti"
 first: "Ennio"
 family: "Visconti"
 mail: ""

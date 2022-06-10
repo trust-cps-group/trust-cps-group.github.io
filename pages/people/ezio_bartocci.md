@@ -1,6 +1,7 @@
 ---
 subheadline: "Univ.-Prof"
-title:  "Univ.-Prof. Dr."
+title:  "Ezio Bartocci"
+academicTitle: "Univ.-Prof. Dr."
 first: "Ezio"
 family: "Bartocci"
 role:   "Group Leader"

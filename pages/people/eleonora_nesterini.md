@@ -1,6 +1,6 @@
 ---
 subheadline: "Univ. assistant"
-title:  ""
+title:  "Eleonora Nesterini"
 first: "Eleonora"
 family: "Nesterini"
 role: "PhD Student"

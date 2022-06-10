@@ -83,14 +83,14 @@ format: frontpage
                                       <img alt="{{post.first}} {{post.family}}" style="object-fit: cover; height: 90px;" src="{{ site.url }}{{ site.baseurl }}/images/{{ post.image.thumb }}">
                                       <div class="media-body ml-3 text-truncate">
                                             <h5 class="card-title text-truncate">
-                                            <a class="stretched-link" href="{{site.url}}{{ site.baseurl }}/pages/people/{{ post.first | downcase }}_{{ post.family | downcase }}/">
+                                            <a class="stretched-link" href="{{site.url}}{{ site.baseurl }}/pages/people/{{ post.first | downcase }}_{{ post.family | replace: " ", "" | downcase }}/">
                                             <span class="d-xs-inline d-sm-none d-md-inline">{{ post.first }} {{ post.family }}</span>
                                             <span class="d-none d-sm-inline d-md-none">{{ post.first }} {{ post.family }}</span>
                                             </a> </h5>
                                             <p class="card-subtitle mb-0 text-truncate">
                                                 {{post.role}}
                                             <span class="text-muted">
-                                            <br> {{post.title}}
+                                            <br> {{post.academicTitle}}
                                             </span>
                                             </p>
                                       </div>
@@ -115,14 +115,14 @@ format: frontpage
                                       <img alt="{{post.first}} {{post.family}}" style="object-fit: cover; height: 90px;" src="{{ site.url }}{{ site.baseurl }}/images/{{ post.image.thumb }}">
                                       <div class="media-body ml-3 text-truncate">
                                             <h5 class="card-title text-truncate">
-                                            <a class="stretched-link" href="{{site.url}}{{ site.baseurl }}/pages/people/{{ post.first | downcase }}_{{ post.family | downcase }}/">
+                                            <a class="stretched-link" href="{{site.url}}{{ site.baseurl }}/pages/administrative/{{ post.first | downcase }}_{{ post.family | replace: " ", "" | downcase }}/">
                                             <span class="d-xs-inline d-sm-none d-md-inline">{{ post.first }} {{ post.family }}</span>
                                             <span class="d-none d-sm-inline d-md-none">{{ post.first }} {{ post.family }}</span>
                                             </a> </h5>
                                             <p class="card-subtitle mb-0 text-truncate">
                                                 {{post.role}}
                                             <span class="text-muted">
-                                            <br> {{post.title}}
+                                            <br> {{post.academicTitle}}
                                             </span>
                                             </p>
                                       </div>

@@ -105,14 +105,14 @@ defaults:
       type: "pages"
     values:
       header: no
-      layout: page-fullwidth
+      layout: person-fullwidth
       categories: "alumni"
   - scope:
       path: "pages/administrative"
       type: "pages"
     values:
       header: no
-      layout: page-fullwidth
+      layout: person-fullwidth
       categories: "administrative"
   - scope:
       path: "pages/research_projects"

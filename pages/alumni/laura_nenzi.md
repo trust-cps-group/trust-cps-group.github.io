@@ -1,6 +1,7 @@
 ---
 subheadline: ""
-title:  "Dr."
+academicTitle:  "Dr."
+title: "Laura Nenzi"
 first: "Laura"
 family: "Nenzi"
 role:   "Now Assistant Professor at University of Trieste"

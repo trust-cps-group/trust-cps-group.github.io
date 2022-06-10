@@ -1,6 +1,7 @@
 ---
 subheadline: ""
-title:  "Dr."
+academicTitle:  "Dr."
+title: "Konstantin Selyunin"
 first: "Konstantin"
 family: "Selyunin"
 mail: ""
