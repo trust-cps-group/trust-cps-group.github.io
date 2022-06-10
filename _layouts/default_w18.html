@@ -11,7 +11,9 @@ layout: compress
 	{% include _header_w18.html %}
 	{% endunless %}
 
-	<!--{% include _masthead.html %}-->
+	{% comment %}
+	{% include _masthead.html %}
+	{% endcomment %}
 	{{ content }}
 
 	{% unless page.skip_boilerplate %}
