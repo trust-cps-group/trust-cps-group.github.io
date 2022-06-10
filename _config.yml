@@ -12,7 +12,7 @@ credits: '<p>Created with <a href="http://jekyllrb.com/" target="_blank">Jekyll<
 
 # Main author of the website
 # See > authors.yml
-author: Ezio Bartocci, Stefan Schupp
+author: Ezio Bartocci, Francesco Pontiggia, Stefan Schupp, Ennio Visconti
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
@@ -32,8 +32,9 @@ improve_content: #https://github.com/trust-cps-group/feeling-responsive/edit/gh-
 #urlimg: "https://phlow.github.io/feeling-responsive/images/"
 urlimg: "https://trust-cps-group.github.io/images/"
 
-# Logo size is 600x80 pixels
-logo: "images/group_pictures/trust_cps.png"
+# Logo size used to be 600x80 pixels. Now it's unclear
+hero: "images/group_pictures/trust_cps.png"
+logo: "images/trust_cps_logo.svg"
 
 # Plugins
 plugins:
@@ -98,7 +99,7 @@ defaults:
     values:
       header: no
       layout: person-fullwidth
-      categories: "people"
+      categories: ["people"]
       prio: "0"
   - scope:
       path: "pages/alumni"
@@ -113,14 +114,14 @@ defaults:
     values:
       header: no
       layout: person-fullwidth
-      categories: "administrative"
+      categories: ["administrative"]
   - scope:
       path: "pages/research_projects"
       type: "pages"
     values:
       header: no
-      layout: page-fullwidth
-      categories: "research"
+      layout: page-fullwidth_w18
+      categories: ["research"]
 
 
 #  Open _data/navigation.yml to adjust the left and right topbar navigation

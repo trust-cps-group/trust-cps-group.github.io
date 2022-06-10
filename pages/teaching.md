@@ -7,4 +7,4 @@ permalink: "/teaching/"
 header: no
 ---
 
-Test.
+No courses are being taught in this semester.
