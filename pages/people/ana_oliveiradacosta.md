@@ -1,6 +1,7 @@
 ---
 subheadline: ""
 title:  "Ana Oliveira da Costa"
+academicTitle: "MSc"
 first: "Ana"
 family: "Oliveira da Costa"
 mail: ""

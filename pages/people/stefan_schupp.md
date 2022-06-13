@@ -1,7 +1,7 @@
 ---
 subheadline: "Univ. assistant"
 title:  "Stefan Schupp"
-academicTitle: "Dr."
+academicTitle: "Dr. rer. nat."
 first: "Stefan"
 family: "Schupp"
 mail: ""

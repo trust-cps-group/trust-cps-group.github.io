@@ -1,6 +1,7 @@
 ---
 subheadline: "Univ. assistant"
 title:  "Drishti Yadav"
+academicTitle: "MSc"
 first: "Drishti"
 family: "Yadav"
 mail: ""

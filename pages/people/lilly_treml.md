@@ -1,6 +1,7 @@
 ---
 subheadline: "Univ. assistant"
 title:  "Lilly Treml"
+academicTitle: "Mag."
 first: "Lilly"
 family: Treml
 mail: ""

@@ -1,10 +1,11 @@
 ---
 subheadline: ""
 title:  "Elisa di Cristo"
+academicTitle: "BA"
 first: "Elisa"
 family: "Di Cristo"
 mail: ""
-role: "Secretary of the group"
+role: "Secretary"
 hasdblp: "no"
 dblp:    ""
 ---

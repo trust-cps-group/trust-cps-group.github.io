@@ -1,10 +1,10 @@
 ---
 subheadline: ""
-academicTitle:  "Dr."
+academicTitle:  "Asst. Prof./ Dr."
 title: "Laura Nenzi"
 first: "Laura"
 family: "Nenzi"
-role:   "Now Assistant Professor at University of Trieste"
+role:   "Asst. Prof. at University of Trieste"
 mail: ""
 website: "https://lauranenzi.github.io/"
 hasdblp: "yes"

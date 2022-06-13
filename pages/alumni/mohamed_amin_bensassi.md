@@ -1,11 +1,11 @@
 ---
 subheadline: ""
-academicTitle:  "Dr."
+academicTitle:  "Asst. Prof./ Dr."
 title: "Mohamed Amin Ben Sassi"
 first: "Mohamed Amin"
 family: "Ben Sassi"
 mail: ""
-role: "Now Assistant Professor at MedTech, Tunisia"
+role: "Asst. Prof. at MedTech, Tunisia"
 hasdblp: "yes"
 dblp:    "https://dblp.org/pid/22/8910.html"
 image:

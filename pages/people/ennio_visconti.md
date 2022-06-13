@@ -1,6 +1,7 @@
 ---
 subheadline: "Univ. assistant"
 title:  "Ennio Visconti"
+academicTitle: "Dott. Magistrale"
 first: "Ennio"
 family: "Visconti"
 mail: ""

@@ -1,6 +1,7 @@
 ---
 subheadline: "Univ. assistant"
 title:  "Emery Neufeld"
+academicTitle: "MSc"
 first: "Emery"
 family: "Neufeld"
 mail: ""

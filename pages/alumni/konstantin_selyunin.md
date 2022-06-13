@@ -5,7 +5,7 @@ title: "Konstantin Selyunin"
 first: "Konstantin"
 family: "Selyunin"
 mail: ""
-role: "Now Development Engineer at Bosch, Austria"
+role: "Development Engineer at Bosch, Austria"
 hasdblp: "yes"
 dblp:    "https://dblp.org/pid/159/1606.html"
 image:

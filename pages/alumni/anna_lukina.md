@@ -1,11 +1,11 @@
 ---
 subheadline: ""
-academicTitle:  "Dr."
+academicTitle:  "Asst. Prof./ Dr."
 title: "Anna Lukina"
 first: "Anna"
 family: "Lukina"
 mail: ""
-role: "Now PostDoc at IST, Austria"
+role:   "Asst. Prof. at TU Delft"
 hasdblp: "yes"
 dblp:    "https://dblp.org/pid/186/9691.html"
 image:
