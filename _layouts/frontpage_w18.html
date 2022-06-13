@@ -34,35 +34,18 @@ format: frontpage
     </section>
 </div> </section>
 
-
-<section id="content" class="home-section wg-content   "  >
+<section class="w18-content">
     <div class="container">
-        <section class="w18-content">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col col-lg-10 col-xl-8">
-                        <a name="about"><h1>About</h1></a>
-                            {{ content }}
-                    </div>
-                </div>
+        <div class="row justify-content-center">
+            <div class="col col-lg-10 col-xl-8">
+                <a name="about"><h1>About</h1></a>
+                {{ content }}
             </div>
-        </section>
-
-        {% unless site.posts == empty %}
-        <section class="w18-content">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col col-lg-10 col-xl-8">
-                        <a name="news"><h1>{{ site.data.language.news }}</h1></a>
-                        {% include list-posts entries='3' %}
-                    </div>
-                </div>
-            </div>
-        </section>
-        {% endunless %}
+        </div>
     </div>
 </section>
 
+{% include _news_tiles.html %}
 
 <section class="w18-content">
     <div class="container">

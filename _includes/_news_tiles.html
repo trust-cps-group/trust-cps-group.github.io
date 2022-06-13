@@ -1,0 +1,34 @@
+<section id="content" class="home-section wg-content   "  >
+    <div class="container">
+        {% unless site.posts == empty %}
+        <section class="w18-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col col-lg-10 col-xl-8">
+                        <a name="news"><h1>{{ site.data.language.news }}</h1></a>
+                        {% for post in site.posts %}
+                        {% assign remainder = forloop.index | modulo: 3 %}
+                        {% if forloop.first == true %}
+                            <div class="row">
+                            <article class="twelve columns"></article>
+                            </div>
+                        {% elsif remainder == 0 %}
+                            <div class="row">
+                            <article class="six columns"></article>
+                            {% if forloop.last %}
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <article class="six columns"></article>
+                            </div>
+                        {% endif %}
+                        {{ post.title }}
+                        {% endfor %}
+                        <!--{% include list-posts entries='3' %}-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endunless %}
+    </div>
+</section>
