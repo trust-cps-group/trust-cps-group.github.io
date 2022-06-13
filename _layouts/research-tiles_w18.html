@@ -1,45 +1,72 @@
 ---
 layout: page-fullwidth_w18
 ---
+    <article class="w18-content">
+        {% for post in site.pages %}
+        {% if post.categories contains 'research' %}
+        <section class="container project-card">
+            <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}">
+                <h3>{{ post.title }}</h3>
+            </a>
+            <div class="row mb-5">
+                {% if post.image.homepage %}
+                <div class="col col-8 col-sm-6 col-lg-7">
+                    <p>
+                        {% if post.teaser %}
+                        <br>
+                        {{ post.teaser }}
+                        <br>
+                        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"
+                           title="{{ post.title | escape_once }}">
+                            {{ site.data.language.more }}
+                        </a>
+                        {% endif %}
+                    </p>
+                </div><!-- /.medium-6.columns -->
+                <div class="col col-4 col-sm-6 col-lg-5 v-center">
+                    <p>
+                        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}">
+                            <img class="project-img" src="{{ site.urlimg }}{{ post.image.thumb }}" alt="{{ page.title | escape_once }}">
+                        </a>
+                    </p>
 
-    <div class="row t30 b20 homepage">
-            {% for post in site.pages %}
-            {% if post.categories contains 'research' %}
-            <div class="medium-12 columns border-dotted t10">
-              <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><h3>{{  post.title}}</h3></a>
-            {% if post.image.homepage %}
-            <div class="medium-9 columns">
-              <p>
-                {% if post.teaser %}
-                <br>
-                {{ post.teaser }}
-                <br>
-                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}">{{  site.data.language.more}}</a>
+                    {% if post.image.caption_url and post.image.caption %}
+                    <p class="text-right caption">
+                        <a href="{{ post.image.caption_url }}">{{ post.image.caption }}</a>
+                    </p>
+                    {% endif %}
+                </div><!-- /.medium-6.columns -->
+                {% else post.image.homepage == NULL %}
+                <div class="col col-12">
+                    {% if post.teaser %}
+                    <br>
+                    {{ post.teaser }}
+                    <br>
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}">
+                        {{  site.data.language.more}}
+                    </a>
+                    {% endif %}
+                </div>
                 {% endif %}
-              </p>
-            </div><!-- /.medium-6.columns -->
-            <div class="medium-3 columns">
-              <p>
-                  <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img  width="970" src="{{ site.urlimg }}{{ post.image.thumb }}" alt="{{ page.title | escape_once }}"></a>
-                </p>
+            </div>
+        </section>
+        {% endif %}
+        {% endfor %}
+    </article>
 
-                {% if post.image.caption_url and post.image.caption %}
-                <p class="text-right caption">
-                  <a href="{{ post.image.caption_url }}">{{ post.image.caption }}</a>
-                </p>
-                {% endif %}
-            </div><!-- /.medium-6.columns -->
-            {% else post.image.homepage == NULL %}
-              <div class="medium-12 columns">
-                {% if post.teaser %}
-                <br>
-                {{ post.teaser }}
-                <br>
-                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}">{{  site.data.language.more}}</a>
-                {% endif %}
-              </div>
-            {% endif %}
-            </div><!-- /.medium-12.columns -->
-            {% endif %}
-            {% endfor %}
-    </div><!-- /.row -->
+<style>
+    .v-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    .project-card:hover, .project-card:focus {
+        border-left: 1.5px solid #ff0202;
+        border-right: 1.5px solid #ff0202;
+    }
+</style>

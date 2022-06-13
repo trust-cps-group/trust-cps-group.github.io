@@ -9,8 +9,8 @@
     <div class="container">
         <div class="w18-header-wrap">
             <h1 class="w18-logo">
-                <a href="/" title="TU Wien - TrustCPS">
-                    <img alt="TU Wien - TrustCPS" src="/assets/w18/1.8.5/images/logo.svg">
+                <a href="{{ site.url }}{{ site.baseurl }}/" title="TU Wien - TrustCPS">
+                    <img class="site-logo" alt="TU Wien - TrustCPS" src="{{ site.url }}{{ site.baseurl }}/{{ site.logo }}">
                 </a>
 <!--                <a class="w18-logo-link-1" href="/" title="TU Wien - TrustCPS"></a>-->
 <!--                <a class="w18-logo-link-2" href="/" title="TU Wien - TrustCPS"></a>-->
@@ -21,3 +21,9 @@
 
     {% include _navigation_w18.html %}
 </header>
+
+<style>
+    .site-logo {
+        width: 250px;
+    }
+</style>
