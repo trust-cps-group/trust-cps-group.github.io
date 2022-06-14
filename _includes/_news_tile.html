@@ -1,31 +1,53 @@
 <article class="card">
     <a class="w18-card-link" href="{{ post.url }}">
-        <!--<figure class="figure">
+        <figure class="figure">
         <noscript>
             <picture class="figure-img card-img">
-                <source srcset="/news/2228/pictures/1433/card-1x.webp 1x, /news/2228/pictures/1433/card-2x.webp 2x" type="image/webp">
-                <source srcset="/news/2228/pictures/1433/card-1x 1x, /news/2228/pictures/1433/card-2x 2x">
+                <!--<source srcset="/news/2228/pictures/1433/card-1x.webp 1x, /news/2228/pictures/1433/card-2x.webp 2x" type="image/webp">
+                <source srcset="/news/2228/pictures/1433/card-1x 1x, /news/2228/pictures/1433/card-2x 2x">-->
+                {% if post.image %}
                 <img
                     class="figure-img card-img"
                     width="370"
                     height="260"
                     decoding="async"
-                    loading="lazy”
-                    src="/news/2228/pictures/1433/card-2x"
-                    alt="{{ post.title }}”">
+                    loading="lazy"
+                    src="{{ post-image }}"
+                    alt="{{ post.title }}">
+                {% else %}
+                <img
+                    class="figure-img card-img"
+                    width="370"
+                    height="260"
+                    decoding="async"
+                    loading="lazy"
+                    src="assets/img/generic_news.png"
+                    alt="{{ post.title }}">
+                {% endif %}
             </picture>
         </noscript>
         <picture class="figure-img card-img lazyload">
-            <source data-srcset="/news/2228/pictures/1433/card-1x.webp 1x, /news/2228/pictures/1433/card-2x.webp 2x" type="image/webp">
-            <source data-srcset="/news/2228/pictures/1433/card-1x 1x, /news/2228/pictures/1433/card-2x 2x">
+            <!--<source data-srcset="/news/2228/pictures/1433/card-1x.webp 1x, /news/2228/pictures/1433/card-2x.webp 2x" type="image/webp">
+            <source data-srcset="/news/2228/pictures/1433/card-1x 1x, /news/2228/pictures/1433/card-2x 2x">-->
+            {% if post.image %}
             <img
                 class="figure-img card-img lazyload"
                 width="370"
                 height="260"
                 decoding="async"
-                src="/assets/w18/1.8.5/images/pixel-370x260.png"
-                data-src="/news/2228/pictures/1433/card-2x"
+                src="{{ post.image }}"
+                data-src="{{ post.image }}"
                 alt="{{ post.title }}”">
+            {% else %}
+            <img
+                class="figure-img card-img lazyload"
+                width="370"
+                height="260"
+                decoding="async"
+                src="assets/img/generic_news.png"
+                data-src="assets/img/generic_news.png"
+                alt="{{ post.title }}">
+            {% endif %}
         </picture>
         <div class="w18-event-date">
             <time class="w18-event-date-day" >
@@ -35,7 +57,7 @@
                 {{ post.date | date: "%Y" }}
             </time>
         </div>
-        </figure>-->
+        </figure>
         <div class="card-body">
             <h2 class="card-title anchorjs-skip">
             <span class="w18-hover-line">{{ post.title }}</span>
