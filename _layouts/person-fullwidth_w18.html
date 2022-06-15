@@ -71,7 +71,7 @@ layout: default_w18
             <div class="row justify-content-center">
                 <div class="col col-lg-10 col-xl-8">
                     <a name="publications"><h1>Publications</h1></a>
-                    {% bibliography -q @*[author~=\b{{ page.family }}\b] %}                        
+                    {% bibliography -q @*[author~={{ page.family }}] %}                        
                 </div>
             </div>
         </div>
