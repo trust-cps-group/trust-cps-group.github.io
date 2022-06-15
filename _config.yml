@@ -107,7 +107,7 @@ defaults:
     values:
       header: no
       layout: person-fullwidth
-      categories: "alumni"
+      categories: ["alumni"]
   - scope:
       path: "pages/administrative"
       type: "pages"
