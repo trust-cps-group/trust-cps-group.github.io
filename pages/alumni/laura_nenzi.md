@@ -19,4 +19,4 @@ image:
 
 <!--more-->
 
-I am a post-doctoral researcher at Trust-CPS Group.
+I was part of Trust-CPS Group.

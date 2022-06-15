@@ -1,5 +1,5 @@
 ---
-layout: alumni-tiles
+layout: alumni-tiles_w18
 title: "Alumni"
 subheadline: ""
 teaser: ""
