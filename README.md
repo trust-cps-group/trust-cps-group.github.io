@@ -1,6 +1,6 @@
 This is the repository for the webpage of trust-cps-group at TU Vienna. This README is intended as a guide on how to test the site locally as well as on how to publish changes.
 
-## <a name="setup"></a>Setup x
+## <a name="setup"></a>Setup
 
 As we do not want to work in the browser, the first step is to clone the repository, e.g., via ssh
 
