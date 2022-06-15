@@ -9,7 +9,7 @@ role: "Master Student"
 hasscopus: "no"
 scopus: 
 image:
-  thumb: 
+  thumb: "people_pictures/no_picture.png"
   homepage:
 ---
 
