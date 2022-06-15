@@ -49,8 +49,8 @@ format: frontpage
 
 <section class="w18-content">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-lg-12 col-xl-12">
+        <div class="content">
+            <div class="container col col-lg-12 col-xl-12">
                 <div class="accordion">
 
                     <!-- scientific staff -->
@@ -86,9 +86,9 @@ format: frontpage
                     </div>
 
                     <!-- alumni staff -->
-                    <div class="w18-accordion-heading" id="people-professors" data-toggle="collapse" data-target="#people-professors-body" aria-expanded="true" aria-controls="#people-professors-body" role="button">
+                    <div class="w18-accordion-heading" id="people-alumni" data-toggle="collapse" data-target="#people-alumni-body" aria-expanded="true" aria-controls="#people-alumni-body" role="button">
                         <a name="people"><h1>Alumni</h1></a>
-                        <div class="collapse show" id="people-professors-body" aria-labelledby="people-professors">
+                        <div class="collapse show" id="people-alumni-body" aria-labelledby="people-alumni">
                             <div class="row pb-4">
                                 {% assign sorted = site.pages | sort: 'family' %}
                                 {% for post in sorted %}
@@ -118,9 +118,9 @@ format: frontpage
                     </div>
 
                     <!-- administrative staff -->
-                    <div class="w18-accordion-heading" id="people-professors" data-toggle="collapse" data-target="#people-professors-body" aria-expanded="true" aria-controls="#people-professors-body" role="button">
+                    <div class="w18-accordion-heading" id="people-administrative" data-toggle="collapse" data-target="#people-administrative-body" aria-expanded="true" aria-controls="#people-administrative-body" role="button">
                         <h1>Administrative Staff</h1>
-                        <div class="collapse show" id="people-professors-body" aria-labelledby="people-professors">
+                        <div class="collapse show" id="people-administrative-body" aria-labelledby="people-administrative">
                             <div class="row pb-4">
                                 {% assign sorted = site.pages | sort: 'family' %}
                                 {% for post in sorted %}

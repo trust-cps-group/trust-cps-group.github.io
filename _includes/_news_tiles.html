@@ -1,32 +1,37 @@
-<section id="content" class="home-section wg-content   "  >
+
+<section id="content" class="home-section wg-content   ">
     <div class="container">
         {% unless site.posts == empty %}
         <section class="w18-content">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col col-lg-12 col-xl-12">
-                        <a name="news"><h1>{{ site.data.language.news }}</h1></a>
-                        {% for post in site.posts limit:6 %}
-                        {% assign remainder = forloop.index0 | modulo: 3 %}
-                        {% if remainder == 0 %}
-                            <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-4">
-                            {% include _news_tile.html %}
+                        <div class="w18-accordion-heading" id="news" data-toggle="collapse" data-target="#news-body" aria-expanded="true" aria-controls="#news-body" role="button">
+                            <h1>{{ site.data.language.news }}</h1>
+                            <div class="collapse show" id="news-body" aria-labelledby="news">
+                            {% for post in site.posts limit:6 %}
+                            {% assign remainder = forloop.index0 | modulo: 3 %}
+                            {% if remainder == 0 %}
+                                <div class="row">
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                {% include _news_tile.html %}
+                                </div>
+                            {% elsif remainder == 2 or forloop.last %}
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                {% include _news_tile.html %}
+                                </div>
+                                </div>
+                            {% else %}
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                {% include _news_tile.html %}
+                                </div>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                            <div class="text-right">
+                                <a href="/blog/">{{ site.data.language.more_news }}</a>
                             </div>
-                        {% elsif remainder == 2 or forloop.last %}
-                            <div class="col-12 col-sm-6 col-lg-4">
-                            {% include _news_tile.html %}
-                            </div>
-                            </div>
-                        {% else %}
-                            <div class="col-12 col-sm-6 col-lg-4">
-                            {% include _news_tile.html %}
-                            </div>
-                        {% endif %}
-                        {% endfor %}
-                    </div>
-                    <div class="text-right">
-                        <a href="/blog/">{{ site.data.language.more_news }}</a>
+                        </div>
                     </div>
                 </div>
             </div>

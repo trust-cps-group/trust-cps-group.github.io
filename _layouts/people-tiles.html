@@ -36,9 +36,9 @@ layout: page-fullwidth_w18
     </div>
 
     <!-- administrative staff -->
-    <div class="w18-accordion-heading" id="people-professors" data-toggle="collapse" data-target="#people-professors-body" aria-expanded="true" aria-controls="#people-professors-body" role="button">
+    <div class="w18-accordion-heading" id="people-administrative" data-toggle="collapse" data-target="#people-professors-body" aria-expanded="true" aria-controls="#people-professors-body" role="button">
         <a name="people"><h1>Administrative Staff</h1></a>
-        <div class="collapse show" id="people-professors-body" aria-labelledby="people-professors">
+        <div class="collapse show" id="people-administrative-body" aria-labelledby="people-professors">
             <div class="row pb-4">
                 {% assign sorted = site.pages | sort: 'family' %}
                 {% for post in sorted %}
@@ -127,7 +127,7 @@ layout: page-fullwidth_w18
                 <br>
                 {{ post.role }}
                 <br>
-              
+
               </div>
             </div>
             {% endif %}
