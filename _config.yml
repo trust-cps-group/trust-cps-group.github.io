@@ -93,6 +93,7 @@ defaults:
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
       # author: phlow # Default author for posts
+      layout: post_w18
   - scope:
       path: "pages/people"
       type: "pages"

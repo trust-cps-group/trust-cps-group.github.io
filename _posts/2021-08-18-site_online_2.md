@@ -1,9 +1,10 @@
 ---
-layout: page-fullwidth_w18
 subheadline: Webpage online
 title:  "Our new webpage is ready"
 teaser: "We are happy to announce the new launch of our webpage."
 image: "images/group_pictures/group1.png"
+imagecaption: "A group photo taken from zoom."
+imagecredit: "Ezio Bartocci"
 tags:
     - news
 author: TrustCPS

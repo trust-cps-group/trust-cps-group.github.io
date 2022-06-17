@@ -1,0 +1,106 @@
+---
+layout: default_w18
+format: post_w18
+---
+<section class="w18-page-intro w18-header-intro">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col col-lg-10 col-xl-8">
+				<h2 class="display-1">
+					{{ page.title }}
+				</h2>
+				<ul class="w18-tags">
+					<li class="w18-tags-item">By {{ page.author }}</li>
+				</ul>
+				<ul class="w18-tags">
+					<li class="w18-tags-item">{{ page.date | date: "%B %-d %Y" }}</li>
+				</ul>
+				<p class="lead">
+					{{ page.teaser }}
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-lg-8 w18-page-intro-figure-col">
+				<figure class="figure w18-header-intro-figure">
+					{% if page.image %}
+					<noscript>
+						<picture class="figure-img">
+							<img
+								class="figure-img"
+								width="770"
+								height="550"
+								decoding="async"
+								loading="lazy”
+								src="{{ page.image }}"
+								alt="{{ page.imagecaption }}">
+						</picture>
+					</noscript>
+					<picture class="figure-img lazyload">
+						<img
+							class="figure-img lazyload"
+							width="770"
+							height="550"
+							decoding="async"
+							src="{{ site.url }}{{ site.baseurl }}/{{ page.image }}"
+							data-src="{{ site.url }}{{ site.baseurl }}/{{ page.image }}"
+							alt="{{ page.imagecaption }}">
+					</picture>
+					{% if page.imagecaption or page.imagecredit %}
+					<figcaption class="figure-caption w18-header-intro-figure-caption">
+						{% if page.imagecaption %}
+						{{ page.imagecaption }}
+						<br>
+						{% endif %}
+						{% if page.imagecredit %}
+						<small class="text-muted">Picture: {{ page.imagecredit }}</small>
+						{% endif %}
+					</figcaption>
+					{% endif %}
+					{% else %}
+					<noscript>
+						<picture class="figure-img">
+							<img
+								class="figure-img"
+								width="770"
+								height="550"
+								decoding="async"
+								loading="lazy”
+								src="{{ site.url }}{{ site.baseurl }}/assets/img/generic_news.png"
+								alt="A keyboard, the default image for post.">
+						</picture>
+					</noscript>
+					<picture class="figure-img lazyload">
+						<img
+							class="figure-img lazyload"
+							width="770"
+							height="550"
+							decoding="async"
+							src="{{ site.url }}{{ site.baseurl }}/assets/img/generic_news.png"
+							data-src="{{ site.url }}{{ site.baseurl }}/assets/img/generic_news.png"
+							alt="A keyboard, the default image for post.">
+					</picture>
+					<figcaption class="figure-caption w18-header-intro-figure-caption">
+						{% if page.imagecaption %}
+						{{ page.imagecaption }}
+						<br>
+						{% endif %}
+						<small class="text-muted">Picture: <a href="https://unsplash.com/@driaug?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dries Augustyns</a> on <a href="https://unsplash.com/s/photos/digital?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  						</small>
+					</figcaption>
+					{% endif %}
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="w18-content">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col col-lg-10 col-xl-8">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</section>
