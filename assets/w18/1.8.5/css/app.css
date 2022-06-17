@@ -8454,9 +8454,6 @@ a.text-dark:hover {
 .w18-accordion-inner .w18-accordion-heading:after,
 .w18-accordion-inner .w18-accordion-heading:hover:after,
 .w18-accordion-inner .w18-accordion-heading[aria-expanded=true]:after,
-.w18-accordion-inner .w18-accordion-heading[aria-expanded=true]:hover:after {
-    background: url(../images/sprite.svg)
-}
 
 .fa.fa-calendar:before,
 .fa.fa-clock-o:before {
