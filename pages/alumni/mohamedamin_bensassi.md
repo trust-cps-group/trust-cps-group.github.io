@@ -15,4 +15,4 @@ image:
 
 <!--more-->
 
-I am a doctoral researcher at Trust-CPS Group.
+I was part of Trust-CPS Group.

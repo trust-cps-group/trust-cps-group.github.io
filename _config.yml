@@ -99,7 +99,7 @@ defaults:
       type: "pages"
     values:
       header: no
-      layout: person-fullwidth
+      layout: person-fullwidth_w18
       categories: ["people"]
       prio: "0"
   - scope:
@@ -107,14 +107,14 @@ defaults:
       type: "pages"
     values:
       header: no
-      layout: person-fullwidth
-      categories: "alumni"
+      layout: person-fullwidth_w18
+      categories: ["alumni"]
   - scope:
       path: "pages/administrative"
       type: "pages"
     values:
       header: no
-      layout: person-fullwidth
+      layout: person-fullwidth_w18
       categories: ["administrative"]
   - scope:
       path: "pages/research_projects"
