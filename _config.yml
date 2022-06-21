@@ -30,7 +30,7 @@ improve_content: #https://github.com/trust-cps-group/feeling-responsive/edit/gh-
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
 #urlimg: "https://phlow.github.io/feeling-responsive/images/"
-urlimg: "https://trust-cps-group.github.io/images/"
+urlimg: "/images/"
 
 # Logo size used to be 600x80 pixels. Now it's unclear
 hero: "images/group_pictures/trust_cps.png"
